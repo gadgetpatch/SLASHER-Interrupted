@@ -170,6 +170,8 @@ transform impact:
 
 label start:
 
+scene street
+
 $ Emily = renpy.input("MAYBE ENTER YOUR NAME IDK?\n", default='Emily')
 $ Emily = Emily.strip()
 
@@ -224,6 +226,8 @@ P "Okay... so, you see something out the corner of your eye..."
 "Squinting at the darkness, you make your way down the street to the house."
 
 "The wind whines through the trees, plaintive and warning, sending a chill up your spine."
+
+scene tree
 
 "When you reach the gate, the outdoor light triggers and illuminates the garden."
 
@@ -396,6 +400,8 @@ P "The door opens with a creak; the only sound in the darkness."
 "But inside, it's weirdly quiet. You call out Hello? and nobody responds."
 
 "You creep down the corridor and peek into the living room."
+
+scene sofa
 
 "The light is on low, with quiet music playing from the stereo."
 
@@ -638,6 +644,8 @@ P "One hand on the handle, you glance back at the sofa, and swallow."
 P "Whatever's in the kitchen, you're facing it on your own."
 
 P "With one quick movement, you snap the handle down and push the door open, to see - "
+
+scene kitchen
 
 C "The killer!"
 
@@ -934,6 +942,8 @@ jump pre_ending
 label pre_ending:
 
 "Your shoulders sag as you reach the end of the story."
+
+scene fire
 
 "In front of you, the campfire has dimmed a little whilst you narrated, and you nudge a log further in with your foot."
 

@@ -361,9 +361,9 @@ screen navigation():
 
             textbutton _("Start") action Start()
 
-            textbutton _("Save") action ShowMenu("save")
+            ## textbutton _("Save") action ShowMenu("save")
 
-            textbutton _("Load") action ShowMenu("load")
+            ## textbutton _("Load") action ShowMenu("load")
 
             textbutton _("Settings") action ShowMenu("preferences")
 
@@ -375,9 +375,9 @@ screen navigation():
 
             ##textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            ## textbutton _("Save") action ShowMenu("save")
 
-            textbutton _("Load") action ShowMenu("load")
+            ## textbutton _("Load") action ShowMenu("load")
 
             textbutton _("Settings") action ShowMenu("preferences")
 
@@ -442,8 +442,8 @@ screen main_menu():
             text "[config.name!t]":
                 style "main_menu_title"
 
-            text "[config.version]":
-                style "main_menu_version"
+            ## text "[config.version]":
+            ##    style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -596,7 +596,7 @@ style game_menu_label_text:
     size gui.title_text_size
     color gui.accent_color
     yalign 0.5
-
+        
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
@@ -624,7 +624,7 @@ screen about():
         vbox:
 
             label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            ## text _("Version [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
             if gui.about:

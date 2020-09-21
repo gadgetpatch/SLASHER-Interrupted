@@ -61,7 +61,7 @@ define gui.text_font = "fonts/Freeroad Regular.ttf"
 define gui.name_text_font = "fonts/Freeroad Regular.ttf"
 
 ## The font used for menu text.
-define gui.interface_text_font = "fonts/Freeroad Regular.ttf"
+define gui.interface_text_font = "fonts/Madjoe.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 28
@@ -79,14 +79,14 @@ define gui.label_text_size = 32
 define gui.notify_text_size = 32
 
 ## The size of the game's title.
-define gui.title_text_size = 48
+define gui.title_text_size = 120
 
 
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.main_menu_background = "gui/fire 1 flip.png"
+define gui.game_menu_background = "gui/fire 1 flip.png"
 
 
 ## Dialogue ####################################################################

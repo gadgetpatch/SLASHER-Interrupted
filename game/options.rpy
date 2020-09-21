@@ -15,7 +15,7 @@ define config.layers = [ 'background', 'master', 'transient', 'screens', 'overla
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Slasher, Interrupted")
+define config.name = _("SLASHER, Interrupted")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -32,7 +32,7 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""hahahahaha
+define gui.about = _p("""
 """)
 
 
