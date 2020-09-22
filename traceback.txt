@@ -1,24 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 952, in script
-    if ellie_score = 3:
-SyntaxError: invalid syntax (game/script.rpy, line 952)
+  File "game/script.rpy", line 193, in script
+    show bg street onlayer background at transparent
+  File "game/script.rpy", line 193, in <module>
+    show bg street onlayer background at transparent
+NameError: name 'transparent' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 952, in script
-    if ellie_score = 3:
-  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\python.py", line 2057, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\python.py", line 692, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/script.rpy, line 952)
+  File "game/script.rpy", line 193, in script
+    show bg street onlayer background at transparent
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\ast.py", line 1183, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\ast.py", line 1142, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 193, in <module>
+    show bg street onlayer background at transparent
+NameError: name 'transparent' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 7.3.5.606
-Slasher, Interrupted 1.0
-Sun Sep 20 20:13:41 2020
+SLASHER, Interrupted 1.0
+Tue Sep 22 06:59:41 2020

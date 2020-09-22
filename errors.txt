@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1762: expected statement.
-    else:
+File "game/screens.rpy", line 16: u'with' is not a keyword argument or valid child for the hbox statement.
+    with dissolve
         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Sep 20 20:01:43 2020
+Tue Sep 22 06:20:54 2020

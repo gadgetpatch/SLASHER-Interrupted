@@ -19,163 +19,168 @@ default stoned = False
 default pizza = False
 default kitty = False
 
-# Colored Built In Names
-#define P = Character('Emily', color="#81d4fa")
-#define E = Character('Ellie', color="#81d4fa")
-#define R = Character('Rosie', color="#ffa726")
-#define C = Character('Caroline', color="#f48fb1")
-
-# Colored names and text, on same line
-#define P = Character(None, kind=nvl, what_prefix="Emily: ", what_color="#4dd0e1")
-#define E = Character(None, kind=nvl, what_prefix="Ellie: ", what_color="#f48fb1")
-#define R = Character(None, kind=nvl, what_prefix="Rosie: ", what_color="#ffa726")
-#define C = Character(None, kind=nvl, what_prefix="Caroline: ", what_color="#ba68c8")
-
-# Colored names and text, on separate lines
-#define P = Character(None, kind=nvl, what_prefix="Emily: \n", what_color="#4dd0e1")
-#define E = Character(None, kind=nvl, what_prefix="Ellie: \n", what_color="#f48fb1")
-#define R = Character(None, kind=nvl, what_prefix="Rosie: \n", what_color="#ffa726")
-#define C = Character(None, kind=nvl, what_prefix="Caroline: \n", what_color="#ba68c8")
-
 define menu = nvl_menu
 define narrator = Character(None, kind=nvl, what_prefix="{i}")
 
 
 ## Sprites #####################################################################
 
-# Miscellaneous
-image vignette = "sprite/vignette.png"
-image black = "#000000"
-image white = "#FFFFFF"
+# Backgrounds
+image bg black = "#000000"
+image bg white = "#FFFFFF"
+
+image bg campfire = "images/fire.png"
+image bg kitchen = "images/kitchen.png"
+image bg sofa = "images/sofa.png"
+image bg street = "images/street.png"
+image bg tree = "images/tree.png"
 
 # Emily
 image emily = "sprite/emily.png"
+image emily sheepish = "sprite/emily_sheepish.png"
+image emily gendo = "sprite/emily_gendo.png"
+image emily interrupted = "sprite/emily_interrupted.png"
+image emily satisfied = "sprite/emily_satisfied.png"
 
 # Ellie
 image ellie = "sprite/ellie.png"
+image ellie scared = "sprite/ellie_scared.png"
+image ellie excited = "sprite/ellie_excited.png"
+image ellie pouting = "sprite/ellie_pouting.png"
+image ellie hiding = "sprite/ellie_hiding.png"
 
 # Rosie
 image rosie = "sprite/rosie.png"
+image rosie skeptical = "sprite/rosie_skeptical.png"
+image rosie gremlin = "sprite/rosie_gremlin.png"
+image rosie laughing = "sprite/rosie_laughing.png"
+image rosie stoned = "sprite/rosie_stoned.png"
 
 # Caroline
 image caz = "sprite/caz.png"
+image caz smirking = "sprite/caz_smirking.png"
+image caz eyeroll = "sprite/caz_eyeroll.png"
+image caz annoyed = "sprite/caz_annoyed.png"
+image caz sinister = "sprite/caz_sinister.png"
 
 
-## Transitions #################################################################
+## Animations #################################################################
 
-transform left:
-    xcenter 0.16666667
-    ycenter 0.5
+transform bob_A:
+    easein_bounce 1.3 yanchor 0.0
+    easein 1.0 yanchor 0.05
+    repeat
 
-transform audience_left:
-    xcenter 0.5
-    ycenter 0.75
+transform bob_B:
+    easein_bounce 1.5 yanchor 0.0
+    easein 1.0 yanchor 0.05
+    repeat
 
-transform audience_mid_left:
-    xcenter 0.58333333
-    ycenter 0.75
+transform bob_C:
+    easein_bounce 1.7 yanchor 0.0
+    easein 1.0 yanchor 0.05
+    repeat
 
-transform audience_mid:
-    xcenter 0.66666667
-    ycenter 0.75
-
-transform audience_mid_right:
-    xcenter 0.75
-    ycenter 0.75
-
-transform audience_right:
-    xcenter 0.83333333
-    ycenter 0.75
-
-transform audience_left_high:
-    xcenter 0.5
-    ycenter 0.66666667
-
-transform audience_mid_left_high:
-    xcenter 0.58333333
-    ycenter 0.66666667
-
-transform audience_mid_high:
-    xcenter 0.66666667
-    ycenter 0.66666667
-
-transform audience_mid_right_high:
-    xcenter 0.75
-    ycenter 0.66666667
-
-transform audience_right_high:
-    xcenter 0.83333333
-    ycenter 0.66666667
-
-transform audience_left_low:
-    xcenter 0.5
-    ycenter 1.0
-
-transform audience_mid_left_low:
-    xcenter 0.58333333
-    ycenter 1.0
-
-transform audience_mid_low:
-    xcenter 0.66666667
-    ycenter 1.0
-
-transform audience_mid_right_low:
-    xcenter 0.75
-    ycenter 1.0
-
-transform audience_right_low:
-    xcenter 0.83333333
-    ycenter 1.0
-
-transform audience_left_hide:
-    xcenter 0.5
-    ycenter 1.33333333
-
-transform audience_mid_left_hide:
-    xcenter 0.58333333
-    ycenter 1.33333333
-
-transform audience_mid_hide:
-    xcenter 0.66666667
-    ycenter 1.33333333
-
-transform audience_mid_right_hide:
-    xcenter 0.75
-    ycenter 1.33333333
-
-transform audience_right_hide:
-    xcenter 0.83333333
-    ycenter 1.33333333
-
-transform popup:
-    ease 0.5 yanchor 1
-    ease 1.0 yanchor 0.5
-
-transform impact:
-    ease 0.025 xanchor 0.51
-    ease 0.025 xanchor 0.49
-    ease 0.03333 xanchor 0.51
-    ease 0.03333 xanchor 0.49
-    ease 0.05 xanchor 0.51
-    ease 0.05 xanchor 0.49
-    ease 0.06667 xanchor 0.51
-    ease 0.06667 xanchor 0.49
+transform shake:
     ease 0.08333 xanchor 0.51
     ease 0.08333 xanchor 0.49
     ease 0.1 xanchor 0.51
     ease 0.1 xanchor 0.5
+    repeat
 
+
+## Positions ###################################################################
+
+#transform flip:
+#    xzoom -1
+
+#transform unflip:
+#    xzoom 1
+
+transform opaque:
+    easein 1.0 alpha 1.0
+
+transform faded:
+    easein 2.0 alpha 0.2
+
+transform invisible:
+    easein 2.0 alpha 0.0
+
+transform hidden:
+    alpha 0.0
+
+transform shown:
+    alpha 1.0
+
+transform left:
+    xcenter 0.125
+    ycenter 0.5
+    xanchor 0.5
+    yanchor 0.5
+
+transform audience_left:
+    #xcenter 0.48
+    xcenter 0.375
+    ycenter 0.66666667
+    xanchor 0.5
+    yanchor 0.4
+
+transform audience_mid:
+    #xcenter 0.66666667
+    xcenter 0.625
+    ycenter 0.66666667
+    xanchor 0.5
+    yanchor 0.4
+
+transform audience_right:
+    #xcenter 0.85333333
+    xcenter 0.875
+    ycenter 0.66666667
+    xanchor 0.5
+    yanchor 0.4
+
+transform scoot_up:
+    easein 0.4 yanchor 0.46666667
+
+transform scoot_mid:
+    easein 0.4 yanchor 0.4
+    easein 0.4 xanchor 0.5
+
+transform scoot_mid_y:
+    easein 0.4 yanchor 0.4
+
+transform scoot_mid_x:
+    easein 0.4 xanchor 0.5
+
+transform scoot_down:
+    easein 0.4 yanchor 0.33333333
+
+transform scoot_away:
+    easein 0.4 yanchor 0.0
+
+transform scoot_left:
+    easein 0.4 xanchor 0.66666667
+
+transform scoot_right:
+    easein 0.4 xanchor 0.33333333
 
 # The game starts here.
 
 label start:
 
-scene street
+show bg black onlayer background
 
-$ Emily = renpy.input("MAYBE ENTER YOUR NAME IDK?\n", default='Emily')
+$ Emily = renpy.input("What is your name?\n\n", default='Emily')
 $ Emily = Emily.strip()
 
-"DEBUG: Name Entered as: [Emily]"
+show bg street onlayer background with dissolve
+
+#"| || ||| |||| ||||| 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0"
+
+show emily onlayer screens at hidden, left
+show rosie onlayer screens at hidden, audience_mid
+show ellie onlayer screens at hidden, audience_left
+show caz onlayer screens at hidden, audience_right
 
 "...everything feels smothered in darkness, just the faintest glow from the moon lighting up the edges of shapes."
 
@@ -185,31 +190,41 @@ $ Emily = Emily.strip()
 
 "It takes a moment for your eyes to adjust. Swaying on your feet, hesitating before soldiering on, you see something out the corner of your eye - "
 
-show ellie onlayer screens at audience_left_high
+show bg campfire onlayer background with dissolve
+
+show ellie scared onlayer screens at opaque, scoot_up
 
 E "Eeek!"
 
-show ellie onlayer screens at audience_left
-show rosie onlayer screens at audience_mid_high
+show rosie gremlin onlayer screens at opaque, scoot_up
+show ellie scared onlayer screens at scoot_mid
 
 R "IT'S A MONSTER, ELLIE! IT'S COMING TO GET YOU!"
 
-show rosie onlayer screens at audience_mid
+show rosie gremlin onlayer screens at scoot_left
+show ellie hiding onlayer screens at scoot_down
 
 E "Stop ittttt! You made me jump!"
 
 "Rosie laughs and retrieves her hand after making Ellie jump."
 
-show caz onlayer screens at audience_right_high
+show caz smirking onlayer screens at opaque, scoot_up
+show rosie onlayer screens at scoot_mid_x
 
 "Caroline smirks briefly, then waves a hand to shush them."
+
+show emily interrupted onlayer screens at opaque, left
+show ellie pouting onlayer screens at scoot_mid
+show caz onlayer screens
 
 C "Quiet, girls. Let [Emily] continue, I want to hear what happens."
 
 nvl clear
 
-show caz onlayer screens at audience_right
-show emily onlayer screens at left
+show emily onlayer screens
+show ellie onlayer screens
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 "The three of them settle down, Rosie and Ellie on a blanket and Caroline in the campchair next to it."
 
@@ -219,7 +234,16 @@ show emily onlayer screens at left
 
 nvl clear
 
+show bg street onlayer background with dissolve
+
+show emily gendo onlayer screens
+
 P "Okay... so, you see something out the corner of your eye..."
+
+show emily gendo onlayer screens at faded
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
 
 "Whatever it is, you can't make it out before it disappears."
 
@@ -227,35 +251,67 @@ P "Okay... so, you see something out the corner of your eye..."
 
 "The wind whines through the trees, plaintive and warning, sending a chill up your spine."
 
-scene tree
+show bg tree onlayer background with dissolve
 
 "When you reach the gate, the outdoor light triggers and illuminates the garden."
 
 "Disappearing behind a tree, you see..."
 
+show ellie excited onlayer screens at shown with vpunch
+show emily interrupted onlayer screens at opaque
+show rosie onlayer screens at opaque
+show caz onlayer screens at opaque
+
 E "A kitty!"
+
+show ellie onlayer screens
+show rosie skeptical onlayer screens
 
 R "Hahahah what!? It's not gonna be a cat!"
 
+show rosie onlayer screens
+
 E "Well, what do YOU think it is?"
+
+show ellie onlayer screens
 
 R "If it were me it'd be, like, an old halloween decoration that makes you jump."
 
+show ellie pouting onlayer screens
+
 E "That's so lame!"
+
+show caz eyeroll onlayer screens
 
 C "You're both lame. Clearly this is a horror story."
 
+show caz sinister onlayer screens
+
 C "She's going to say 'A wicked blade flashes in the dark', or something."
+
+show ellie scared onlayer screens
 
 P "..."
 
+nvl clear
+
+show emily onlayer screens
+
+show ellie onlayer screens at scoot_up
+show rosie onlayer screens at scoot_up
+show caz sinister onlayer screens at scoot_up
+
 show screen choice_A
-"Who's ideas do you go with?"
-
-# We can remove these vanilla menus once we're done. Leaving them in for now
-
+"FREYA WANNA REWRITE THIS WITH AN INTERNAL MONOLOGUE OR SOMETHING?\nWhose direction do you want to take this story in?"
 
 label choice_A_Ellie:
+
+hide screen choice_A
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 $ kitty = True
 
@@ -296,6 +352,13 @@ jump choice_B
 
 label choice_A_Rosie:
 
+hide screen choice_A
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
+
 $ rosie_score += 1
 
 P "A shape sways in the wind..."
@@ -334,6 +397,13 @@ jump choice_B
 
 label choice_A_Caz:
 
+hide screen choice_A
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
+
 $ caz_score += 1
 
 P "A wicked blade flashes in the dark..."
@@ -364,6 +434,13 @@ jump choice_B
 
 
 label choice_B:
+
+hide screen choice_B
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 "You don't waste any time heading indoors."
 
@@ -401,7 +478,7 @@ P "The door opens with a creak; the only sound in the darkness."
 
 "You creep down the corridor and peek into the living room."
 
-scene sofa
+show bg sofa onlayer background with dissolve
 
 "The light is on low, with quiet music playing from the stereo."
 
@@ -421,6 +498,13 @@ show screen choice_B
 "Whose ideas do you go with?"
 
 label choice_B_Ellie:
+
+hide screen choice_B
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 $ ellie_score += 1
 
@@ -477,6 +561,13 @@ jump choice_C
 
 
 label choice_B_Rosie:
+
+hide screen choice_B
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 $ stoned = True
 
@@ -550,6 +641,13 @@ jump choice_C
 
 label choice_B_Caz:
 
+hide screen choice_B
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
+
 $ death = True
 
 $ caz_score += 1
@@ -617,6 +715,13 @@ jump choice_C
 
 label choice_C:
 
+hide screen choice_C
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
+
 P "You stare at the kitchen door, a grim sense of foreboding rooting you to the spot."
 
 P "It feels inevitable that you'll have to open it - "
@@ -645,7 +750,7 @@ P "Whatever's in the kitchen, you're facing it on your own."
 
 P "With one quick movement, you snap the handle down and push the door open, to see - "
 
-scene kitchen
+show bg kitchen onlayer background with dissolve
 
 C "The killer!"
 
@@ -656,9 +761,16 @@ R "Nah, a, a, a pizza's on fire!"
 P "..."
 
 show screen choice_C
-"Who's ideas do you go with?"
+"Whose ideas do you go with?"
 
 label choice_C_Ellie:
+
+hide screen choice_C
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 $ ellie_score += 1
 
@@ -748,6 +860,13 @@ jump pre_ending
 
 
 label choice_C_Rosie:
+
+hide screen choice_C
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 $ rosie_score += 1
 
@@ -842,6 +961,13 @@ jump pre_ending
 
 
 label choice_C_Caz:
+
+hide screen choice_C
+nvl clear
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 $ caz_score += 1
 
@@ -943,7 +1069,7 @@ label pre_ending:
 
 "Your shoulders sag as you reach the end of the story."
 
-scene fire
+show bg campfire onlayer background with dissolve
 
 "In front of you, the campfire has dimmed a little whilst you narrated, and you nudge a log further in with your foot."
 

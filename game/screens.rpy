@@ -13,12 +13,12 @@ screen choice_A():
     modal True
 
     hbox:
-        xpos 804
-        ypos 596
+        xpos 480
+        ypos 315
         spacing 0
-        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_A"), Jump("choice_A_Ellie") ]
-        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_A"), Jump("choice_A_Rosie") ]
-        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_A"), Jump("choice_A_Caz") ]
+        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_A"), Jump("choice_A_Ellie") ] at bob_A
+        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_A"), Jump("choice_A_Rosie") ] at bob_B
+        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_A"), Jump("choice_A_Caz") ] at bob_C
 
 screen choice_B():
     tag chooser
@@ -26,12 +26,12 @@ screen choice_B():
     modal True
 
     hbox:
-        xpos 804
-        ypos 596
+        xpos 480
+        ypos 315
         spacing 0
-        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_B"), Jump("choice_B_Ellie") ]
-        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_B"), Jump("choice_B_Rosie") ]
-        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_B"), Jump("choice_B_Caz") ]
+        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_B"), Jump("choice_B_Ellie") ] at bob_A
+        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_B"), Jump("choice_B_Rosie") ] at bob_B
+        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_B"), Jump("choice_B_Caz") ] at bob_C
 
 screen choice_C():
     tag chooser
@@ -39,12 +39,12 @@ screen choice_C():
     modal True
 
     hbox:
-        xpos 804
-        ypos 596
+        xpos 480
+        ypos 315
         spacing 0
-        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_C"), Jump("choice_C_Ellie") ]
-        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_C"), Jump("choice_C_Rosie") ]
-        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_C"), Jump("choice_C_Caz") ]
+        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_C"), Jump("choice_C_Ellie") ] at bob_A
+        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_C"), Jump("choice_C_Rosie") ] at bob_B
+        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_C"), Jump("choice_C_Caz") ] at bob_C
 
 #screen ctc(arg=None):
 
@@ -226,13 +226,13 @@ screen input(prompt):
 
     window:
 
-        style "nvl_window"
+        #style "nvl_window"
 
         vbox:
             xalign gui.dialogue_text_xalign
-            xpos gui.dialogue_xpos
+            xpos 0.5
             xsize gui.dialogue_width
-            ypos gui.dialogue_ypos
+            ypos -2.5
 
             text prompt style "input_prompt"
             input id "input"
@@ -246,6 +246,7 @@ style input_prompt:
 style input:
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
+    color "#4dd0e1"
 
 
 ## Choice screen ###############################################################

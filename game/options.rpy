@@ -6,7 +6,9 @@
 
 ## Basic Customization ##########################################################
 
-define config.layers = [ 'background', 'master', 'transient', 'screens', 'overlay' ]
+define config.layers = [ 'master', 'transient', 'background', 'screens', 'overlay' ]
+style default:
+    outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
 
 ## Basics ######################################################################
 
