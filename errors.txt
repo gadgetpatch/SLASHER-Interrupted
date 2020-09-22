@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 16: u'with' is not a keyword argument or valid child for the hbox statement.
-    with dissolve
-        ^
+File "game/screens.rpy", line 440: screen expects a non-empty block.
+    if gui.show_name:
+                     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Sep 22 06:20:54 2020
+Tue Sep 22 15:22:30 2020

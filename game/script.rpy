@@ -170,7 +170,7 @@ label start:
 
 show bg black onlayer background
 
-$ Emily = renpy.input("What is your name?\n\n", default='Emily')
+$ Emily = renpy.input("Content Warnings:\nMild drug use\nSwearing\nDescription of murder\n\n\n\nWhat is your name? Type here then press Enter when you're done. \n\n", default='Emily')
 $ Emily = Emily.strip()
 
 show bg street onlayer background with dissolve
@@ -190,12 +190,11 @@ show caz onlayer screens at hidden, audience_right
 
 "It takes a moment for your eyes to adjust. Swaying on your feet, hesitating before soldiering on, you see something out the corner of your eye - "
 
-show bg campfire onlayer background with dissolve
-
 show ellie scared onlayer screens at opaque, scoot_up
 
 E "Eeek!"
 
+show bg campfire onlayer background with dissolve
 show rosie gremlin onlayer screens at opaque, scoot_up
 show ellie scared onlayer screens at scoot_mid
 
@@ -302,50 +301,69 @@ show rosie onlayer screens at scoot_up
 show caz sinister onlayer screens at scoot_up
 
 show screen choice_A
-"FREYA WANNA REWRITE THIS WITH AN INTERNAL MONOLOGUE OR SOMETHING?\nWhose direction do you want to take this story in?"
+"""It feels like the girls are trying to lead you towards three different stories...\n
+{i}(Click a character's speech bubble to continue){/i}"""
 
 label choice_A_Ellie:
 
 hide screen choice_A
 nvl clear
 
-show ellie onlayer screens at scoot_mid
-show rosie onlayer screens at scoot_mid
-show caz onlayer screens at scoot_mid
+show ellie onlayer screens at scoot_mid 
+show rosie onlayer screens at scoot_mid 
+show caz onlayer screens at scoot_mid 
 
 $ kitty = True
 
 $ ellie_score += 1
 
+show emily gendo onlayer screens
+
 P "A tail flicks out from the tree..."
+
+show ellie excited onlayer screens with vpunch
 
 E "Yay! Kitty!"
 
+show rosie stoned onlayer screens
+
 R "Oh my god..."
+
+show emily interrupted onlayer screens
 
 P "..."
 
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+
 P "You carefully cross the garden to the tree, and try to coax the cat back out."
 
-"Pspspspspspsps..."
+show emily onlayer screens at faded
 
-"The flick of a tail appears again, cautious and quick, then a small face peeks out."
+P "Pspspspspspsps..."
+
+P "The flick of a tail appears again, cautious and quick, then a small face peeks out."
+
+show ellie onlayer screens at shown
 
 E "Kitty...."
 
-"The cat is sleek and black, except for a little smudge of white on its nose."
+show ellie onlayer screens at faded
 
-"It sniffs the air before gingerly stepping forward to let you stroke it."
+P "The cat is sleek and black, except for a little smudge of white on its nose."
 
-"Another gust of wind whistles through the tree, shaking the leaves, and the cat hesitates."
+P "It sniffs the air before gingerly stepping forward to let you stroke it."
 
-"It seems apprehensive of the house, and glances at the windows as you scratch behind its ears."
+P "Another gust of wind whistles through the tree, shaking the leaves, and the cat hesitates."
 
-"Then, there's a noise, and it shrinks back hissing at something over your shoulder."
+P "It seems apprehensive of the house, and glances at the windows as you scratch behind its ears."
 
-"When you turn to look, there's nothing there, and the cat scarpers."
+P "Then, there's a noise, and it shrinks back hissing at something over your shoulder."
 
-"You feel a chill run up your spine, and you stand up, alone in the garden, but for the feeling of being watched..."
+P "When you turn to look, there's nothing there, and the cat scarpers."
+
+P "You feel a chill run up your spine, and you stand up, alone in the garden, but for the feeling of being watched..."
 
 jump choice_B
 
@@ -363,35 +381,50 @@ $ rosie_score += 1
 
 P "A shape sways in the wind..."
 
+show emily gendo
+show ellie onlayer screens at faded
+show rosie stoned onlayer screens
+show caz onlayer screens at faded
+
 R "Yesssss."
 
-P "Dangling from a tree, the light catches the edge of plastic bones and wires:"
+show rosie onlayer screens at faded
 
-"the grinning face of a skeleton, hung up for the long month of October."
+P "Dangling from a tree, the light catches the edge of plastic bones and wires;"
 
-"It sways back and forth gently in the wind, arms rattling quietly as the joints click."
+P "the grinning face of a skeleton, hung up for the long month of October."
 
-"For a plastic corpse, it's unsettling at first, but then you spot something dangling from its mouth."
+P "It sways back and forth gently in the wind, arms rattling quietly as the joints click."
 
-"Someone has taped a joint to its lower jaw."
+P "For a plastic corpse, it's unsettling at first, but then you spot something dangling from its mouth."
+
+P "Someone has taped a joint to its lower jaw."
+
+show rosie laughing onlayer screens at shown
 
 R "Wack. Get it."
 
-"...you go to reach up for it - and hear a noise behind you!"
+show rosie onlayer screens at faded
+
+P "...you go to reach up for it - and hear a noise behind you!"
+
+show rosie skeptical onlayer screens at shown
 
 R "It's a prank!"
 
 P "...you jump as a second skeleton, unseen, starts cackling at you."
 
-"The sound is cheap and tinny, coming from a tiny speaker, the distortion creepy and manic."
+show rosie onlayer screens at faded
 
-"It turns off after a second, as you move your hand away from whatever infrared things triggered it, but the eye sockets still seem to bore into you."
+P "The sound is cheap and tinny, coming from a tiny speaker, the distortion creepy and manic."
 
-"Between the two plastic skeletons, you feel unnerved; the feeling of being watched remains."
+P "It turns off after a second, as you move your hand away from whatever infrared things triggered it, but the eye sockets still seem to bore into you."
 
-"You feel a chill run up your spine, and the humour of the moment doesn't quite take the edge off the adrenaline."
+P "Between the two plastic skeletons, you feel unnerved; the feeling of being watched remains."
 
-"Something makes you feel like you're not alone in the garden..."
+P "You feel a chill run up your spine, and the humour of the moment doesn't quite take the edge off the adrenaline."
+
+P "Something makes you feel like you're not alone in the garden..."
 
 jump choice_B
 
@@ -408,27 +441,40 @@ $ caz_score += 1
 
 P "A wicked blade flashes in the dark..."
 
+show emily gendo onlayer screens
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz sinister onlayer screens
+
 C "Nice."
+
+show caz onlayer screens at faded
 
 P "The glimmer of metal sets your heart beating, and you freeze on the spot as the knife disappears out of sight."
 
-"When you can bring yourself to take more steps into the garden, there's nothing to be seen behind the tree."
+show emily gendo onlayer screens at faded
 
-"Shapes move in the corners of your vision, and you look around frantically for whatever lurks in the shadows."
+P "When you can bring yourself to take more steps into the garden, there's nothing to be seen behind the tree."
 
-"You shout at the darkness, challenging whoever's there to show themselves."
+P "Shapes move in the corners of your vision, and you look around frantically for whatever lurks in the shadows."
 
-"The only reply is the wind brushing through the trees, and the faintest hint of a laugh..."
+P "You shout at the darkness, challenging whoever's there to show themselves."
+
+P "The only reply is the wind brushing through the trees, and the faintest hint of a laugh..."
+
+show caz sinister onlayer screens at shown
 
 C "Heh heh heh..."
 
+show caz onlayer screens at faded
+
 P "The laughter seems to come from different directions, and you feel small and vulnerable stood there in the garden."
 
-"Clutching your dead phone to your chest, you try and make out anything in the hedges."
+P "Clutching your dead phone to your chest, you try and make out anything in the hedges."
 
-"The laughter stops, and you can't see anything but trees and bushes."
+P "The laughter stops, and you can't see anything but trees and bushes."
 
-"The feeling of being watched and taunted sends a shiver up your spine..."
+P "The feeling of being watched and taunted sends a shiver up your spine..."
 
 jump choice_B
 
@@ -450,52 +496,97 @@ show caz onlayer screens at scoot_mid
 
 "The door closes with a creak - "
 
+show rosie skeptical onlayer screens at shown
+
 R "Oh come on, our door doesn't creak!"
+
+show emily interrupted onlayer screens at shown
+show rosie skeptical onlayer screens at scoot_mid
+show caz annoyed onlayer screens at shown
 
 C "It does in winter. I have to put wd40 on the hinges."
 
+show rosie skeptical onlayer screens at scoot_up
+
 R "You do?!"
+
+show caz annoyed onlayer screens at scoot_up with vpunch
 
 C "Just because you don't notice, doesn't mean it doesn't get done."
 
+show ellie hiding onlayer screens at opaque
+
 E "The windows stick when it gets cold, too..."
 
+show emily interrupted onlayer screens at scoot_right
+
 P "Ahem..."
+
+show ellie onlayer screens at scoot_mid
+show rosie onlayer screens at scoot_mid
+show caz annoyed onlayer screens at scoot_mid
 
 "The three trail off quickly and let you keep talking."
 
 P "I didn't say it was our house... it's A house."
 
+show emily interrupted onlayer screens at left
+
 "It totally is your house you're narrating, though. You keep that quiet."
+
+show emily onlayer screens at left
 
 P "Anyway..."
 
+show emily gendo onlayer screens
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+
 P "The door opens with a creak; the only sound in the darkness."
 
-"You close and lock it against the outdoors, taking a deep breath of relief."
+P "You close and lock it against the outdoors, taking a deep breath of relief."
 
-"But inside, it's weirdly quiet. You call out Hello? and nobody responds."
+P "But inside, it's weirdly quiet. You call out Hello? and nobody responds."
 
-"You creep down the corridor and peek into the living room."
+P "You creep down the corridor and peek into the living room."
 
 show bg sofa onlayer background with dissolve
 
-"The light is on low, with quiet music playing from the stereo."
+P "The light is on low, with quiet music playing from the stereo."
 
-"Over the top of the sofa you can see the backs of two people's heads, unmoving."
+P "Over the top of the sofa you can see the backs of two people's heads, unmoving."
 
-"A sense of dread washes over you as you step closer to the sofa to see..."
+P "A sense of dread washes over you as you step closer to the sofa to see..."
+
+show caz sinister onlayer screens at opaque
 
 C "They're dead..."
 
+show rosie stoned onlayer screens at opaque
+
 R "Nah, they're super stoned."
+
+show ellie hiding onlayer screens at opaque
 
 E "No! They just fell asleep cuddling."
 
+show emily interrupted onlayer screens
+
 "You start to wonder who's telling this story..."
 
+nvl clear
+
+show emily onlayer screens
+
+show ellie onlayer screens at scoot_up
+show rosie onlayer screens at scoot_up
+show caz sinister onlayer screens at scoot_up
+
 show screen choice_B
-"Whose ideas do you go with?"
+"""Whose idea do you choose?\n
+{i}(Click a character's speech bubble to continue){/i}"""
+
 
 label choice_B_Ellie:
 
@@ -1125,7 +1216,7 @@ P "It is a bit creepy, huh."
 
 R "Yeah. Shomething'sh gonna getcha inna night, Elsh."
 
-C "Don't eat with your mouth full, dear."
+C "Don't speak with your mouth full, dear."
 
 "Rosie rolls her eyes and lays back down on the blanket, looking up at the stars."
 
@@ -1252,6 +1343,8 @@ R "Like... humerus..."
 "..."
 
 "Rosie ending."
+
+return
 
 label ending_Caz:
 
