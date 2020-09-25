@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 440: screen expects a non-empty block.
-    if gui.show_name:
-                     ^
+File "game/script.rpy", line 901: end of line expected.
+    R "..." pause (1.0) show rosie stoned OS "Grody."
+            ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Sep 22 15:22:30 2020
+Fri Sep 25 17:44:30 2020

@@ -140,11 +140,10 @@ transform audience_right:
     yanchor 0.4
 
 transform scoot_up:
-    easein 0.4 yanchor 0.46666667
+    easein 0.4 yanchor 0.46666667 alpha 1.0
 
 transform scoot_mid:
-    easein 0.4 yanchor 0.4
-    easein 0.4 xanchor 0.5
+    easein 0.4 yanchor 0.4 xanchor 0.5
 
 transform scoot_mid_y:
     easein 0.4 yanchor 0.4
@@ -170,7 +169,7 @@ label start:
 
 show bg black onlayer background
 
-$ Emily = renpy.input("Content Warnings:\nMild drug use\nSwearing\nDescription of murder\n\n\n\nWhat is your name? Type here then press Enter when you're done. \n\n", default='Emily')
+$ Emily = renpy.input("Content Warnings:\nMild drug use\nSwearing\nDescription of murder\n\n\n\nIf you would like a different name, enter it here. The game will use she/her pronouns for you.\n\n", default='Emily')
 $ Emily = Emily.strip()
 
 show bg street onlayer background with dissolve
@@ -530,7 +529,7 @@ show caz annoyed onlayer screens at scoot_mid
 
 P "I didn't say it was our house... it's A house."
 
-show emily interrupted onlayer screens at left
+show emily interrupted onlayer screens at scoot_mid_x
 
 "It totally is your house you're narrating, though. You keep that quiet."
 
@@ -604,49 +603,89 @@ if ellie_score > 1:
 else:
     "You glance at Ellie and throw in a scene for her."
 
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+show emily gendo onlayer screens
+
 P "As you get closer to check the bodies, one of them gently snores."
 
-"Moving around the side of the sofa, you realise it's Jake and Amy - "
+P "Moving around the side of the sofa, you realise it's Jake and Amy - "
+
+show caz eyeroll onlayer screens at scoot_up
 
 C "Ugh, them again."
 
+show emily interrupted onlayer screens
+show caz onlayer screens at scoot_mid
+
 P "...they're both asleep, arms wrapped around each other."
+
+show ellie excited onlayer screens at scoot_up
 
 E "Awwwh..."
 
+show ellie pouting onlayer screens
+
 E "I want that..."
+
+show rosie gremlin onlayer screens at scoot_up
+show ellie onlayer screens at scoot_mid
 
 R "Lol, gay."
 
+show caz eyeroll onlayer screens at scoot_up
+
 C "I can't believe you say actually 'lol' out loud like that."
+
+show caz onlayer screens at scoot_mid
+show emily onlayer screens
 
 P "..."
 
+show emily interrupted onlayer screens
+
 P "You keep quiet so as not to disturb them."
 
-"The remains of cups of tea sit on the table, getting cold."
+"Everyone shuts up again and listens."
 
-"The quiet music playing only makes the room feel more still, like a film paused mid-scene."
+show emily gendo onlayer screens
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
 
-"You think about turning the music off, but it's not disrupting anything to leave it as it is."
+P "The remains of cups of tea sit on the table, getting cold."
 
-"As you stand there, one of them sniffs in their sleep and fidgets."
+P "The quiet music playing only makes the room feel more still, like a film paused mid-scene."
 
-"It's kinda cute to watch, but you start to feel a bit voyeuristic."
+P "You think about turning the music off, but it's not disrupting anything to leave it as it is."
 
-"Then you hear another noise."
+P "As you stand there, one of them sniffs in their sleep and fidgets."
+
+P "It's kinda cute to watch, but you start to feel a bit voyeuristic."
+
+P "Then you hear another noise."
+
+show ellie hiding onlayer screens at scoot_down
 
 E "Oh no..."
 
+show caz sinister onlayer screens at scoot_up
+
 C "Oh yes."
+
+show caz onlayer screens at scoot_mid
 
 P "A wet sound comes from the kitchen, behind the closed door."
 
-"The two on the sofa don't react, but that feeling you had outside is back."
+show caz onlayer screens at faded
+show ellie onlayer screens at faded
 
-"Like you're not alone - sleeping couple aside, it feels like there's something else."
+P "The two on the sofa don't react, but that feeling you had outside is back."
 
-"Something waits."
+P "Like you're not alone - sleeping couple aside, it feels like there's something else."
+
+P "Something waits."
 
 jump choice_C
 
@@ -669,63 +708,131 @@ if rosie_score > 1:
 else:
     "You look at Rosie, and pick her idea to run with this time."
 
+show emily gendo onlayer screens
+
 P "As you get closer to check the bodies, one of them groans."
 
-"You spot a bong sat on the floor next to the sofa, and you realise the two prone shapes on the sofa are Jake and Amy, too stoned to function."
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+
+P "You spot a bong sat on the floor next to the sofa, and you realise the two prone shapes on the sofa are Jake and Amy, too stoned to function."
+
+show rosie stoned onlayer screens at shown
 
 R "Ayyy, fuckin... that's the life."
 
+show caz annoyed onlayer screens at shown
+
 C "If they stay on the SOFA, anyway."
+
+show emily interrupted onlayer screens
 
 "Rosie sparks up her own joint and laughs."
 
+show rosie skeptical onlayer screens at scoot_up
+
 R "You're not still mad, Caz?"
+
+show caz annoyed onlayer screens at scoot_up
+show rosie_skeptical onlayer screens at scoot_mid
 
 C "Yes! It was only three weeks ago! When your band friends come over and get trashed they can pass out in YOUR room next time."
 
+show rosie onlayer screens at scoot_up
+show ellie hiding onlayer screens
+
 R "They weren't trashed, they were just stoned is all. Jake doesn't drink."
+
+show rosie onlayer screens at scoot_mid
+show caz annoyed onlayer screens at scoot_up
 
 C "They were passed out IN MY BED. NAKED. I don't care what it was from."
 
+show caz annoyed onlayer screens at scoot_mid
+show emily sheepish onlayer screens
+
 P "..."
+
+show emily onlayer screens
+show ellie hiding onlayer screens at scoot_up
 
 E "I've done that too..."
 
+show ellie onlayer screens at scoot_mid
+show caz smirking onlayer screens at scoot_up # TODO: replace with reassuring emote
+
 C "Ellie, dear, you're different, I'm not mad at you."
+
+show caz onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_up
 
 R "Dya wanna toke? You'll be less mad."
 
+show rosie stoned onlayer screens at scoot_mid
+show emily interrupted onlayer screens at scoot_right
+
 P "Ahem."
+
+show emily interrupted onlayer screens at scoot_mid
+show rosie grmelin onlayer screens
+show ellie onlayer screens
+show caz eyeroll onlayer screens
 
 "The three of them look at you, and Rosie rubs her neck sheepishly."
 
+show rosie stoned onlayer screens at scoot_up
+
 R "Sorry, Em. Uhhhhh Jake and Amy are stoned on the sofa, then what."
+
+show rosie onlayer screens at scoot_mid
+show caz onlayer screens
+show emily onlayer screens
 
 P "..."
 
+show emily gendo onlayer screens
+
 P "You keep quiet so as not to disturb them."
 
-"Jake lifts a hand slightly, only just registering your presence, then lets it flop back down."
+show emily gendo onlayer screens at faded
+show rosie onlayer screens at faded
+show ellie onlayer screens at faded
+show caz onlayer screens at faded
 
-"The quiet reggae playing only makes the room feel more still, like a film paused mid-scene."
+P "Jake lifts a hand slightly, only just registering your presence, then lets it flop back down."
 
-"You think about turning the music off, but they're probably enjoying it, even if it's not to your taste."
+P "The quiet reggae playing only makes the room feel more still, like a film paused mid-scene."
+
+P "You think about turning the music off, but they're probably enjoying it, even if it's not to your taste."
+
+show caz smirking onlayer screens at shown
 
 C "Hah."
 
+show caz onlayer screens at faded
+
 P "...as you hesitate, you hear another noise behind you."
+
+show ellie hiding at shown
 
 E "Oh no..."
 
+show ellie hiding onlayer screens at scoot_down
+show caz sinister onlayer screens at shown
+
 C "Oh yes. Slasher time."
+
+show ellie hiding onlayer screens at faded
+show caz onlayer screens at faded
 
 P "...a wet sound comes from the kitchen, behind the closed door."
 
-"The two on the sofa don't react, but that feeling you had outside is back."
+P "The two on the sofa don't react, but that feeling you had outside is back."
 
-"Like you're not alone - stoned couple aside, it feels like there's something else."
+P "Like you're not alone - stoned couple aside, it feels like there's something else."
 
-"Something waits."
+P "Something waits."
 
 jump choice_C
 
@@ -748,7 +855,14 @@ if caz_score > 1:
 else:
     "You glance up at Caroline, and decide to pivot back to proper horror."
 
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+show emily gendo onlayer screens
+
 P "You step closer to the sofa, and every step causes a sick feeling in your stomach to rise."
+
+show emily gendo onlayer screens at faded
 
 P "When you can see the figures closer, you gasp and take a step back in shock."
 
@@ -758,41 +872,91 @@ P "Sprawled out on the sofa are the bodies of - "
 
 P " - of two friends, their clothes torn and bloodstained, cut up by some vicious knife."
 
+show ellie hiding onlayer screens at shown
+
 E "Eeeek..."
+
+show ellie hiding onlayer screens at scoot_down
+show caz onlayer screens at scoot_up
 
 C "Who's 'two friends' meant to be?"
 
+show emily sheepish onlayer screens at shown
+show caz onlayer screens at scoot_mid
+
 P "Like, just two friends of yours - "
+
+show rosie stoned onlayer screens at scoot_up
 
 R "Is it me and Ellie?"
 
+show ellie hiding onlayer screens at shake
+
 E "I don't wanna be stabbed!"
+
+show ellie hiding onlayer screens at scoot_down
+show emily interrupted onlayer screens
 
 P "Fine, it's Jake and Amy, they came over for band practice and now they're DEAD."
 
-pause (1.0)
+show rosie skeptical onlayer screens at scoot_up
 
-R "Grody."
+R "...{nw}" 
+pause (1.0) 
+show rosie stoned onlayer screens 
+extend "Grody."
+
+show caz eyeroll onlayer screens at scoot_up
+show rosie stoned onlayer screens at scoot_mid
 
 C "Oh, no, Jake and Amy are dead."
 
+show caz eyeroll onlayer screens at scoot_mid
+show rosie skeptical onlayer screens at scoot_up
+
 R "Hey, I know you don't like them, but chill with the sarcasm."
+
+show caz annoyed onlayer screens at scoot_up
+show rosie skeptical onlayer screens at scoot_mid
 
 C "I don't actually want them dead! But stakes are higher if they're named, right?"
 
+show caz smirking onlayer screens
+
 C "It's not 'oh no generic friend is dead' anymore, it's visceral."
+
+show caz smirking onlayer screens at scoot_mid
+show ellie pouting onlayer screens at scoot_mid
 
 E "I'd be sad if they got stabbed."
 
+show emily sheepish onlayer screens
+
 P "..."
+
+show emily interrupted onlayer screens at scoot_right
 
 P "So, your two named friends are dead on the sofa - "
 
+show emily onlayer screens at scoot_mid
+show rosie gremlin onlayer screens at scoot_up
+
 R "That's classic Jake and Amy - "
+
+show emily interrupted onlayer screens
+show caz eyeroll onlayer screens
+show rosie gremlin onlayer screens at scoot_mid
 
 P "..."
 
+show emily gendo onlayer screens
+
 P "You turn away from the grisly scene, horrified, your stomach turning at the sight."
+
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+show emily gendo onlayer at faded
 
 P "Anywhere here, the killer could be waiting, ready to strike again."
 
@@ -809,21 +973,38 @@ label choice_C:
 hide screen choice_C
 nvl clear
 
-show ellie onlayer screens at scoot_mid
-show rosie onlayer screens at scoot_mid
-show caz onlayer screens at scoot_mid
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+show emily gendo onlayer at faded
 
 P "You stare at the kitchen door, a grim sense of foreboding rooting you to the spot."
 
 P "It feels inevitable that you'll have to open it - "
 
+show ellie scared onlayer screens at shown
+
 E "Noo! Run away!"
+
+show emily interrupted onlayer screens at opaque
+show ellie scared onlayer screens at scoot_down
+show caz sinister onlayer screens at scoot_up
 
 C "Grab a weapon!"
 
+show caz sinister onlayer screens at scoot_mid
+show rosie gremlin onlayer screens at scoot_up
+
 R "Fuck it, open the door."
 
+show rosie gremlin onlayer screens at scoot_mid
+
 P "You take a few deep breaths to try and steel yourself."
+
+show emily gendo onlayer screens
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
 
 P "Looking around, all you can find for a weapon is an umbrella in the corner."
 
@@ -843,16 +1024,36 @@ P "With one quick movement, you snap the handle down and push the door open, to 
 
 show bg kitchen onlayer background with dissolve
 
+show caz sinister onlayer screens at scoot_up
+
 C "The killer!"
+
+show caz sinister onlayer screens at scoot_mid
+show ellie excited onlayer screens at scoot_up
 
 E "No! A surprise birthday party!"
 
+show ellie excited onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_up
+
 R "Nah, a, a, a pizza's on fire!"
+
+show rosie stoned onlayer screens at scoot_mid
+show emily interrupted onlayer screens
 
 P "..."
 
+nvl clear
+
+show emily onlayer screens
+
+show ellie excited onlayer screens at scoot_up
+show rosie stoned onlayer screens at scoot_up
+show caz sinister onlayer screens at scoot_up
+
 show screen choice_C
-"Whose ideas do you go with?"
+"""Whose idea do you choose?\n
+{i}(Click a character's speech bubble to continue){/i}"""
 
 label choice_C_Ellie:
 
