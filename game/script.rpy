@@ -1085,22 +1085,42 @@ else:
 
         "This story is a lost cause by now."
 
+show emily gendo onlayer screens
+
 P "As you open the door, there's a bang, and you close your eyes in shock."
+
+show ellie onlayer screens at faded
+show caz onlayer screens at faded
+show rosie onlayer screens at faded
 
 P "You raise the umbrella, and feel something light patter against it."
 
 P "Letting your eyes open again, a shower of confetti falls on you."
 
+show ellie excited onlayer screens at scoot_up with vpunch
+
 E "...!"
 
 P "Rosie yells {i}Surprise! It's your birthday!{/i}"
 
+show ellie excited onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_up
+
 R "Uhhhhh surprise! It's your birthday!"
+
+show ellie excited onlayer screens at scoot_up
+show rosie stoned onlayer screens at scoot_mid
 
 E "It's my birthday! Yay!"
 
+show ellie excited onlayer screens at scoot_mid
+
 if death:
+    show caz onlayer screens at scoot_up
+
     C "..."
+
+    show caz annoyed onlayer screens 
 
     C "People are DEAD out there."
 
