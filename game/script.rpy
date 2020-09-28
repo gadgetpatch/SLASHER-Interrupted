@@ -1124,47 +1124,88 @@ if death:
 
     C "People are DEAD out there."
 
+    show caz annoyed onlayer screens at scoot_mid
+
     "You hesitate for a moment, keenly aware of how shambolic this story is getting."
 
+    show emily sheepish onlayer screens
+
     P "Uhhhhhhhhhh Jake and Amy come up behind you and say {i}Happy birthday!{/i} The blood was fake!"
+
+    show ellie excited onlayer screens at scoot_up
 
     E "Yay they're not dead!"
 
 else:
 
+    show caz eyeroll onlayer screens at scoot_up
+
     C "So Jake and Amy are just sleeping through the party, huh?"
 
+    show emily interrupted onlayer screens
+
     "You hesitate for a moment, trying to retcon it in your head."
+
+    show caz onlayer screens at scoot_mid
+    show emily sheepish onlayer screens
 
     P "Uhhhh they were just lulling you into a false sense of security!"
 
     P "The two of them emerge behind you and say {i}Happy birthday!{/i}"
 
+show ellie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
+show caz eyeroll onlayer screens at scoot_mid
+
 "Caroline rolls her eyes."
+
+show caz smirking onlayer screens at scoot_up
 
 C "Happy birthday~"
 
+show caz onlayer screens at scoot_mid
+show ellie excited onlayer screens at scoot_mid,shake
+
 "Ellie smiles and does a little wiggle whilst sat on the blanket."
 
+show ellie excited onlayer screens at scoot_up
+
 E "Is there a birthday cake?"
+
+show ellie excited onlayer screens at scoot_mid
 
 P "Uhhhh yeah there's a strawberry topped birthday cake for you."
 
 P "And you've got presents, too!"
 
+show emily sheepish onlayer screens
+
 "You look imploringly at Rosie and Caz to help you out."
 
+show ellie excited onlayer screens at scoot_up
+
 E "Yay! What have you got me?"
+
+show ellie excited onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_up
 
 R "Uhhhhh..."
 
 "Rosie holds out her half-smoked joint."
 
+show rosie gremlin onlayer screens at scoot_up
+
 R "Here's your present, kiddo."
+
+show rosie gremlin onlayer scrfeens at scoot_mid
 
 "Ellie doesn't miss a beat, and takes it from her with a grin."
 
+show ellie excited onlayer screens at scoot_up
+
 E "Yay! Thank you Rosie, you're so kind."
+
+show ellie onlayer screens at scoot_up
 
 E "A surprise birthday! I'm so glad. It's not even my birthday for a week yet..."
 
@@ -1203,19 +1244,32 @@ else:
 
         "This story is a lost cause by now."
 
-"As you open the door, a bad smell hits your nose and you reel backwards a step."
+P "As you open the door, a bad smell hits your nose and you reel backwards a step."
 
-"The kitchen is filled with black smoke, spilling out in clouds from the edge of the oven door."
+P "The kitchen is filled with black smoke, spilling out in clouds from the edge of the oven door."
+
+show rosie skeptical onlayer screens at scoot_up
 
 R "Awh dang."
 
-"You cross the kitchen, wafting smoke away from your face, and pull open the oven door."
+show rosie skeptical onlayer screens at scoot_mid
 
-"Inside is a gory mess; the blackened remains of what was once a pizza, now charred to a crisp."
+P "You cross the kitchen, wafting smoke away from your face, and pull open the oven door."
+
+P "Inside is a gory mess; the blackened remains of what was once a pizza, now charred to a crisp."
+
+show rosie stoned onlayer screens at scoot_up
 
 R "Nooo..."
 
+show rosie stoned onlayer screens at scoot_mid
+show ellie pouting onlayer screens at scoot_up
+
 E "F in the chat..."
+
+show ellie onlayer screens at scoot_mid
+show caz annoyed onlayer screens at scoot_up
+show emily interrupted onlayer screens
 
 C "What does that even {i}mean{/i}?"
 
@@ -1223,49 +1277,104 @@ if death:
 
     C "Aren't there two people DEAD?"
 
+    show caz annoyed onlayer screens at scoot_mid
+    show rosie gremlin onlayer screens at scoot_up
+
     R "They - they - they died before they could eat their pizza!"
+
+    show rosie laughing onlayer screens at scoot_up
 
     R "This is so sad!"
 
+    show rosie laughing onlayer screens at scoot_mid
+    show ellie excited onlayer screens at scoot_up
+
     E "It's so sad!"
+
+show ellie excited onlayer screens at scoot_mid
 
 "Rosie breaks down into laughter, passing the joint to Ellie to hold as she cackles."
 
+show caz smirking onlayer screens
+
 "Caroline rolls her eyes, but you catch a glimpse of her smiling." 
 
+show emily sheepish onlayer screens
+
+P "..."
+
+show emily onlayer screens
+
 P "You cough at the pizza smoke, and hunt around for gloves to take it out."
+
+show emily gendo onlayer screens
 
 P "With the blackened disk now sat on the counter, the kitchen feels like a crime scene."
 
 if death: 
 
+    show caz smirking OS at scoot_up
+
     C "The {i}kitchen{/i} feels like a crime scene?"
+
+    show caz smirking OS at scoot_mid
+    show rosie gremlin OS at scoot_up
 
     R "Hey, my dead friends are sad, but a pizza is TRAGIC."
 
+    show rosie gremlin OS at scoot_mid
+    show caz annoyed OS at scoot_up
+
     C "You told me off for being sarcastic about them like, two minutes ago."
+
+    show caz annoyed OS at scoot_mid
+    show rosie stoned OS at scoot_up
 
     R "...yeah, well."
 
 elif stoned:
     
+    show caz eyeroll OS at scoot_up
+
     C "This is why we don't let Jake and Amy come over unattended."
+
+    show caz eyeroll OS at scoot_mid
+    show rosie skeptical OS at scoot_up
 
     R "Oh like you've never burned food."
 
+    show rosie skeptical OS at scoot_mid
+    show caz annoyed OS at scoot_up
+
     C "Not after smoking too much and passing out at someone {i}else's{/i} house, no!"
+
+    show caz OS at scoot_mid
+    show rosie stoned OS at scoot_up
 
     R "Well, y'know..."
 
 else:
 
+    show caz eyeroll OS at scoot_up
+
     C "This is why we don't let Jake and Amy come over unattended."
+
+     show caz eyeroll OS at scoot_mid
+    show rosie skeptical OS at scoot_up
 
     R "Oh like you've never burned food."
 
+    show rosie skeptical OS at scoot_mid
+    show caz annoyed OS at scoot_up
+ 
     C "Not after getting distracted cuddling at someone {i}else's{/i} house, no!"
 
+    show caz OS at scoot_mid
+    show rosie stoned OS at scoot_up
+
     R "Well, y'know..."
+
+show rosie stoned OS at scoot_mid
 
 "Rosie shrugs, and Caroline rolls her eyes."
 
@@ -1299,33 +1408,77 @@ else:
 
     "Feels a bit jarring, but whatever. Here goes a swerve back onto the rails."
 
+show emily gendo OS
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+
 P "As you open the door, you peek around it, umbrella at the ready."
 
 P "There, hunched over another body, a dark shape looms."
 
+show ellie scared OS at opaque
+
 E "Oh no..."
+
+show emily interrupted OS
+show caz sinister OS at scoot_up
 
 C "Oh yes..."
 
+show caz sinister OS at scoot_mid
+show emily gendo OS
+
 P "You only have a moment to take in the body on the floor, the blood seeping out of them - "
+
+show rosie gremlin OS at scoot_up
 
 R "Who is it? Who's dead??"
 
+show rosie gremlin OS at scoot_mid
+show caz smirking OS at scoot_up
+show emily interrupted OS
+
 C "Maybe it's YOU!"
 
+show caz smirking OS at scoot_mid
+
 "Rosie clutches her hands to her chest in mock pain."
+
+show rosie laughing OS at scoot_up with vpunch
 
 R "No! It can't be! Avenge, me, Caz!"
 
 if death:
 
+    show rosie laughing OS at scoot_mid
+    show ellie pouting OS at scoot_up
+
     E "There's so many people dying..."
+
+    show ellie pouting OS at scoot_mid
+    show caz eyeroll OS at scoot_up
 
     C "It {i}is{/i} a horror story."
 
+show rosie stoned OS at scoot_mid
+show ellie OS at scoot_mid
+show caz OS at scoot_mid
+
+P "..."
+
+show emily gendo OS
+show rosie stoned OS at faded
+show ellie OS at faded
+show caz OS at faded
+
 P "The figure looks up from Rosie's bleeding corpse - "
 
+show rosie gremlin OS at shown
+
 R "Wack."
+
+show rosie gremlin OS at faded
 
 P "-and straightens up with a dark laugh."
 
