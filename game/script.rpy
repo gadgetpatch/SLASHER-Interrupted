@@ -1313,68 +1313,68 @@ P "With the blackened disk now sat on the counter, the kitchen feels like a crim
 
 if death: 
 
-    show caz smirking OS at scoot_up
+    show caz smirking onlayer screens at scoot_up
 
     C "The {i}kitchen{/i} feels like a crime scene?"
 
-    show caz smirking OS at scoot_mid
-    show rosie gremlin OS at scoot_up
+    show caz smirking onlayer screens at scoot_mid
+    show rosie gremlin onlayer screens at scoot_up
 
     R "Hey, my dead friends are sad, but a pizza is TRAGIC."
 
-    show rosie gremlin OS at scoot_mid
-    show caz annoyed OS at scoot_up
+    show rosie gremlin onlayer screens at scoot_mid
+    show caz annoyed onlayer screens at scoot_up
 
     C "You told me off for being sarcastic about them like, two minutes ago."
 
-    show caz annoyed OS at scoot_mid
-    show rosie stoned OS at scoot_up
+    show caz annoyed onlayer screens at scoot_mid
+    show rosie stoned onlayer screens at scoot_up
 
     R "...yeah, well."
 
 elif stoned:
     
-    show caz eyeroll OS at scoot_up
+    show caz eyeroll onlayer screens at scoot_up
 
     C "This is why we don't let Jake and Amy come over unattended."
 
-    show caz eyeroll OS at scoot_mid
-    show rosie skeptical OS at scoot_up
+    show caz eyeroll onlayer screens at scoot_mid
+    show rosie skeptical onlayer screens at scoot_up
 
     R "Oh like you've never burned food."
 
-    show rosie skeptical OS at scoot_mid
-    show caz annoyed OS at scoot_up
+    show rosie skeptical onlayer screens at scoot_mid
+    show caz annoyed onlayer screens at scoot_up
 
     C "Not after smoking too much and passing out at someone {i}else's{/i} house, no!"
 
-    show caz OS at scoot_mid
-    show rosie stoned OS at scoot_up
+    show caz onlayer screens at scoot_mid
+    show rosie stoned onlayer screens at scoot_up
 
     R "Well, y'know..."
 
 else:
 
-    show caz eyeroll OS at scoot_up
+    show caz eyeroll onlayer screens at scoot_up
 
     C "This is why we don't let Jake and Amy come over unattended."
 
-     show caz eyeroll OS at scoot_mid
-    show rosie skeptical OS at scoot_up
+     show caz eyeroll onlayer screens at scoot_mid
+    show rosie skeptical onlayer screens at scoot_up
 
     R "Oh like you've never burned food."
 
-    show rosie skeptical OS at scoot_mid
-    show caz annoyed OS at scoot_up
+    show rosie skeptical onlayer screens at scoot_mid
+    show caz annoyed onlayer screens at scoot_up
  
     C "Not after getting distracted cuddling at someone {i}else's{/i} house, no!"
 
-    show caz OS at scoot_mid
-    show rosie stoned OS at scoot_up
+    show caz onlayer screens at scoot_mid
+    show rosie stoned onlayer screens at scoot_up
 
     R "Well, y'know..."
 
-show rosie stoned OS at scoot_mid
+show rosie stoned onlayer screens at scoot_mid
 
 "Rosie shrugs, and Caroline rolls her eyes."
 
@@ -1408,7 +1408,7 @@ else:
 
     "Feels a bit jarring, but whatever. Here goes a swerve back onto the rails."
 
-show emily gendo OS
+show emily gendo onlayer screens
 show ellie onlayer screens at faded
 show rosie onlayer screens at faded
 show caz onlayer screens at faded
@@ -1417,68 +1417,68 @@ P "As you open the door, you peek around it, umbrella at the ready."
 
 P "There, hunched over another body, a dark shape looms."
 
-show ellie scared OS at opaque
+show ellie scared onlayer screens at opaque
 
 E "Oh no..."
 
-show emily interrupted OS
-show caz sinister OS at scoot_up
+show emily interrupted onlayer screens
+show caz sinister onlayer screens at scoot_up
 
 C "Oh yes..."
 
-show caz sinister OS at scoot_mid
-show emily gendo OS
+show caz sinister onlayer screens at scoot_mid
+show emily gendo onlayer screens
 
 P "You only have a moment to take in the body on the floor, the blood seeping out of them - "
 
-show rosie gremlin OS at scoot_up
+show rosie gremlin onlayer screens at scoot_up
 
 R "Who is it? Who's dead??"
 
-show rosie gremlin OS at scoot_mid
-show caz smirking OS at scoot_up
-show emily interrupted OS
+show rosie gremlin onlayer screens at scoot_mid
+show caz smirking onlayer screens at scoot_up
+show emily interrupted onlayer screens
 
 C "Maybe it's YOU!"
 
-show caz smirking OS at scoot_mid
+show caz smirking onlayer screens at scoot_mid
 
 "Rosie clutches her hands to her chest in mock pain."
 
-show rosie laughing OS at scoot_up with vpunch
+show rosie laughing onlayer screens at scoot_up with vpunch
 
 R "No! It can't be! Avenge, me, Caz!"
 
 if death:
 
-    show rosie laughing OS at scoot_mid
-    show ellie pouting OS at scoot_up
+    show rosie laughing onlayer screens at scoot_mid
+    show ellie scared onlayer screens at scoot_up
 
     E "There's so many people dying..."
 
-    show ellie pouting OS at scoot_mid
-    show caz eyeroll OS at scoot_up
+    show ellie pouting onlayer screens at scoot_mid
+    show caz eyeroll onlayer screens at scoot_up
 
     C "It {i}is{/i} a horror story."
 
-show rosie stoned OS at scoot_mid
-show ellie OS at scoot_mid
-show caz OS at scoot_mid
+show rosie stoned onlayer screens at scoot_mid
+show ellie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
 
 P "..."
 
-show emily gendo OS
-show rosie stoned OS at faded
-show ellie OS at faded
-show caz OS at faded
+show emily gendo onlayer screens
+show rosie stoned onlayer screens at faded
+show ellie onlayer screens at faded
+show caz onlayer screens at faded
 
 P "The figure looks up from Rosie's bleeding corpse - "
 
-show rosie gremlin OS at shown
+show rosie gremlin onlayer screens at shown
 
 R "Wack."
 
-show rosie gremlin OS at faded
+show rosie gremlin onlayer screens at faded
 
 P "-and straightens up with a dark laugh."
 
@@ -1486,11 +1486,21 @@ P "Their long blade flicks out from their coat, the muddy fabric shapeless and h
 
 P "You brandish your umbrella in front of you, desperately stepping back as they swipe through the air."
 
+show caz sinister onlayer screens at scoot_up
+
 C "Go for the eyes!"
+
+show caz sinister Os at scoot_mid
+show ellie hiding onlayer screens at scoot_up
 
 E "Run away!"
 
+show ellie hiding onlayer screens at scoot_mid
+
 P "... you jab the umbrella forward, aiming underneath their hood."
+
+show caz sinister onlayer screens at faded
+show ellie hiding onlayer screens at faded
 
 P "They bat it away with ease, and approach you one heavy step at a time."
 
@@ -1498,11 +1508,21 @@ P "You swing your umbrella at them, trying to knock the knife out of their hand.
 
 P "They slash at it and the flimsy end snaps off, half the umbrella dangling in a spidery mess."
 
+show rosie laughing onlayer screens at scoot_up
+
 R "Chuck it and run!"
+
+show rosie laughing onlayer screens at scoot_mid
+show caz smirking onlayer screens at scoot_up
 
 C "No! Throw it at them and kick their feet out."
 
+show caz onlayer screens at scoot_mid
+
 P "You throw the broken umbrella at the attacker, and try to kick their feet."
+
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
 
 P "They stumble, and stagger towards you with an outstretched hand."
 
@@ -1524,7 +1544,12 @@ P "You fall backwards and your head hits the floor with a slam."
 
 P "Everything goes black for a second, then you wrench your eyes open again, just in time to see the glint of the knife - "
 
+show ellie hiding onlayer screens at scoot_up
+
 E "Eeeeek okay we're dead let's stop there please..."
+
+show ellie hiding onlayer screens at scoot_mid
+show caz sinister onlayer screens at scoot_up
 
 C "Awh, it was just getting good."
 
@@ -1532,17 +1557,30 @@ jump pre_ending
 
 label pre_ending:
 
+show caz onlayer screens at faded
+show rosie onlayer screens at faded
+show ellie onlayer screens at faded
+
 "Your shoulders sag as you reach the end of the story."
 
 show bg campfire onlayer background with dissolve
 
 "In front of you, the campfire has dimmed a little whilst you narrated, and you nudge a log further in with your foot."
 
+show emily satisfied onlayer screens
+
 P "Well, that's it. The end."
+
+show emily onlayer screens
+show ellie excited onlayer screens at opaque
 
 "Ellie claps excitedly for a few seconds, beaming at you."
 
+show rosie stoned onlayer screens at opaque
+
 "Rosie raises her joint in applause."
+
+show caz smirking onlayer screens at opaque
 
 "Caz raises her mug of tea in appreciation."
 
@@ -1564,71 +1602,146 @@ else:
 
 label ending_Ellie:
 
+show ellie onlayer screens at scoot_up
+
 E "That was fun! I'm glad you put in a load of cute things for me."
+
+show emily satisfied onlayer screens
+show ellie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_up
 
 C "It was a bit... out of place, amongst all the narration."
 
+show caz onlayer screens at scoot_mid
+show emily onlayer screens
+
 "Rosie shrugs, not really agreeing with either of them."
+
+show rosie onlayer screens at scoot_up
 
 R "It was alright. Who's got the snacks?"
 
+show rosie onlayer screens at scoot_mid
+show caz smirking onlayer screens at scoot_up
+show emily sheepish onlayer screens
+
 C "They're in the tent, away from the ants."
 
+show caz smirking onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_up
+
 R "Sick."
+
+show rosie stoned onlayer screens at scoot_away
 
 "Rosie starts to crawl over to the tent to fetch her biscuits."
 
 "Caz rubs her hands together to warm them up."
 
+show ellie onlayer screens at scoot_up
+
 E "Well, I liked it, [Emily]. It was sweet."
+
+show ellie pouting onlayer screens
+show emily satisfied onlayer screens
 
 E "I didn't want to hear a scary story before we go to sleep, it's so... spooky out here."
 
 "She gestures around to the mostly-empty campsite, the wind making only slightly less noise than in the story."
 
+show ellie pouting onlayer screens at scoot_mid
+show emily onlayer screens at scoot_right
+
 P "It is a bit creepy, huh."
+
+show emily onlayer screens at scoot_mid
+show rosie gremlin onlayer screens at scoot_left
 
 R "Yeah. Shomething'sh gonna getcha inna night, Elsh."
 
+show caz eyeroll onlayer screens at scoot_up
+
 C "Don't speak with your mouth full, dear."
+
+show rosie skeptical onlayer screens at scoot_mid
 
 "Rosie rolls her eyes and lays back down on the blanket, looking up at the stars."
 
+show rosie skeptical onlayer screens at scoot_up
+
 R "Whatever, mom."
+
+show caz annoyed onlayer screens at scoot_up
 
 C "Don't call me - "
 
-R "Hey, Em, you wanna put more jokes in the next story?"
+show rosie stoned onlayer screens at scoot_left
+
+R "Hey, [Emily], you wanna put more jokes in the next story?"
+
+show rosie gremlin onlayer screens
 
 R "Gotta balance out sourpuss here."
 
+show rosie gremlin onlayer screens at scoot_mid
+show caz annoyed onlayer screens with vpunch
+
 C "Oh! You - I'm not sharing the tent with you tonight."
+
+show caz onlayer screens at scoot_left,scoot_up
 
 C "[Emily], you're in the tent. If you want, anyway."
 
+show caz onlayer screens at scoot_mid
+
 "You can stretch your legs out better in the tent, so that's a plus."
+
+show emily satisfied onlayer screens
 
 P "Yeah, I'm in."
 
+show rosie gremlin onlayer screens at scoot_up
+
 R "Whatever. I can sleep anywhere. I'll sleep outside."
+
+show rosie gremlin onlayer screens at scoot_mid
+show ellie pouting onlayer screens at scoot_up
 
 E "Noooo you'll get cold!"
 
+show ellie onlayer screens at scoot_mid
+show rosie laughing onlayer screens at scoot_up
+
 R "Nah, I'm {i}warmed{/i} by the cute story birthday party... antics."
+
+show rosie stoned onlayer screens
 
 R "What was with that?"
 
+show rosie stoned onlayer screens at scoot_mid
+show ellie pouting onlayer screens at scoot_up
+
 E "They were nice!"
+
+show ellie onlayer screens
 
 E "I like happy endings..."
 
+show ellie onlayer screens at scoot_mid
+
 "You're glad that Ellie liked the story."
+
+show ellie onlayer screens at faded
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
 
 "It's nice to see her more cheerful, after being initially nervous about the isolated campsite." 
 
 "As you watch, she beams and shushes Rosie by feeding her another biscuit."
 
 "Maybe you could've told the story differently, but it's nice seeing someone get what they wanted."
+
+show emily onlayer screens at faded 
 
 "..."
 
@@ -1637,6 +1750,8 @@ E "I like happy endings..."
 return
 
 label ending_Rosie:
+
+show ellie 
 
 E "That was... funny? It kinda felt just like... average real life..."
 
