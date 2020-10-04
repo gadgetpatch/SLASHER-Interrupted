@@ -1837,67 +1837,140 @@ return
 
 label ending_Caz:
 
+show ellie scared onlayer screens at scoot_up
+
 E "That was scary..."
+
+show ellie scared onlayer screens at scoot_mid
+show caz sinister onlayer screens at scoot_up
 
 C "That was great."
 
+show ellie pouting onlayer screens at scoot_up
+show caz sinister onlayer screens at scoot_mid
+
 E "But we died! Rosie died!"
+
+show ellie pouting onlayer screens at scoot_mid
+show rosie gremlin onlayer screens at scoot_up
 
 R "Harsh, bruh."
 
+show rosie gremlin onlayer screens at scoot_mid
+show caz annoyed onlayer screens at scoot_up
+
 C "Don't bruh me. This is why you died."
+
+show caz annoyed onlayer screens at scoot_mid
 
 "A twig snapping noise comes from the trees nearby, and Ellie jumps."
 
+show ellie hiding onlayer screens at scoot_down,shake
+
 E "Eeek! What was that?!"
 
+show ellie hiding onlayer screens at scoot_down
+show emily gendo onlayer screens
+
 P "It's the slasher. They're {i}real{/i}."
+
+show ellie scared onlayer screens at scoot_down,shake
 
 E "Doooooon't I won't sleep!"
 
 "Rosie subtly reaches around Ellie's back, and taps her on the shoulder."
 
+show ellie scared onlayer screens at scoot_down with vpunch
+
 "She shrieks and flails away, then bats Rosie's hand away with a pout."
+
+show ellie pouting onlayer screens at scoot_down
+show caz eyeroll onlayer screens at scoot_up
 
 C "Alright, let's not be too mean..."
 
+show caz reassuring onlayer screens
+
 C "We said at the start that campfire stories have to be horror, right?"
+
+show ellie pouting onlayer screens at scoot_mid
+show caz reassuring onlayer screens at scoot_mid
 
 E "{i}I{/i} said what if they were cute instead..."
 
+show rosie laughing onlayer screens at scoot_up
+
 R "You're cute."
+
+show rosie laughing onlayer screens at scoot_mid
+show ellie pouting onlayer screens at scoot_up
 
 E "Shush. Go get me a biscuit for being mean."
 
+show ellie pouting onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_up
+
 R "Now THAT'S an idea."
+
+show rosie stoned onlayer screens at scoot_up,scoot_right
 
 R "...where are they?"
 
+show rosie stoned onlayer screens at scoot_mid
+show caz smirking onlayer screens at scoot_up
+
 C "They're in the tent."
+
+show rosie stoned onlayer screens at scoot_away
+show caz onlayer screens at scoot_mid
 
 "Rosie crawls away from Ellie, who shrinks into a ball and hugs her legs."
 
+show ellie hiding onlayer screens at scoot_up
+
 E "I'm all scared now..."
+
+show ellie hiding onlayer screens at scoot_mid
+show emily sheepish onlayer screens at scoot_right
 
 P "Sorry, Ellie. There's no slasher really."
 
+show emily sheepish onlayer screens at scoot_mid
+
 "She sniffs and smiles thinly at you."
+
+show caz reassuring onlayer screens at scoot_up
 
 C "Well, I enjoyed the story."
 
 C "Could've used less interruptions to really build the mood, but it was fun."
 
+show rosie gremlin onlayer screens at scoot_mid
+
 R "Could've ushed more jokesh."
+
+show caz eyeroll onlayer screens at scoot_up
 
 C "Don't talk with your mouth full, dear."
 
+show caz eyeroll onlayer screens at scoot_mid
+
 "Rosie sticks her biscuit-coated tongue out at Caz, and passes the pack to Ellie."
+
+show rosie skeptical onlayer screens at scoot_up
 
 R "Whatever. Em, you gotta throw in more jokes next time, they're like, the best bit in horror."
 
+sho rosie skeptical onlayer screens at scoot_mid
+show caz annoyed onlayer screens at scoot_up
+
 C "They're not. The {i}horror{/i} bit is."
 
+show caz annoyed onlayer screens at scoot_mid
+
 "The two of them start to bicker, whilst Ellie eats biscuits quietly and watches them."
+
+show emily satisfied onlayer screens
 
 "It's nice to see Caroline animated about the story."
 
