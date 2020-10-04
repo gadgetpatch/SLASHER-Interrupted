@@ -1,0 +1,32 @@
+emily 
+emily sheepish 
+emily gendo 
+emily interrupted 
+emily satisfied
+
+ellie
+ellie scared 
+ellie excited 
+ellie pouting 
+ellie hiding 
+ellie hiding_alt
+
+rosie 
+rosie skeptical 
+rosie gremlin 
+rosie laughing
+rosie stoned 
+
+caz 
+caz smirking 
+caz eyeroll 
+caz annoyed 
+caz sinister
+caz reassure
+
+opaque # 1sec
+faded # 2sec
+invisible # 2sec
+shown # instant
+hidden  # instant
+

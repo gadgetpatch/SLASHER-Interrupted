@@ -1751,83 +1751,176 @@ return
 
 label ending_Rosie:
 
-show ellie 
+show ellie onlayer screens at scoot_up
 
 E "That was... funny? It kinda felt just like... average real life..."
 
+show ellie onlayer screens at scoot_mid
+show caz smirking onlayer screens at scoot_up
+
 C "If you narrated real life like a horror story, maybe."
+
+show caz onlayer screens at scoot_mid
+show rosie laughing onlayer screens at scoot_up
 
 R "Hey, I thought it was fun! It was like, believeable, innit."
 
+show rosie stoned onlayer screens
+
 R "Relatable antics. Relatable cast - "
+
+show rosie stoned onlayer screens at scoot_mid
+show caz eyeroll onlayer screens at scoot_up
 
 C "Relatable for some of us, anyway."
 
+show caz eyeroll onlayer screens at scoot_mid
+
 "Rosie sticks her tongue out at Caz, and looks around on the ground."
+
+show caz onlayer screens
+show rosie stoned onlayer screens at scoot_up
 
 R "Hey, who's got the snacks?"
 
+show rosie stoned onlayer screens at scoot_mid
+show ellie onlayer screens at scoot_up
+
 E "They're in the tent."
 
+show ellie onlayer screens at scoot_mid
+show rosie gremlin onlayer screens at scoot_down
+
 R "Oh, sick. Snack time."
+
+show rosie gremlin onlayer screens at scoot_away
 
 "Rosie starts to crawl over to the tent to fetch her biscuits."
 
 "Caz watches her go, then rubs her hands together to warm them up."
 
+show ellie pouting onlayer screens at scoot_up
+
 E "I'm kinda sad about the pizza now."
+
+show ellie onlayer screens at scoot_mid
+show caz smirking onlayer screens at scoot_up
 
 C "It's not that tragic. It's just a fictional pizza."
 
+show caz smirking onlayer screens at scoot_mid
+show ellie pouting onlayer screens at scoot_up
+
 E "I know... I just like happy endings."
+
+show ellie pouting onlayer screens at scoot_mid
+show emily sheepish onlayer screens at scoot_right
 
 P "I'll do a happier story next time for you."
 
+show emily sheepish onlayer screens at scoot_mid
+
 "Ellie beams, then brings her knees up to her chest to hug."
+
+show ellie onlayer screens at scoot_up
 
 E "At least it made me laugh."
 
+show ellie scared onlayer screens at scoot_up
+
 E "I didn't really want to hear a scary story, it's so... spooky out here."
+
+show ellie scared onlayer screens at scoot_mid
 
 "She gestures around to the mostly-empty campsite, the wind making only slightly less noise than in the story."
 
+show emily satisfied onlayer screens at scoot_right
+
 P "It is a bit creepy, huh."
+
+show emily satisfied onlayer screens at scoot_mid
+show caz reassuring onlayer screens at scoot_up
 
 C "It's only a campsite. We're basically the only ones here."
 
+show caz reassuring onlayer screens at scoot_mid
+show ellie hiding onlayer screens at scoot_up
+show emily onlayer screens
+
 E "That's why it's so creepy! We're all alone..."
 
-R "It'sh alright, Elsh. I'll protc you from monshtersh."
+show rosie gremlin onlayer screens at scoot_down
+
+R "It'sh alright, Elsh. I'll protectch you from monshtersh."
+
+show ellie pouting onlayer screens at scoot_mid
+show rosie gremlin onlayer screens at scoot_mid
+show caz eyeroll onlayer screens at scoot_up
 
 C "Don't eat with your mouth full, dear."
 
+show caz eyeroll onlayer screens at scoot_mid
+show ellie onlayer screens
+
 "Rosie rolls her eyes and lays back down on the blanket, patting Ellie on the back."
+
+show rosie stoned onlayer screens at scoot_up
 
 R "Hey, Em, I liked the jokes. S'good."
 
+show rosie stoned onlayer screens at scoot_mid
+show emily satisfied onlayer screens at scoot_right
+
 P "Thanks."
+
+show emily satisfied onlayer screens at scoot_mid
+show rosie gremlin onlayer screens at scoot_up
 
 R "Shame it didn't rub off on Caz, huh."
 
+show rosie gremlin onlayer screens at scoot_mid
+show caz annoyed onlayer screens at scoot_up
+
 C "Oh! You - I'm not sharing the tent with you tonight."
 
+show caz annoyed onlayer screens at scoot_mid
+show rosie laughing onlayer screens at scoot_up
+show emily onlayer screens
+
 R "Whatever. You share with Ellie, I'll take the car with Em."
+
+show rosie stoned onlayer screens
 
 R "She likes funny stuff, at least. The skeletons were fun."
 
 R "Like..."
 
+show rosie gremlin onlayer screens
+
 "Her face contorts as she tries to suppress a laugh."
 
 R "Like... humerus..."
 
+show ellie excited onlayer screens
+show caz smirking onlayer screens
+show emily satisfied onlayer screens
+
 "Caz groans and Ellie giggles. You can't help but grin at the half-formed joke."
 
+show rosie gremlin onlayer screens at scoot_mid
+show emily onlayer screens
+
 "However the story went down with the others, Rosie appreciated the stoner comedy, at least."
+
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+show ellie onlayer screens at faded
 
 "It's nice to see her laugh - not that that's difficult usually."
 
 "Maybe you could've told the story differently, but it's nice seeing someone get what they wanted."
+
+show emily onlayer screens at faded
 
 "..."
 
@@ -1874,7 +1967,7 @@ show emily gendo onlayer screens
 
 P "It's the slasher. They're {i}real{/i}."
 
-show ellie scared onlayer screens at scoot_down,shake
+show ellie hiding_alt onlayer screens
 
 E "Doooooon't I won't sleep!"
 
@@ -1971,8 +2064,13 @@ show caz annoyed onlayer screens at scoot_mid
 "The two of them start to bicker, whilst Ellie eats biscuits quietly and watches them."
 
 show emily satisfied onlayer screens
+show rosie onlayer screens at faded
+show caz onlayer screens at faded
+show ellie onlayer screens at faded
 
 "It's nice to see Caroline animated about the story."
+
+show emily onlayer screens at faded
 
 "Secretly, you're glad you had the chance to tell a slasher story; the campfire setting just feels right."
 
@@ -1986,36 +2084,76 @@ return
 
 label ending_mix:
 
+show ellie scared OS at scoot_up
+
 E "That was... ummm..."
 
+show ellie scared OS at scoot_mid
+show rosie skeptical OS at scoot_up
+
 R "Bit of a change in tone."
+
+show rosie skeptical OS at scoot_mid
+show caz reassure OS at scoot_up
 
 C "A bit, yes."
 
 if ellie_score == caz_score: ####################### equal results
 
+	show rosie OS at scoot_mid
+	show ellie OS at scoot_mid
+	show caz reassuring OS at scoot_up
+
     C "Something for each of us, I suppose."
 
     if death: ##### Caz middle
 
+    	show caz smirking OS
+
         C "An impressively compromised story."
+
+        show caz smirking OS at scoot_mid
+        show rosie skeptical OS at scoot_up
 
         R "Yeah, a cute scene, a funny scene, and a dual fuckin' murder."
 
+        show rosie skeptical OS at scoot_mid
+        show caz OS
+        show ellie OS at scoot_up
+
         E "The three elements..."
 
-        R "Gasp! Jake and Amy were killed by a murder-bender!"
+        show ellie OS at scoot_mid
+        show rosie laughing OS at scoot_up
+
+        R "Gasp! Jake and Amy were killed by a knife-bender!"
 
         if pizza:
-
             #### Ellie -> Caz -> Rosie
+            show ellie excited OS
+            show rosie stoned OS
+            show caz smirking OS
+
             R "And worse, a pizza was murdered, too..."
+
+            show rosie stoned OS at scoot_mid
+            show ellie OS at scoot_up
 
             E "So sad..."
 
+            show ellie pouting OS at scoot_mid
+            show rosie laughing OS at scoot_up
+            show caz eyeroll OS
+
             R "So sad!"
 
+            show rosie laughing OS at scoot_mid
+            show caz eyeroll OS at scoot_up
+
             C "Sadder than your two friends getting stabbed?"
+
+            show caz OS at scoot_mid
+            show rosie gremlin OS at scoot_up
 
             R "They'd be sad about the pizza too!"
 
@@ -2648,29 +2786,68 @@ else: ############### i don't think this should come up?
 
     R "Lol."
 
+show rosie OS at scoot_mid
+show ellie OS at scoot_mid
+show caz OS at scoot_mid
+show emily OS at scoot_mid
+
 "Rosie blows out a breath and laughs briefly, stubbing her roach into the grass."
+
+show rosie stoned OS at scoot_up
 
 R "Anyway, storytime over. Where's the snacks..."
 
+show rosie stoned OS at scoot_mid
+show caz reassure OS at scoot_up
+
 C "They're in the tent."
+
+show caz reassure OS at scoot_mid
+show ellie excited OS at scoot_up
+
+E "Ooh, get me some too!"
+
+show ellie excited OS at scoot_mid
+show rosie stoned OS at scoot_away
 
 "Rosie crawls off to fetch them, leaving Ellie to curl up on the blanket."
 
+show caz OS at scoot_down
+show ellie OS
+
 "In her camp chair, Caz leans back and looks at the stars."
+
+show ellie OS at faded
+show caz OS at faded
+show rosie OS at faded
 
 "Your story seems to have... well, at least entertained them a bit."
 
+show emily sheepish OS
+
 "Maybe you could've told it a bit more consistently..."
 
-"But it seemed like a good idea to try and please everyone, " 
+show rosie OS at scoot_mid,faded
+
+"But it seemed like a good idea to try and please everyone."
+
+show caz reassuring OS at scoot_down
 
 "Caz seems to notice you staring frustratedly at the fire, and whistles quietly to get your attention."
 
+show caz reassuring OS at scoot_up
+
 C "Hey, [Emily], it wasn't that bad. Trying to appeal to everyone is... admirable, at least."
+
+show caz reassuring OS at scoot_mid
+show emily satisfied OS at scoot_right
 
 P "Thanks..."
 
 P "Thought that counts, right?"
+
+show emily OS at scoot_mid
+show caz OS at faded
 
 "..."
 
