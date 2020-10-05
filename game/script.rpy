@@ -51,10 +51,15 @@ image ellie hiding = "sprite/ellie_hiding.png"
 
 # Rosie
 image rosie = "sprite/rosie.png"
+image rosie flip = im.Flip("sprite/rosie.png", vertical=True)
 image rosie skeptical = "sprite/rosie_skeptical.png"
+image rosie skeptical flip = im.Flip("sprite/rosie_skeptical.png", vertical=True)
 image rosie gremlin = "sprite/rosie_gremlin.png"
+image rosie gremlin flip = im.Flip("sprite/rosie_gremlin.png", vertical=True)
 image rosie laughing = "sprite/rosie_laughing.png"
+image rosie laughing flip = im.Flip("sprite/rosie_laughing.png", vertical=True)
 image rosie stoned = "sprite/rosie_stoned.png"
+image rosie stoned flip = im.Flip("sprite/rosie_stoned.png", vertical=True)
 
 # Caroline
 image caz = "sprite/caz.png"
@@ -2085,183 +2090,318 @@ return
 
 label ending_mix:
 
-show ellie scared OS at scoot_up
+show ellie scared onlayer screens at scoot_up
 
 E "That was... ummm..."
 
-show ellie scared OS at scoot_mid
-show rosie skeptical OS at scoot_up
+show ellie scared onlayer screens at scoot_mid
+show rosie skeptical onlayer screens at scoot_up
 
 R "Bit of a change in tone."
 
-show rosie skeptical OS at scoot_mid
-show caz reassure OS at scoot_up
+show rosie skeptical onlayer screens at scoot_mid
+show caz reassure onlayer screens at scoot_up
 
 C "A bit, yes."
 
 if ellie_score == caz_score: ####################### equal results
 
-    show rosie OS at scoot_mid
-    show ellie OS at scoot_mid
-    show caz reassuring OS at scoot_up
+    show rosie onlayer screens at scoot_mid
+    show ellie onlayer screens at scoot_mid
+    show caz reassuring onlayer screens at scoot_up
 
     C "Something for each of us, I suppose."
 
     if death: ##### Caz middle
 
-        show caz smirking OS
+        show caz smirking onlayer screens
 
         C "An impressively compromised story."
 
-        show caz smirking OS at scoot_mid
-        show rosie skeptical OS at scoot_up
+        show caz smirking onlayer screens at scoot_mid
+        show rosie skeptical onlayer screens at scoot_up
 
         R "Yeah, a cute scene, a funny scene, and a dual fuckin' murder."
 
-        show rosie skeptical OS at scoot_mid
-        show caz OS
-        show ellie OS at scoot_up
+        show rosie skeptical onlayer screens at scoot_mid
+        show caz onlayer screens
+        show ellie onlayer screens at scoot_up
 
         E "The three elements..."
 
-        show ellie OS at scoot_mid
-        show rosie laughing OS at scoot_up
+        show ellie onlayer screens at scoot_mid
+        show rosie laughing onlayer screens at scoot_up
 
         R "Gasp! Jake and Amy were killed by a knife-bender!"
 
         if pizza:
             #### Ellie -> Caz -> Rosie
-            show ellie excited OS
-            show rosie stoned OS
-            show caz smirking OS
+            show ellie excited onlayer screens
+            show rosie stoned onlayer screens
+            show caz smirking onlayer screens
 
             R "And worse, a pizza was murdered, too..."
 
-            show rosie stoned OS at scoot_mid
-            show ellie OS at scoot_up
+            show rosie stoned onlayer screens at scoot_mid
+            show ellie onlayer screens at scoot_up
 
             E "So sad..."
 
-            show ellie pouting OS at scoot_mid
-            show rosie laughing OS at scoot_up
-            show caz eyeroll OS
+            show ellie pouting onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
+            show caz eyeroll onlayer screens
 
             R "So sad!"
 
-            show rosie laughing OS at scoot_mid
-            show caz eyeroll OS at scoot_up
+            show rosie laughing onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
 
             C "Sadder than your two friends getting stabbed?"
 
-            show caz OS at scoot_mid
-            show rosie gremlin OS at scoot_up
+            show caz onlayer screens at scoot_mid
+            show rosie gremlin onlayer screens at scoot_up
 
             R "They'd be sad about the pizza too!"
 
         else:
             #### Rosie -> Caz -> Ellie
+            show rosie onlayer screens at scoot_mid
+            show ellie scared onlayer screens at scoot_up
+
             E "But it wasn't a murder! It was fake blood, right?"
+
+            show ellie scared onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
 
             C "That was totally a cop-out."
 
+            show caz eyeroll onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
+
             E "Noooo it was a surprise so I didn't find out about the party..."
+
+            show ellie pouting onlayer screens at scoot_mid
+            show caz onlayer screens
+            show rosie skeptical onlayer screens
 
             R "..."
 
+            show rosie skeptical onlayer screens at scoot_up
+
             R "It was definitely a cop-out, lol."
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show emily sheepish onlayer screens
 
             "Yeah, it definitely was."
 
     elif stoned: ###### Rosie middle
 
+        show rosie skeptical onlayer screens at scoot_up
+
         R "Yeah, a cute scene, a funny scene, but then a creepy guy with a knife."
 
+        show rosie skeptical onlayer screens at scoot_mid
+        show ellie scared onlayer screens at scoot_up
+
         E "I mean... I've been afraid of killers when stoned..."
+
+        show ellie scared onlayer screens at scoot_mid
+        show rosie stoned onlayer screens at scoot_up
 
         R "Yeah, guess it's accurate."
 
         if kitty:
             #### Ellie -> Rosie -> Caz
+
+            show rosie stoned onlayer screens at scoot_mid
+            show ellie excited onlayer screens at scoot_up
+
             E "I'm glad we saw a kitty though..."
+
+            show ellie excited onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
 
             R "Kinda balanced out by the {i}getting murdered{/i}."
 
+            show rosie onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
+
             C "Oh come on, the tone was setting it up."
+
+            show caz onlayer screens at scoot_mid
+            show rosie skeptical onlayer screens at scoot_up
 
             R "See a kitty, see your stoned friends, {i}get killed by a knife guy??!{/i}"
 
+            show rosie skeptical onlayer screens at scoot_mid
+            show emily sheepish onlayer screens 
+
             "You do have to admit, it kinda came out of nowhere."
+
+            show emily sheepish onlayer screens 
 
             P "I was trying to get back on track..."
 
         else:
             #### Caz -> Rosie -> Ellie
+            show rosie onlayer screens at scoot_mid
+            show ellie excited onlayer screens at scoot_up
+
             E "But I got a lovely birthday party!"
+
+            show ellie excited onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
 
             R "Yeah. A surprise!"
 
+            show rosie skeptical onlayer screens
+
             R "But what was with that knife guy outside..."
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show caz smirking onlayer screens at scoot_up
 
             C "This was simply the setup, of course."
 
+            show caz sinister onlayer screens
+
             C "For a grisly birthday-party slasher murder..."
+
+            show caz sinister onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
 
             E "Noooooo they were just..."
 
+            show emily sheepish onlayer screens at scoot_right
+
             P "Bringing the knife to cut the cake?"
 
+            show ellie onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens
+            show emily sheepish onlayer screens at scoot_mid_x
+
             "Nobody looks convinced by that."
+
+            show ellie hiding onlayer screens at scoot_up
 
             E "...yeah..."
 
     else: ###### Ellie middle
 
+        show rosie skeptical onlayer screens at scoot_up
+
         R "Yeah, a cute couple oblivious to the horror around them..."
+
+        show rosie skeptical onlayer screens at scoot_mid
+        show ellie onlayer screens at scoot_up
 
         E "Well... I've been like that before..."
 
+        show ellie onlayer screens at scoot_mid
+        show rosie laughing onlayer screens at scoot_up
+
         R "You've ignored a {i}creepy guy with a knife{/i} whilst cuddling?"
+
+        show rosie laughing onlayer screens at scoot_mid
+        show caz smirking onlayer screens at scoot_up
 
         C "Really sets the mood, doesn't it."
 
         if pizza:
         ##### Caz -> Ellie -> Rosie
 
+            show caz onlayer screens at scoot_mid
+            show rosie gremlin onlayer screens at scoot_up
+
             R "God, what carnage... what horror..."
+
+            show rosie gremlin onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
 
             C "You're talking about the pizza, aren't you."
 
+            show caz onlayer screens at scoot_mid
+            show ellie onlayer screens at scoot_up
+
             E "So sad..."
+
+            show ellie onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
 
             R "So sad!"
 
+            show rosie laughing onlayer screens at scoot_mid
+            show caz annoyed onlayer screens at scoot_up
+
             C "So what was with the creepy knife guy outside?"
+
+            show caz onlayer screens at scoot_mid
+            show rosie stoned onlayer screens
+            show emily sheepish onlayer screens at scoot_right
 
             P "Uhhh..."
 
+            show emily sheepish onlayer screens at scoot_mid_x
+            show rosie stoned onlayer screens at scoot_up
+
             R "He murdered the pizza!"
+
+            show emily satisfied onlayer screens
+            show rosie stoned onlayer screens at scoot_mid
+            show ellie hiding onlayer screens at scoot_up
 
             E "Oh no!"
 
+            show ellie onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
+
             R "Oh no!"
+
+            show rosie laughing Os at scoot_mid
+            show caz eyeroll onlayer screens
 
             "Caz looks unimpressed."
 
         else:
         ###### Rosie -> Ellie -> Caz
+
+            show rosie onlayer screens at scoot_up
+
             R "Yeah, well, your ignorance led to my {i}death{/i}."
+
+            show rosie onlayer screens at scoot_mid
+            show ellie scared onlayer screens at scoot_up
 
             E "And ours!"
 
+            show ellie scared onlayer screens at scoot_mid
+            show rosie skeptical onlayer screens at scoot_up
+
             R "Yeah! So much death outta nowhere! Talk about no foreshadowing!"
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
 
             C "Oh come on, the tone was setting it up."
 
+            show caz onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
+
             R "See a creepy skeleton, see your friends cuddling, {i}get killed by a knife guy??!{/i}"
+
+            show rosie laughing onlayer screens at scoot_mid
 
             "You do have to admit, it kinda came out of nowhere."
 
+            show emily sheepish onlayer screens at scoot_right
+
             P "I was trying to get back on track..."
+
+            show emily sheepish onlayer screens at scoot_mid
+            show caz reassuring onlayer screens at scoot_mid
+            show rosie skeptical onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_mid
 
             "Everyone looks unimpressed."
 
@@ -2787,68 +2927,68 @@ else: ############### i don't think this should come up?
 
     R "Lol."
 
-show rosie OS at scoot_mid
-show ellie OS at scoot_mid
-show caz OS at scoot_mid
-show emily OS at scoot_mid
+show rosie onlayer screens at scoot_mid
+show ellie onlayer screens at scoot_mid
+show caz onlayer screens at scoot_mid
+show emily onlayer screens at scoot_mid
 
 "Rosie blows out a breath and laughs briefly, stubbing her roach into the grass."
 
-show rosie stoned OS at scoot_up
+show rosie stoned onlayer screens at scoot_up
 
 R "Anyway, storytime over. Where's the snacks..."
 
-show rosie stoned OS at scoot_mid
-show caz reassure OS at scoot_up
+show rosie stoned onlayer screens at scoot_mid
+show caz reassure onlayer screens at scoot_up
 
 C "They're in the tent."
 
-show caz reassure OS at scoot_mid
-show ellie excited OS at scoot_up
+show caz reassure onlayer screens at scoot_mid
+show ellie excited onlayer screens at scoot_up
 
 E "Ooh, get me some too!"
 
-show ellie excited OS at scoot_mid
-show rosie stoned OS at scoot_away
+show ellie excited onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_away
 
 "Rosie crawls off to fetch them, leaving Ellie to curl up on the blanket."
 
-show caz OS at scoot_down
-show ellie OS
+show caz onlayer screens at scoot_down
+show ellie onlayer screens
 
 "In her camp chair, Caz leans back and looks at the stars."
 
-show ellie OS at faded
-show caz OS at faded
-show rosie OS at faded
+show ellie onlayer screens at faded
+show caz onlayer screens at faded
+show rosie onlayer screens at faded
 
 "Your story seems to have... well, at least entertained them a bit."
 
-show emily sheepish OS
+show emily sheepish onlayer screens
 
 "Maybe you could've told it a bit more consistently..."
 
-show rosie OS at scoot_mid,faded
+show rosie onlayer screens at scoot_mid,faded
 
 "But it seemed like a good idea to try and please everyone."
 
-show caz reassuring OS at scoot_down
+show caz reassuring onlayer screens at scoot_down
 
 "Caz seems to notice you staring frustratedly at the fire, and whistles quietly to get your attention."
 
-show caz reassuring OS at scoot_up
+show caz reassuring onlayer screens at scoot_up
 
 C "Hey, [Emily], it wasn't that bad. Trying to appeal to everyone is... admirable, at least."
 
-show caz reassuring OS at scoot_mid
-show emily satisfied OS at scoot_right
+show caz reassuring onlayer screens at scoot_mid
+show emily satisfied onlayer screens at scoot_right
 
 P "Thanks..."
 
 P "Thought that counts, right?"
 
-show emily OS at scoot_mid
-show caz OS at faded
+show emily onlayer screens at scoot_mid
+show caz onlayer screens at faded
 
 "..."
 
