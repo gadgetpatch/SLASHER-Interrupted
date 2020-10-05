@@ -62,6 +62,7 @@ image caz smirking = "sprite/caz_smirking.png"
 image caz eyeroll = "sprite/caz_eyeroll.png"
 image caz annoyed = "sprite/caz_annoyed.png"
 image caz sinister = "sprite/caz_sinister.png"
+image caz reassuring = "sprite/caz_reassure.png"
 
 
 ## Animations #################################################################
@@ -155,7 +156,7 @@ transform scoot_down:
     easein 0.4 yanchor 0.33333333
 
 transform scoot_away:
-    easein 0.4 yanchor 0.0
+    easein 1.5 yanchor -0.2
 
 transform scoot_left:
     easein 0.4 xanchor 0.66666667
@@ -735,7 +736,7 @@ show rosie skeptical onlayer screens at scoot_up
 R "You're not still mad, Caz?"
 
 show caz annoyed onlayer screens at scoot_up
-show rosie_skeptical onlayer screens at scoot_mid
+show rosie skeptical onlayer screens at scoot_mid
 
 C "Yes! It was only three weeks ago! When your band friends come over and get trashed they can pass out in YOUR room next time."
 
@@ -755,7 +756,7 @@ show emily sheepish onlayer screens
 P "..."
 
 show emily onlayer screens
-show ellie hiding onlayer screens at scoot_up
+show ellie pouting onlayer screens at scoot_up
 
 E "I've done that too..."
 
@@ -775,7 +776,7 @@ show emily interrupted onlayer screens at scoot_right
 P "Ahem."
 
 show emily interrupted onlayer screens at scoot_mid
-show rosie grmelin onlayer screens
+show rosie gremlin onlayer screens
 show ellie onlayer screens
 show caz eyeroll onlayer screens
 
@@ -938,7 +939,7 @@ show emily interrupted onlayer screens at scoot_right
 
 P "So, your two named friends are dead on the sofa - "
 
-show emily onlayer screens at scoot_mid
+show emily onlayer screens at scoot_mid_x
 show rosie gremlin onlayer screens at scoot_up
 
 R "That's classic Jake and Amy - "
@@ -956,7 +957,7 @@ P "You turn away from the grisly scene, horrified, your stomach turning at the s
 show ellie onlayer screens at faded
 show rosie onlayer screens at faded
 show caz onlayer screens at faded
-show emily gendo onlayer at faded
+show emily gendo onlayer screens at faded
 
 P "Anywhere here, the killer could be waiting, ready to strike again."
 
@@ -976,7 +977,7 @@ nvl clear
 show ellie onlayer screens at faded
 show rosie onlayer screens at faded
 show caz onlayer screens at faded
-show emily gendo onlayer at faded
+show emily gendo onlayer screens at faded
 
 P "You stare at the kitchen door, a grim sense of foreboding rooting you to the spot."
 
@@ -1197,7 +1198,7 @@ show rosie gremlin onlayer screens at scoot_up
 
 R "Here's your present, kiddo."
 
-show rosie gremlin onlayer scrfeens at scoot_mid
+show rosie gremlin onlayer screens at scoot_mid
 
 "Ellie doesn't miss a beat, and takes it from her with a grin."
 
@@ -1359,7 +1360,7 @@ else:
 
     C "This is why we don't let Jake and Amy come over unattended."
 
-     show caz eyeroll onlayer screens at scoot_mid
+    show caz eyeroll onlayer screens at scoot_mid
     show rosie skeptical onlayer screens at scoot_up
 
     R "Oh like you've never burned food."
@@ -1655,7 +1656,7 @@ show emily onlayer screens at scoot_right
 P "It is a bit creepy, huh."
 
 show emily onlayer screens at scoot_mid
-show rosie gremlin onlayer screens at scoot_left
+show rosie gremlin onlayer screens at scoot_mid
 
 R "Yeah. Shomething'sh gonna getcha inna night, Elsh."
 
@@ -1967,7 +1968,7 @@ show emily gendo onlayer screens
 
 P "It's the slasher. They're {i}real{/i}."
 
-show ellie hiding_alt onlayer screens
+show ellie hiding onlayer screens
 
 E "Doooooon't I won't sleep!"
 
@@ -2054,7 +2055,7 @@ show rosie skeptical onlayer screens at scoot_up
 
 R "Whatever. Em, you gotta throw in more jokes next time, they're like, the best bit in horror."
 
-sho rosie skeptical onlayer screens at scoot_mid
+show rosie skeptical onlayer screens at scoot_mid
 show caz annoyed onlayer screens at scoot_up
 
 C "They're not. The {i}horror{/i} bit is."
@@ -2100,15 +2101,15 @@ C "A bit, yes."
 
 if ellie_score == caz_score: ####################### equal results
 
-	show rosie OS at scoot_mid
-	show ellie OS at scoot_mid
-	show caz reassuring OS at scoot_up
+    show rosie OS at scoot_mid
+    show ellie OS at scoot_mid
+    show caz reassuring OS at scoot_up
 
     C "Something for each of us, I suppose."
 
     if death: ##### Caz middle
 
-    	show caz smirking OS
+        show caz smirking OS
 
         C "An impressively compromised story."
 
