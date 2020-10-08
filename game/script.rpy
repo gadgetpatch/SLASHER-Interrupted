@@ -2736,67 +2736,145 @@ elif ellie_score == 2: ####################### ellie majority
 
 elif rosie_score == 2: ################ rosie majority
 
+     show emily onlayer screens at scoot_mid_x
+     show ellie onlayer screens at scoot_mid
+     show caz onlayer screens at scoot_mid
+     show rosie onlayer screens at scoot_up
+    
     R "I liked that it was mostly kinda funny."
+
+    show rosie onlayer screens at scoot_mid
+    show reassuring onlayer screens at scoot_up
 
     C "A regular stoner comedy."
 
+    show caz onlayer screens at scoot_mid
+    show rosie stoned onlayer screens at scoot_up
+
     R "Yeah! Right!"
+
+    show rosie skeptical onlayer screens at scoot_up
 
     R "Just..."
 
     if not stoned:
 
+        show rosie skeptical onlayer screens at scoot_up
+
         R "Without anyone actually getting stoned."
 
+        show rosie skeptical onlayer screens at scoot_mid
+        show emily sheepish onlayer screens
+
         "Woops..."
+
+        show ellie onlayer screens at scoot_up
 
         E "Yeah..."
 
         if ellie_score == 1: ####### R E R
 
+            show ellie excited onlayer screens at scoot_up
+
             E "I mean, there was a cute couple!"
+
+            show ellie excited onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
 
             C "If it was Jake and Amy, they probably {i}were{/i} stoned. They usually are."
 
+            show caz eyeroll onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "Yeah! guess it was just, like... implied..."
+
+            show emily satisfied onlayer screens at scoot_right
 
             P "Right. Yeah. Implied."
 
+            show emily satisfied onlayer screens at scoot_mid_x
+            show rosie skeptical onlayer screens at scoot_up
+
             R "..."
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show caz onlayer screens at scoot_up
 
             C "Actually, it's kind of depressing, isn't it?"
 
+            show caz smirking onlayer screens
+
             C "You run into some halloween decorations outside, in {i}August{/i}, then go in to find your friends made out too much and fell asleep and burned a pizza."
+
+            show caz onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
 
             E "..."
 
+            show ellie pouting at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "..."
 
-            P "...I guess that wasn't a great story, was it..."
+            show rosie stoned at scoot_mid
+            show emily sheepish onlayer screens at scoot_right
+
+            P "...I guess that wasn't a super exciting narrative, was it..."
 
         else: ###### R C R
 
+            show rosie skeptical onlayer screens at scoot_up
+
             R "Yeah, they just fucking... died..."
 
-            C "If it was Jake and Amy, they probably {i}were{/i} stoned. They usually are."
+            show rosie skeptical onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
+
+            C "If it was Jake and Amy, they probably {i}were{/i} stoned, beforehand. They usually are."
+
+            show caz eyeroll onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
 
             R "Yeah! guess it was just, like... implied..."
 
+            show rosie gremlin onlayer screens at scoot_up
+
             R "Impldied."
+
+            show rosie gremlin onlayer screens at scoot_mid
 
             "Ellie giggles at the mashed pronunciation."
 
+            show caz smirking onlayer screens at scoot_up
+
             C "It's like an anti-drugs advert."
+
+            show caz smirking onlayer screens at scoot_mid
+            show emily interrupted onlayer screens
 
             "Woops..."
 
+            show caz smirking onlayer screens at scoot_up
+
             C "Don't do drugs, kids! You'll get killed by a knife murderer!"
+
+            show caz smirking onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
 
             R "And burn your pizza!"
 
+            show rosie laughing onlayer screens at scoot_mid
+            show ellie hiding onlayer screens at scoot_up
+
             E "So sad!"
 
+            show ellie onlayer screens at scoot_up
+            show rosie laughing onlayer screens at scoot_up
+
             R "So sad!"
+
+            show rosie laughing onlayer screens at scoot_mid
+            show emily sheepish onlayer screens at scoot_right
 
             P "..."
 
