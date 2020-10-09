@@ -2736,10 +2736,10 @@ elif ellie_score == 2: ####################### ellie majority
 
 elif rosie_score == 2: ################ rosie majority
 
-     show emily onlayer screens at scoot_mid_x
-     show ellie onlayer screens at scoot_mid
-     show caz onlayer screens at scoot_mid
-     show rosie onlayer screens at scoot_up
+    show emily onlayer screens at scoot_mid_x
+    show ellie onlayer screens at scoot_mid
+    show caz onlayer screens at scoot_mid
+    show rosie onlayer screens at scoot_up
     
     R "I liked that it was mostly kinda funny."
 
@@ -3015,55 +3015,120 @@ elif rosie_score == 2: ################ rosie majority
 
     else:
 
+        show rosie skeptical onlayer screens at scoot_up
+
         R "Kinda started slightly a bit clunkily..."
+
+        show rosie skeptical onlayer screens at scoot_mid
+        show caz smirking onlayer screens at scoot_up
 
         C "What, you mean the ominous narration?"
 
         if ellie_score == 1: ##### E R R
 
+            show caz smirking onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
+
             R "No, like, the cat..."
+
+            show rosie laughing onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
 
             E "The kitty was nice!"
 
+            show ellei excited onlayer screens
+
             E "Don't you like saying hi to a cat?"
+
+            show ellie excited onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
 
             R "I mean yeah totally. But it's a weird narrative, innit?"
 
+            show rosie stoned onlayer screens at scoot_mid
+            show caz onlayer screens at scoot_up
+
             C "Pet a cat, see your stoned friends, take a burnt pizza out the oven?"
+
+            show caz onlayer screens at scoot_mid
+            show emily sheepish onlayer screens at scoot_right
 
             P "..."
 
+            show emily sheepish onlayer screens at scoot_mid_x
+            show ellie onlayer screens at scoot_up
+
             E "It just sounds like a generic day..."
 
+            show ellie onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "Yeah, dang."
+
+            show rosie stoned onlayer screens at scoot_mid
 
             "You admit to yourself that it wasn't the most gripping story..."
 
         else: #C R R
 
+            show rosie stoned onlayer screens at scoot_up
+
             R "No, like, the fucking... knife guy hanging around."
+
+            show rosie skeptical onlayer screens
 
             R "What was with that??"
 
+            show rosie skeptical onlayer screens at scoot_mid
+            show ellie scared onlayer screens at scoot_up
+
             E "It was scary..."
 
-            "It was a bit out of place..."
+            show ellie scared onlayer screens at scoot_mid
+            show emily sheepish onlayer screens
+
+            "It <i>was</i> a bit out of place..."
+
+            show caz sinister onlayer screens at scoot_up
 
             C "It's foreshadowing the death of the pizza."
 
+            show caz sinister onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+            show emily satisfied onlayer screens ### emily laughing ?
+
             R "That wasn't {i}stabbed{/i} though."
+
+            show rosie stoned onlayer screens at scoot_mid
+            show caz smirking onlayer screens at scoot_up
 
             C "Foreshadowing the abstract concept of death."
 
+            show caz smirking onlayer screens at scoot_mid
+            show ellie onlayer screens at scoot_up
+
             E "Pizza death..."
+
+            show ellie onlayer screens at scoot_mid
+            show emily onlayer screens
 
             P "..."
 
+            show ellie pouting onlayer screens at scoot_up
+
             E "So sad..."
+
+            show ellie onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
 
             R "So sad..."
 
 elif caz_score == 2: ################# caz majority
+
+    show emily onlayer screens at scoot_mid_x
+    show rosie onlayer screens at scoot_mid
+    show ellie onlayer screens at scoot_mid
+    show caz onlayer screens at scoot_up
 
     C "I liked most of it."
 
@@ -3071,21 +3136,42 @@ elif caz_score == 2: ################# caz majority
 
     if ellie_score == 1:
 
+        show caz onlayer screens at scoot_mid
+        show ellie hiding onlayer screens at scoot_up
+
         E "Yeah..."
+
+        show ellie excited onlayer screens
 
         E "But at least it had a little cute moment!"
 
         if kitty: ##### E C C
 
+            show ellie excited onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "Oh, the cat?"
+
+            show rosie stoned onlayer screens at scoot_mid
+            show ellie excited onlayer screens at scoot_up
 
             E "Yeah!"
 
+            show ellie scared onlayer screens
+
             E "We got to see a cat before everyone died..."
+
+            show ellie onlayer screens at scoot_mid
+            show rosie gremlin onlayer screens at scoot_up
 
             R "The dreaded black cat... a bad omen..."
 
+            show rosie gremlin onlayer screens at scoot_mid
+            show emily satisfied onlayer screens
+
             "Huh, guess that scene kinda worked in context..."
+
+            show caz annoyed onlayer screens at 
 
             C "They're not bad omens. They're just cats."
 
