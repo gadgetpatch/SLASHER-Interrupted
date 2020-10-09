@@ -2880,61 +2880,136 @@ elif rosie_score == 2: ################ rosie majority
 
     elif not pizza:
 
+        show rosie skeptical onlayer screens at scoot_up
+
         R "With a kinda leftfield ending..."
 
+        show rosie skeptical onlayer screens at scoot_mid
+        show emily sheepish onlayer screens
+
         "Woops..."
+
+        show ellie onlayer screens at scoot_up
 
         E "Yeah..."
 
         if ellie_score == 1: ###### R R E
 
+            show ellie excited onlayer screens
+            show emily satisfied onlayer screens
+
             E "I mean... it was kinda cute to go from comedy to a fun party..."
+
+            show ellie scared onlayer screens
 
             E "I didn't want to hear a scary story before we go to sleep, it's so... spooky out here."
 
+            show ellie scared onlayer screens at scoot_mid
+            show emily onlayer screens
+
             "She gestures around to the mostly-empty campsite, the wind making only slightly less noise than in the story."
+
+            show caz smirking onlayer screens at scoot_up
 
             C "So you get a birthday party, that's happening whilst two people are stoned on your sofa."
 
+            show caz smirking onlayer screens at scoot_mid
+            show ellie pouting Os at scoot_up
+
             E "Yeah... I guess that's kinda realistic..."
+
+            show ellie pouting onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
 
             R "It's real life, innit."
 
+            show rosie stoned onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
+
             C "Depressingly so."
+
+            show caz eyeroll onlayer screens at scoot_mid
+            show emily sheepish onlayer screens at scoot_right
 
             P "..."
 
         else:  ######## R R C
 
+            show rosie stoned onlayer screens at scoot_up
+
             R "Yeah, I just fucking... died..."
+
+            show rosie stoned onlayer screens at scoot_mid
+            show ellie hiding onlayer screens at scoot_up
 
             E "So did we! Or... whoever's meant to be the character..."
 
+            show ellie hiding onlayer screens at scoot_mid
+            show emily sheepish onlayer screens
+
             "It was kinda muddled as to who the protagonist was..."
+
+            show caz sinister onlayer screens at scoot_up
 
             C "I thought it was alright."
 
+            show caz sinister onlayer screens at scoot_mid
+            show emily onlayer screens
+            show rosie laughing onlayer screens at scoot_up
+
             R "It was so out of nowhere!"
+
+            show rosie laughing onlayer screens at scoot_mid
+            show ellie onlayer screens
+            show caz reassuring onlayer screens at scoot_up
 
             C "It was a classic one-two-three misdirection."
 
+            show caz sinister onlayer screens
+
             C "Setup, repeat, twist."
+
+            show caz sinister onlayer screens at scoot_mid
+            show emily sheepish onlayer screens at scoot_right
 
             P "Uhhh yeah that's what - "
 
+            show emily interrupted onlayer screens at scoot_mid_x
+            show rosie skeptical onlayer screens at scoot_up
+
             R "Oh come on, it felt like an anti-drugs advert."
+
+            show rosie skeptical onlayer screens at scoot_mid
 
             "Caz laughs suddenly, and pats her thigh in amusement."
 
+            show caz smirking onlayer screens at scoot_up
+            show emily onlayer screens
+
             C "Don't do drugs, kids! You'll get killed by a knife murderer!"
+
+            show caz smirking onlayer screens at scoot_mid
+            show ellie onlayer screens at scoot_up
 
             E "But the protagonist didn't, did they? Whoever we were..."
 
+            show ellie onlayer screens at scoot_mid
+            show caz onlayer screens at scoot_up
+
             C "...I guess not."
+
+            show caz onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
 
             R "Don't be in proximity to drugs?"
 
+            show rosie stoned onlayer screens at scoot_mid
+            show caz onlayer screens at scoot_up
+
             C "Doesn't really work, does it..."
+
+            show caz onlayer screens at scoot_mid
+            show emily sheepish onlayer screens
 
             P "..."
 
