@@ -3171,7 +3171,7 @@ elif caz_score == 2: ################# caz majority
 
             "Huh, guess that scene kinda worked in context..."
 
-            show caz annoyed onlayer screens at 
+            
 
             C "They're not bad omens. They're just cats."
 
