@@ -447,7 +447,7 @@ P "You feel a chill run up your spine, and you stand up, alone in the garden, bu
 
 jump choice_B
 
-# CHOICE A ROSIE ###############################################################
+# CHOICE A RoSIE ###############################################################
 
 label choice_A_Rosie:
 
@@ -2288,7 +2288,7 @@ show rosie skeptical onlayer screens at scoot_up
 R "Bit of a change in tone."
 
 show rosie skeptical onlayer screens at scoot_mid
-show caz reassure onlayer screens at scoot_up
+show caz reassuring onlayer screens at scoot_up
 
 C "A bit, yes."
 
@@ -3322,6 +3322,8 @@ elif caz_score == 2: ################# caz majority
 
     C "Nearly a solid slasher narrative."
 
+    show caz onlayer screens at scoot_mid
+
     if ellie_score == 1:
 
         show caz onlayer screens at scoot_mid
@@ -3359,85 +3361,186 @@ elif caz_score == 2: ################# caz majority
 
             "Huh, guess that scene kinda worked in context..."
 
-            show caz annoyed onlayer screens
+            show caz annoyed onlayer screens at scoot_up
 
             C "They're not bad omens. They're just cats."
 
+            show caz reassuring onlayer screens
+
             C "They get so much shunning for having black fur..."
+
+            show caz reassuring onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
 
             R "Oh, Caz, I was {i}joking{/i}."
 
+            show rosie laughing onlayer screens at scoot_mid
+            show caz annoyed onlayer screens at scoot_up
+
             C "Hmmph."
+
+            show caz onlayer screens at scoot_mid
+            show emily sheepish onlayer screens at scoot_right
 
             P "..."
 
+            show emily sheepish onlayer screens at scoot_mid_x
+            show ellie pouting onlayer screens at scoot_up
+
             E "I hope the cat survived..."
+
+            show ellie pouting onlayer screens at scoot_mid
+            show emily interrupted onlayer screens at scoot_right
 
             P "I wouldn't kill a cat in a story!"
 
         elif not death: ###### C E C
 
+            show caz eyeroll onlayer screens at scoot_up
+
             C "You mean Jake and Amy passed out on the sofa."
+
+            show caz eyeroll onlayer screens at scoot_mid
+            show ellie excited onlayer screens at scoot_up
 
             E "Yeah! Having a cuddle..."
 
+            show ellie onlayer screens
+
             E "It sounds nice."
+
+            show rosie gremlin onlayer screens at scoot_up
+            show ellie pouting onlayer screens at scoot_mid
 
             R "And then a murderer breaks in!"
 
+            show rosie gremlin onlayer screens at scoot_mid
+            show caz sinister onlayer screens at scoot_up
+
             C "Blood everywhere as they scream."
+
+            show caz sinister onlayer screens at scoot_mid
+            show ellie pouting onlayer screens
 
             "Ellie pouts and shakes her head at the two of them."
 
+            show ellie pouting onlayer screens at scoot_up
+
             E "It's so back and forth..."
+
+            show ellie pouting onlayer screens at scoot_mid
+            show caz smirking onlayer screens at scoot_up`
 
             C "Everyone knows the couple who make out die in a horror film."
 
+            show caz smirking onlayer screens at scoot_mid
+            show rosie skeptical onlayer screens at scoot_up
+
             R "Did they die, though? I thought we did? Or like... whoever the protagonist was."
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show emily sheepish onlayer screens
 
             P "..."
 
+            show emily sheepish onlayer screens at scoot_right
+
             P "I didn't specify if they died."
+
+            show emily sheepish onlayer screens at scoot_mid_x
+            show ellie hiding onlayer screens at scoot_up
 
             E "I hope they're not dead."
 
+            show ellie hiding onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "I mean, they're not in real life."
 
-            C "Could be a slasher at our house right now."
+            show rosie stoned onlayer screens at scoot_mid
+            show caz sinister onlayer screens at scoot_up
+
+            C "Who knows? Could be a slasher at our house right now."
+
+            show rosie laughing onlayer screens
+            show caz sinister onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
 
             E "Nooo..."
 
         else: ###### C C E
 
+            show ellie excited onlayer screens at scoot_up
+
             E "I got a nice birthday party!"
+
+            show ellie excited onlayer screens at scoot_mid
+            show rosie skeptical onlayer screens at scoot_up
 
             R "You mean the \"Happy birthday! My friends are dead and there's a knife guy outside laughing at us!\" bit?"
 
+            show rosie skeptical onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
+
             E "But it wasn't a murder! It was fake blood, right?"
+
+            show ellie pouting onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens at scoot_up
 
             C "Yeah. That was totally a cop-out."
 
+            show caz eyeroll onlayer screens at scoot_mid
+
             "She glances over at you, unimpressed."
+
+            show ellie pouting onlayer screens at scoot_up
 
             E "Noooo it was a surprise so I didn't find out about the party..."
 
+            show ellie pouting onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "..."
+
+            show rosie laughing onlayer screens
 
             R "It was definitely a cop-out, lol."
 
+            show rosie laughing onlayer screens at scoot_mid
+            show caz onlayer screens at scoot_up
+
             C "Shame you couldn't commit to the party-slasher-horror setup."
+
+            show caz smirking onlayer screens at scoot_up
 
             C "Or maybe it's a double-bluff, and next the slasher comes in for real."
 
+            show caz sinister onlayer screens
+
             C "That'd be fun."
+
+            show caz sinister onlayer screens at scoot_mid
+            show ellie hiding onlayer screens at scoot_up
 
             E "Noooo that's not what it was going to be! Don't make me worry about a slasher."
 
+            show ellie scared onlayer screens
+            show caz smirking onlayer screens
+
             E "That wasn't the story, right?"
+
+            show ellie scared onlayer screens at scoot_mid
 
             P "..."
 
+            show emily sheepish onlayer screens at scoot_right
+
             P "...no, the murders were, uh. Pretend."
+
+            show emily sheepish onlayer screens at scoot_mid_x
+            show ellie pouting onlayer screens
+            show rosie skeptical onlayer screens
+            show caz eyeroll onlayer screens
 
             "Nobody really looks impressed at that compromise."
 
@@ -3445,108 +3548,232 @@ elif caz_score == 2: ################# caz majority
 
         if pizza:  ###### C C R
 
+            show rosie skeptical onlayer screens at scoot_up
+
             R "Yeah, just derailed by the pizza-murder ending."
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
 
             E "The saddest part..."
 
+            show rosie stoned onlayer screens at scoot_up
+            show ellie onlayer screens at scoot_mid
+
             R "So sad..."
+
+            show rosie stoned onlayer screens at scoot_mid
+            show caz smirking onlayer screens at scoot_up
 
             C "Sadder than your two friends getting stabbed?"
 
+            show caz onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
+
             R "They'd be sad about the pizza too!"
+
+            show rosie laughing onlayer screens at scoot_mid
+            show caz onlayer screens at scoot_up
 
             C "Hmmm."
 
+            show caz smirking onlayer screens
+
             C "I guess it's a good black comedy twist."
+
+            show caz smirking onlayer screens at scoot_mid
+            show emily sheepish onlayer screens
 
             "Yeah, that's totally what it was."
 
+            show caz reassuring onlayer screens at scoot_up
+
             C "A bit anticlimatic though."
+
+            show caz reassuring onlayer screens at scoot_mid
+            show emily sheepish onlayer screens at scoot_right
 
             P "Yeah, I guess."
 
         elif stoned: ##### C R C
 
+            show rosie skeptical onlayer screens at scoot_up
+
             R "How was it? You see a creepy guy, see your stoned friends, then I'm dead?"
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show caz sinister onlayer screens at scoot_up
 
             C "Yeah. Setup, distraction, payoff."
 
+            show caz reassuring onlayer screens
+
             C "Shame we don't see what happens to Jake and Amy."
+
+            show caz onlayer screens at scoot_mid
+            show ellie onlayer screens at scoot_up
 
             E "Or... whoever's meant to be the character..."
 
+            show ellie onlayer screens at scoot_mid
+            show emily sheepish onlayer screens
+
             "It was kinda muddled as to who the protagonist was..."
 
-            C "Yeha. I guess it's like an anti-drugs advert."
+            show caz smirking onlayer screens at scoot_up
 
-            P "Uhhh... yeah..."
+            C "Yeah. I guess it's like an anti-drugs advert."
+
+            show caz smirking onlayer screens at scoot_mid
+            show emily onlayer screens at scoot_right
+
+            P "Uhhh... yeah...?"
+
+            show emily onlayer screens at scoot_mid_x
+            show caz smirking onlayer screens at scoot_up
 
             C "Don't do drugs, kids! You'll wake up to your recording engineer dead by knife!"
 
+            show caz smirking onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "However will they record their EP without me..."
+
+            show rosie stoned at scoot_mid
+            show caz reassuring onlayer screens at scoot_up
 
             C "They'll be missing a certain spark, that's for sure."
 
+            show caz reassuring onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
+
             E "But it's not like {i}we{/i} took any - I mean, the protagonist... whoever they are."
+
+            show ellie pouting onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
 
             R "I mean, I probably did. It's implied."
 
+            show rosie laughing onlayer screens
+
             R "Heh. Impldied, you could say."
+
+            show ellie excited onlayer screens
+            show caz eyeroll onlayer screens
 
             "Ellie snorts at the bad pun."
 
-            C "God, you probably got knife-murdered for that level of pun."
+            show rosie laughing onlayer screens at scoot_mid
+            show caz smirking onlayer screens at scoot_up
+
+            C "God, you probably got knife-murdered because of that level of pun."
+
+            show caz smirking onlayer screens at scoot_mid
+            show rosie gremlin onlayer screens at scoot_up
 
             R "Hey, you love my jokes!"
+
+            show rosie gremlin onlayer screens at scoot_mid
+            show caz eyeroll onlayer screens
 
             "Caz looks unimpressed."
 
         else: ###### R C C
 
+            show rosie skeptical onlayer screens at scoot_up
+
             R "What do you mean? It was rock solid, even if I {i}died{/i}."
+
+            show rosie skeptical onlayer screens at scoot_mid
+            show caz onlayer screens at scoot_up
 
             C "I mean, the sofa death comes out of nowhere."
 
+            show caz eyeroll onlayer screens at scoot_up
+
             C "Just a few skeleton jumpscares beforehand."
+
+            show caz onlayer screens at scoot
+            show rosie skeptical onlayer screens at scoot_up
 
             R "That's, like, setting up misdirection, innit."
 
-            "You're glad that Rosie is covering for your inconsistent storytelling..."
+            show emily sheepish onlayer screens
+
+            "You're glad that Rosie is covering for your storytelling..."
+
+            show rosie stoned onlayer screens
 
             R "Funny, too..."
 
+            show rosie stoned onlayer screens at scoot_mid
+            show ellie pouting onlayer screens at scoot_up
+
             E "If you put up jumpscare skeletons this halloween, I'll scream..."
+
+            show ellie pouting onlayer screens at scoot_mid
+            show rosie gremlin onlayer screens at scoot_up
 
             R "Heh heh heh..."
 
-            C "Really, though, if [Emily] was going for a misdirection, there'd be {i}two{/i} of them to really sell it."
+            show rosie gremlin onlayer screens at scoot_mid
+            show caz reassuring onlayer screens at scoot_up
+
+            C "Really, though, if I was going for a misdirection, I'd have {i}two{/i} of them to really sell it."
+
+            show caz sinister onlayer screens
 
             C "A skeleton jumpscare, then - I don't know, something else, {i}then{/i} knife murder."
 
+            show caz sinister onlayer screens at scoot_mid
+            show emily onlayer screens at scoot_right
+
             P "..."
+
+            show emily sheepish onlayer screens
 
             P "Guess I'll remember that for next time..."
 
+            show emily sheepish onlayer screens at scoot_mid
+            show rosie stoned onlayer screens at scoot_up
+
             R "Hey, next storytime, maybe me and the band can {i}survive{/i}? Just a thought."
 
+            show rosie stoned onlayer screens at scoot_mid
+            show ellie onlayer screens at scoot_up
+
             E "Once upon a time, Rosie and the band didn't die. The end, happy ever after."
+
+            show ellie onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_up
 
             R "Thanks, El, that's perfect."
 
 else: ############### i don't think this should come up?
 
+    show rosie skeptical onlayer screens at scoot_up
+
     R "That was a fucking mess."
+
+    show rosie skeptical onlayer screens at scoot_mid
+    show caz eyeroll onlayer screens at scoot_up
 
     C "Indeed. So much so you're seeing text the writer didn't forsee you seeing."
 
+    show caz eyeroll onlayer screens at scoot_mid
+    show ellie pouting onlayer screens at scoot_up
+
     E "Awh don't make fun of them..."
+
+    show ellie pouting onlayer screens at scoot_mid
+    show rosie gremlin onlayer screens at scoot_up
 
     R "Lol."
 
 show rosie onlayer screens at scoot_mid
 show ellie onlayer screens at scoot_mid
 show caz onlayer screens at scoot_mid
-show emily onlayer screens at scoot_mid
+show emily onlayer screens at scoot_mid_x
 
 "Rosie blows out a breath and laughs briefly, stubbing her roach into the grass."
 
@@ -3555,7 +3782,7 @@ show rosie stoned onlayer screens at scoot_up
 R "Anyway, storytime over. Where's the snacks..."
 
 show rosie stoned onlayer screens at scoot_mid
-show caz reassure onlayer screens at scoot_up
+show caz reassuring onlayer screens at scoot_up
 
 C "They're in the tent."
 
