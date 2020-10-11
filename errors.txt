@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3174: expected 'simple_expression' not found.
-    show caz annoyed onlayer screens at 
-                                        ^
+File "game/options.rpy", line 74: expected statement.
+    renpy.music.register_channel("musicb", mixer="music", loop=True, stop_on_mute=False, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False, framedrop=True)
+                                                                                                                                                                                    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Oct 10 23:43:12 2020
+Sun Oct 11 13:34:11 2020

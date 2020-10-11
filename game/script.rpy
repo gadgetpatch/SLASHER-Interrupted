@@ -5,8 +5,35 @@
 
 ## Audio #######################################################################
 
-define config.main_menu_music = "audio/Slasher Campfire.mp3"
-# define config.game_menu_music = "audio/Slasher Campfire.mp3"
+init python:
+
+    renpy.music.register_channel("musicb", mixer="music", loop=True, stop_on_mute=False, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False, framedrop=True)
+
+define config.main_menu_music = "audio/campfire.mp3"
+## define config.game_menu_music = "audio/campfire.mp3"
+
+define audio.campfire = "audio/campfire.mp3"
+define audio.chewgum = "audio/chewgum.mp3"
+define audio.spooky = "audio/spooky.mp3"
+
+## story start
+
+# play music spooky loop fadein 1.0
+
+## on first play of chewgum
+
+# play musicb chewgum loop fadein 1.0
+
+## spooky fadeout
+# renpy.music.set_volume(0.0, delay=2, channel='music')
+## spooky fadein
+# renpy.music.set_volume(1.0, delay=2, channel='music')
+
+## chewgum fadeout
+# renpy.music.set_volume(0.0, delay=2, channel='musicb')
+## chewgum fadein
+# renpy.music.set_volume(1.0, delay=2, channel='musicb')
+
 
 ## Characters ##################################################################
 
@@ -204,6 +231,7 @@ show emily onlayer screens at hidden, left
 show rosie onlayer screens at hidden, audience_mid
 show ellie onlayer screens at hidden, audience_left
 show caz onlayer screens at hidden, audience_right
+play music spooky loop fadein 2.0
 
 "...everything feels smothered in darkness, just the faintest glow from the moon lighting up the edges of shapes."
 
@@ -220,8 +248,8 @@ E "Eeek!"
 show bg campfire onlayer background with dissolve
 show rosie laughing onlayer screens at opaque, scoot_up
 show ellie scared onlayer screens
-
-play music "audio/Freya Campbell - Coke and Chewing Gum.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+play musicb chewgum loop fadein 1.0
 
 R "IT'S A MONSTER, ELLIE! IT'S COMING TO GET YOU!"
 
@@ -257,9 +285,10 @@ show emily onlayer screens
 
 "You clear your throat and continue where you left off."
 
-nvl clear
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
-play music "audio/Slasher Dub.mp3"
+nvl clear
 
 show emily gendo onlayer screens
 show ellie onlayer screens at faded
@@ -282,7 +311,8 @@ P "When you reach the gate, the outdoor light triggers and illuminates the garde
 
 P "Disappearing behind a tree, you see..."
 
-play music "audio/Freya Campbell - Coke and Chewing Gum.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 show ellie excited onlayer screens at shown, scoot_up with vpunch
 
@@ -378,7 +408,8 @@ show caz onlayer screens at faded
 
 P "..."
 
-play music "audio/Slasher Dub.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 show bg tree onlayer background with dissolve
 
@@ -423,7 +454,8 @@ label choice_A_Rosie:
 hide screen choice_A
 nvl clear
 
-play music "audio/Slasher Dub.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 show bg tree onlayer background with dissolve
 
@@ -489,7 +521,8 @@ label choice_A_Caz:
 hide screen choice_A
 nvl clear
 
-play music "audio/Slasher Dub.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 show bg tree onlayer background with dissolve
 
@@ -558,9 +591,10 @@ P "The door closes with a creak - "
 
 show rosie stoned onlayer screens at opaque
 
-R "Oh come on, our door doesn't creak!"
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
-play music "audio/Freya Campbell - Coke and Chewing Gum.mp3"
+R "Oh come on, our door doesn't creak!"
 
 show bg campfire onlayer background with dissolve
 
@@ -605,7 +639,8 @@ show emily gendo onlayer screens
 
 P "Anyway..."
 
-play music "audio/Slasher Dub.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 show bg tree onlayer background with dissolve
 
@@ -634,7 +669,8 @@ show caz sinister onlayer screens at opaque
 
 C "They're dead..."
 
-play music "audio/Freya Campbell - Coke and Chewing Gum.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 show bg campfire onlayer background with dissolve
 
@@ -681,7 +717,8 @@ show ellie onlayer screens at faded
 show rosie onlayer screens at faded
 show caz onlayer screens at faded
 
-#play music "audio/Slasher Dub.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "As you get closer to check the bodies, one of them gently snores."
 
@@ -700,10 +737,11 @@ show ellie excited onlayer screens at scoot_up
 E "Awwwh..."
 
 show ellie pouting onlayer screens
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 E "I want that..."
 
-#play music "audio/Freya Campbell - Coke and Chewing Gum.mp3"
 show emily interrupted onlayer screens at opaque
 show rosie gremlin onlayer screens at scoot_up
 show ellie onlayer screens at scoot_mid
@@ -721,11 +759,12 @@ P "..."
 
 show emily interrupted onlayer screens
 
-"You keep quiet so as not to disturb them."
+P "You keep quiet so as not to disturb them."
 
 "Eventually, everyone shuts up again and listens."
 
-play music "audio/Slasher Dub.mp3"
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 show emily gendo onlayer screens
 
@@ -786,6 +825,9 @@ if rosie_score > 1:
     "You look at Rosie, and play along with her ideas again."
 else:
     "You look at Rosie, and pick her idea to run with this time."
+
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 show emily gendo onlayer screens
 
@@ -870,6 +912,8 @@ show emily onlayer screens
 
 P "..."
 
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 show emily gendo onlayer screens
 
 P "You keep quiet so as not to disturb them."
@@ -938,6 +982,8 @@ show ellie onlayer screens at faded
 show rosie onlayer screens at faded
 show caz onlayer screens at faded
 show emily gendo onlayer screens
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "You step closer to the sofa, and every step causes a sick feeling in your stomach to rise."
 
@@ -957,6 +1003,8 @@ E "Eeeek..."
 
 show ellie hiding onlayer screens at scoot_down
 show caz onlayer screens at scoot_up
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 C "Who's 'two friends' meant to be?"
 
@@ -1014,6 +1062,8 @@ show emily sheepish onlayer screens
 P "..."
 
 show emily interrupted onlayer screens at scoot_right
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "So, your two named friends are dead on the sofa - "
 
@@ -1056,6 +1106,8 @@ show emily gendo onlayer screens
 show ellie scared onlayer screens at faded
 show rosie stoned onlayer screens at faded
 show caz sinister onlayer screens at faded
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "You stare at the kitchen door, a grim sense of foreboding rooting you to the spot."
 
@@ -1105,6 +1157,8 @@ P "With one quick movement, you snap the handle down and push the door open, to 
 play music "audio/Freya Campbell - Coke and Chewing Gum.mp3"
 
 show bg campfire onlayer background with dissolve
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 show caz sinister onlayer screens at scoot_up
 
@@ -1153,6 +1207,9 @@ show caz onlayer screens at scoot_mid
 
 $ ellie_score += 1
 
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
+
 if ellie_score > 2:
     "Well, you've committed to Ellie's ideas already."
 
@@ -1173,6 +1230,8 @@ else:
         "This story is a lost cause by now."
 
 show emily gendo onlayer screens
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "As you open the door, there's a bang, and you close your eyes in shock."
 
@@ -1189,6 +1248,8 @@ show ellie excited onlayer screens at scoot_up with vpunch
 E "...!"
 
 show ellie onlayer screens at scoot_mid
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 P "Rosie yells {i}Surprise! It's your birthday!{/i}"
 
@@ -1329,6 +1390,9 @@ else:
 
         "This story is a lost cause by now."
 
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
+
 P "As you open the door, a bad smell hits your nose and you reel backwards a step."
 
 P "The kitchen is filled with black smoke, spilling out in clouds from the edge of the oven door."
@@ -1349,6 +1413,8 @@ R "Nooo..."
 
 show rosie stoned onlayer screens at scoot_mid
 show ellie pouting onlayer screens at scoot_up
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 E "F in the chat..."
 
@@ -1385,6 +1451,8 @@ show caz smirking onlayer screens
 "Caroline rolls her eyes, but you catch a glimpse of her smiling." 
 
 show emily sheepish onlayer screens
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "..."
 
@@ -1395,6 +1463,9 @@ P "You cough at the pizza smoke, and hunt around for gloves to take it out."
 show emily gendo onlayer screens
 
 P "With the blackened disk now sat on the counter, the kitchen feels like a crime scene."
+
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 if death: 
 
@@ -1477,6 +1548,9 @@ show caz onlayer screens at scoot_mid
 
 $ caz_score += 1
 
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
+
 if caz_score > 2:
     "Alright, stick to your horror guns."
 
@@ -1517,6 +1591,8 @@ show emily gendo onlayer screens
 P "You only have a moment to take in the body on the floor, the blood seeping out of them - "
 
 show rosie gremlin onlayer screens at scoot_up
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 R "Who is it? Who's dead??"
 
@@ -1556,6 +1632,8 @@ show emily gendo onlayer screens
 show rosie stoned onlayer screens at faded
 show ellie onlayer screens at faded
 show caz onlayer screens at faded
+$ renpy.music.set_volume(0.0, delay=1, channel='musicb')
+$ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "The figure looks up from Rosie's bleeding corpse - "
 
@@ -1632,6 +1710,8 @@ P "Everything goes black for a second, then you wrench your eyes open again, jus
 show ellie hiding onlayer screens at scoot_up
 
 E "Eeeeek okay we're dead let's stop there please..."
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 show ellie hiding onlayer screens at scoot_mid
 show caz sinister onlayer screens at scoot_up
@@ -1659,6 +1739,8 @@ P "Well, that's it. The end."
 
 show emily onlayer screens
 show ellie excited onlayer screens at opaque
+$ renpy.music.set_volume(0.0, delay=1, channel='music')
+$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 "Ellie claps excitedly for a few seconds, beaming at you."
 

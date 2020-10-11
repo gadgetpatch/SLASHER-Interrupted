@@ -66,8 +66,7 @@ define config.has_voice = False
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
-
+define config.main_menu_music = "audio/campfire.mp3"
 
 ## Transitions #################################################################
 ##
@@ -199,6 +198,10 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
+    ## im sticking the music definitions here cos it seems right
+    ## use musicb for interruptions and music for the spooky theme
+
+
 
 ## A Google Play license key is required to download expansion files and perform
 ## in-app purchases. It can be found on the "Services & APIs" page of the Google
@@ -211,3 +214,4 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
