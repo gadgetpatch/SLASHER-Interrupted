@@ -3429,7 +3429,7 @@ elif caz_score == 2: ################# caz majority
             E "It's so back and forth..."
 
             show ellie pouting onlayer screens at scoot_mid
-            show caz smirking onlayer screens at scoot_up`
+            show caz smirking onlayer screens at scoot_up
 
             C "Everyone knows the couple who make out die in a horror film."
 

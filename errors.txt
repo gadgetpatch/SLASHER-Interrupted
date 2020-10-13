@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 74: expected statement.
-    renpy.music.register_channel("musicb", mixer="music", loop=True, stop_on_mute=False, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                                                                    ^
+File "game/script.rpy", line 3432: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ` at the end of the first line.)
+                show caz smirking onlayer screens at scoot_up`
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Oct 11 13:34:11 2020
+Tue Oct 13 18:14:43 2020
