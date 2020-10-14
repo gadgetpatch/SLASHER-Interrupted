@@ -70,6 +70,7 @@ style input:
 style hyperlink_text:
     properties gui.text_properties("hyperlink", accent=True)
     hover_underline True
+    font gui.interface_text_font
 
 style gui_text:
     properties gui.text_properties("interface")
@@ -411,6 +412,7 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
+    size 64
     properties gui.button_text_properties("navigation_button")
 
 
@@ -643,7 +645,7 @@ style about_label_text is gui_label_text
 style about_text is gui_text
 
 style about_label_text:
-    size gui.label_text_size
+    size 56
 
 ## Load and Save screens #######################################################
 ##
@@ -918,9 +920,10 @@ style pref_label:
 
 style pref_label_text:
     yalign 1.0
+    size 48
 
 style pref_vbox:
-    xsize 338
+    xsize 480
 
 style radio_vbox:
     spacing gui.pref_button_spacing
@@ -1146,7 +1149,7 @@ screen mouse_help():
         text _("Accesses the game menu.")
 
     hbox:
-        label _("Mouse Wheel Up\nClick Rollback Side")
+        label _("Mouse Wheel Up")
         text _("Rolls back to earlier dialogue.")
 
     hbox:
@@ -1202,7 +1205,7 @@ style help_label:
     right_padding 30
 
 style help_label_text:
-    size gui.text_size
+    size 48
     xalign 1.0
     text_align 1.0
 
