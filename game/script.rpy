@@ -15,6 +15,7 @@ define config.main_menu_music = "audio/campfire.mp3"
 define audio.campfire = "audio/campfire.mp3"
 define audio.chewgum = "audio/chewgum.mp3"
 define audio.spooky = "audio/spooky.mp3"
+define audio.guitar = "audio/guitar.mp3"
 
 ## story start
 
@@ -1774,10 +1775,14 @@ P "Well, that's it. The end."
 
 show emily onlayer screens
 show ellie excited onlayer screens at scoot_up
-$ renpy.music.set_volume(0.0, delay=1, channel='music')
-$ renpy.music.set_volume(1.0, delay=2, channel='musicb')
+$ renpy.music.set_volume(0.0, delay=3, channel='musicb')
+play music guitar loop fadein 0.5
+$ renpy.music.set_volume(1.0, delay=1, channel='music')
 
 "Ellie claps excitedly for a few seconds, beaming at you."
+
+play musicb campfire loop fadein 0.5
+$ renpy.music.set_volume(1.0, delay=1, channel='musicb')
 
 show rosie stoned onlayer screens at scoot_up
 

@@ -633,7 +633,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("A campfire horror story interrupted by your friends.\n\nMade with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("A campfire horror story interrupted by your girlfriends.\n\nMade for the {a=https://store.steampowered.com/curator/38713864}10mg Collection{/a}. \n\nFreya would like to thank her patreon supporters:\n80percentrelatable, MKhan, Mathias, Abbi, and Rumpel.\n\nMade with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 ## This is redefined in options.rpy to add text to the about screen.

@@ -1,11 +1,7 @@
 button SFX
-3rd audio track
+
 install instructions
-patreon credits
+
 sprite animations pass 2
+
 BGs ver 2
-itchio screenshots
-longer itchio description / external links
-itchio twitter etc images
-gif for twitter
-Write In-Game About/Credits page for Main Menu (links etc)
