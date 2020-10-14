@@ -1,30 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 313, in script
-    
-  File "game/script.rpy", line 313, in <module>
-    
-Exception: Audio channel u'musica' is unknown.
+  File "game/script.rpy", line 3696, in script
+    show caz onlayer screens at scoot
+  File "game/script.rpy", line 3696, in <module>
+    show caz onlayer screens at scoot
+NameError: name 'scoot' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 313, in script
-    
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 313, in <module>
-    
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\audio\music.py", line 433, in set_volume
-    c = renpy.audio.audio.get_channel(channel)
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\audio\audio.py", line 821, in get_channel
-    raise Exception("Audio channel %r is unknown." % name)
-Exception: Audio channel u'musica' is unknown.
+  File "game/script.rpy", line 3696, in script
+    show caz onlayer screens at scoot
+  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\ast.py", line 1183, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\ast.py", line 1142, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 3696, in <module>
+    show caz onlayer screens at scoot
+NameError: name 'scoot' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 SLASHER, Interrupted 1.0
-Sun Oct 11 13:59:19 2020
+Tue Oct 13 23:55:23 2020

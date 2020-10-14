@@ -326,7 +326,7 @@ E "A kitty!"
 
 show rosie skeptical onlayer screens at scoot_up
 
-R "Hahahah what!? It's not gonna be a cat!"
+R "Hahahah, what? It's not gonna be a cat!"
 
 show emily onlayer screens at opaque
 show ellie pouting flip onlayer screens at scoot_right
@@ -469,16 +469,18 @@ $ rosie_score += 1
 P "A shape sways in the wind..."
 
 show ellie onlayer screens at faded
-show rosie stoned onlayer screens
 show caz onlayer screens at faded
+show rosie onlayer screens at faded
+
+P "Dangling from a tree, the light catches the edge of plastic bones and wires."
+
+show rosie stoned onlayer screens at shown
 
 R "Yesssss."
 
 show rosie onlayer screens at faded
 
-P "Dangling from a tree, the light catches the edge of plastic bones and wires;"
-
-P "the grinning face of a skeleton, hung up for the long month of October."
+P "Facing you is the grinning face of a skeleton, hung up for the long month of October."
 
 P "It sways back and forth gently in the wind, arms rattling quietly as the joints click."
 
@@ -504,7 +506,7 @@ show rosie onlayer screens at faded
 
 P "The sound is cheap and tinny, coming from a tiny speaker, the distortion creepy and manic."
 
-P "It turns off after a second, as you move your hand away from whatever infrared things triggered it, but the eye sockets still seem to bore into you."
+P "It turns off after a second, as you move your hand away from whatever infrared beam triggered it, but the eye sockets still seem to bore into you."
 
 P "Between the two plastic skeletons, you feel unnerved; the feeling of being watched remains."
 
@@ -904,7 +906,7 @@ show caz eyeroll onlayer screens
 
 show rosie stoned onlayer screens at scoot_up
 
-R "Sorry, Em. Uhhhhh Jake and Amy are stoned on the sofa, then what."
+R "Sorry, [Emily]. Uhhhhh Jake and Amy are stoned on the sofa, then what."
 
 show rosie onlayer screens at scoot_mid
 show caz onlayer screens
@@ -937,7 +939,7 @@ show caz onlayer screens at faded
 
 P "...as you hesitate, you hear another noise behind you."
 
-show ellie hiding at shown
+show ellie hiding onlayer screens at shown
 
 E "Oh no..."
 
@@ -1153,8 +1155,6 @@ P "One hand on the handle, you glance back at the sofa, and swallow."
 P "Whatever's in the kitchen, you're facing it on your own."
 
 P "With one quick movement, you snap the handle down and push the door open, to see - "
-
-play music "audio/Freya Campbell - Coke and Chewing Gum.mp3"
 
 show bg campfire onlayer background with dissolve
 $ renpy.music.set_volume(0.0, delay=1, channel='music')
@@ -2060,7 +2060,7 @@ show ellie onlayer screens
 
 show rosie stoned onlayer screens at scoot_up
 
-R "Hey, Em, I liked the jokes. S'good."
+R "Hey, [Emily], I liked the jokes. S'good."
 
 show rosie stoned onlayer screens at scoot_mid
 show emily satisfied onlayer screens at scoot_right
@@ -2118,7 +2118,7 @@ show emily onlayer screens at faded
 
 "..."
 
-"Rosie ending."
+R "Rosie ending."
 
 return
 
@@ -2246,7 +2246,7 @@ show caz eyeroll onlayer screens at scoot_mid
 
 show rosie skeptical onlayer screens at scoot_up
 
-R "Whatever. Em, you gotta throw in more jokes next time, they're like, the best bit in horror."
+R "Whatever. [Emily], you gotta throw in more jokes next time, they're like, the best bit in horror."
 
 show rosie skeptical onlayer screens at scoot_mid
 show caz annoyed onlayer screens at scoot_up
@@ -2272,17 +2272,17 @@ show emily onlayer screens at faded
 
 "..."
 
-"Caz ending"
+C "Caz ending"
 
 return
 
 label ending_mix:
 
-show ellie scared onlayer screens at scoot_up
+show ellie onlayer screens at scoot_up
 
 E "That was... ummm..."
 
-show ellie scared onlayer screens at scoot_mid
+show ellie onlayer screens at scoot_mid
 show rosie skeptical onlayer screens at scoot_up
 
 R "Bit of a change in tone."
@@ -2712,7 +2712,7 @@ elif ellie_score == 2: ####################### ellie majority
 
         "She gestures around to the mostly-empty campsite, the wind making only slightly less noise than in the story."
 
-        show caz eyroll onlayer screens at scoot_up
+        show caz eyeroll onlayer screens at scoot_up
 
         C "And you got two people stoned on your sofa."
 
@@ -2932,7 +2932,7 @@ elif rosie_score == 2: ################ rosie majority
     R "I liked that it was mostly kinda funny."
 
     show rosie onlayer screens at scoot_mid
-    show reassuring onlayer screens at scoot_up
+    show caz reassuring onlayer screens at scoot_up
 
     C "A regular stoner comedy."
 
@@ -3224,7 +3224,7 @@ elif rosie_score == 2: ################ rosie majority
 
             E "The kitty was nice!"
 
-            show ellei excited onlayer screens
+            show ellie excited onlayer screens
 
             E "Don't you like saying hi to a cat?"
 
@@ -3275,7 +3275,7 @@ elif rosie_score == 2: ################ rosie majority
             show ellie scared onlayer screens at scoot_mid
             show emily sheepish onlayer screens
 
-            "It <i>was</i> a bit out of place..."
+            "It {i}was{/i} a bit out of place..."
 
             show caz sinister onlayer screens at scoot_up
 
@@ -3693,7 +3693,7 @@ elif caz_score == 2: ################# caz majority
 
             C "Just a few skeleton jumpscares beforehand."
 
-            show caz onlayer screens at scoot
+            show caz onlayer screens at scoot_mid
             show rosie skeptical onlayer screens at scoot_up
 
             R "That's, like, setting up misdirection, innit."
@@ -3786,7 +3786,7 @@ show caz reassuring onlayer screens at scoot_up
 
 C "They're in the tent."
 
-show caz reassure onlayer screens at scoot_mid
+show caz reassuring onlayer screens at scoot_mid
 show ellie excited onlayer screens at scoot_up
 
 E "Ooh, get me some too!"
@@ -3811,7 +3811,7 @@ show emily sheepish onlayer screens
 
 "Maybe you could've told it a bit more consistently..."
 
-show rosie onlayer screens at scoot_mid,faded
+show rosie onlayer screens at faded
 
 "But it seemed like a good idea to try and please everyone."
 
