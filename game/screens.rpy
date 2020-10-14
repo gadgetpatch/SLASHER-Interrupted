@@ -16,9 +16,9 @@ screen choice_A():
         xpos 480
         ypos 315
         spacing 0
-        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_A"), Jump("choice_A_Ellie") ] at bob_A
-        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_A"), Jump("choice_A_Rosie") ] at bob_B
-        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_A"), Jump("choice_A_Caz") ] at bob_C
+        imagebutton auto "gui/btn_ellie_%s.png" hovered Play("sound", "audio/sfx_hover_A.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_A"), Jump("choice_A_Ellie") ] at bob_A
+        imagebutton auto "gui/btn_rosie_%s.png" hovered Play("sound", "audio/sfx_hover_B.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_A"), Jump("choice_A_Rosie") ] at bob_B
+        imagebutton auto "gui/btn_caz_%s.png" hovered Play("sound", "audio/sfx_hover_C.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_A"), Jump("choice_A_Caz") ] at bob_C
 
 screen choice_B():
     tag chooser
@@ -29,9 +29,9 @@ screen choice_B():
         xpos 480
         ypos 315
         spacing 0
-        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_B"), Jump("choice_B_Ellie") ] at bob_A
-        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_B"), Jump("choice_B_Rosie") ] at bob_B
-        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_B"), Jump("choice_B_Caz") ] at bob_C
+        imagebutton auto "gui/btn_ellie_%s.png" hovered Play("sound", "audio/sfx_hover_A.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_B"), Jump("choice_B_Ellie") ] at bob_A
+        imagebutton auto "gui/btn_rosie_%s.png" hovered Play("sound", "audio/sfx_hover_B.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_B"), Jump("choice_B_Rosie") ] at bob_B
+        imagebutton auto "gui/btn_caz_%s.png" hovered Play("sound", "audio/sfx_hover_C.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_B"), Jump("choice_B_Caz") ] at bob_C
 
 screen choice_C():
     tag chooser
@@ -42,9 +42,9 @@ screen choice_C():
         xpos 480
         ypos 315
         spacing 0
-        imagebutton auto "gui/btn_ellie_%s.png" action [ Hide("choice_C"), Jump("choice_C_Ellie") ] at bob_A
-        imagebutton auto "gui/btn_rosie_%s.png" action [ Hide("choice_C"), Jump("choice_C_Rosie") ] at bob_B
-        imagebutton auto "gui/btn_caz_%s.png" action [ Hide("choice_C"), Jump("choice_C_Caz") ] at bob_C
+        imagebutton auto "gui/btn_ellie_%s.png" hovered Play("sound", "audio/sfx_hover_A.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_C"), Jump("choice_C_Ellie") ] at bob_A
+        imagebutton auto "gui/btn_rosie_%s.png" hovered Play("sound", "audio/sfx_hover_B.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_C"), Jump("choice_C_Rosie") ] at bob_B
+        imagebutton auto "gui/btn_caz_%s.png" hovered Play("sound", "audio/sfx_hover_C.mp3") action [ Play("sound", "audio/sfx_confirm.mp3"), Hide("choice_C"), Jump("choice_C_Caz") ] at bob_C
 
 #screen ctc(arg=None):
 
@@ -283,6 +283,7 @@ style choice_vbox:
     spacing gui.choice_spacing
 
 style choice_button is default:
+    activate_sound "audio/hover.mp3"
     properties gui.button_properties("choice_button")
 
 style choice_button_text is default:
@@ -310,9 +311,9 @@ screen quick_menu():
             ypos 0.03333333
             xspacing 64
 
-            imagebutton auto _("gui/btn_settings_%s.png") action ShowMenu('preferences')
-            imagebutton auto _("gui/btn_back_%s.png") action Rollback()
-            imagebutton auto _("gui/btn_forward_%s.png") action Preference("auto-forward", "toggle")
+            imagebutton auto _("gui/btn_settings_%s.png") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu('preferences') ]
+            imagebutton auto _("gui/btn_back_%s.png") action [ Play("sound", "audio/sfx_hover.mp3"), Rollback() ]
+            imagebutton auto _("gui/btn_forward_%s.png") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("auto-forward", "toggle") ]
             #textbutton _("Forward") action RollForward()
             #textbutton _("History") action ShowMenu('history')
             #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
@@ -361,17 +362,17 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start") action [ Play("sound", "audio/sfx_hover.mp3"), Start() ]
 
             ## textbutton _("Save") action ShowMenu("save")
 
             ## textbutton _("Load") action ShowMenu("load")
 
-            textbutton _("Settings") action ShowMenu("preferences")
+            textbutton _("Settings") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("preferences") ]
 
-            textbutton _("Credits") action ShowMenu("about")
+            textbutton _("Credits") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("about") ]
 
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Help") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("help") ]
 
         else:
 
@@ -381,17 +382,17 @@ screen navigation():
 
             ## textbutton _("Load") action ShowMenu("load")
 
-            textbutton _("Settings") action ShowMenu("preferences")
+            textbutton _("Settings") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("preferences") ]
 
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Help") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("help") ]
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("End Replay") action [ Play("sound", "audio/sfx_hover.mp3"), EndReplay(confirm=True) ]
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Main Menu") action [ Play("sound", "audio/sfx_hover.mp3"), MainMenu() ]
 
         #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -402,7 +403,7 @@ screen navigation():
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action [ Play("sound", "audio/sfx_hover.mp3"), Quit(confirm=not main_menu) ]
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -545,8 +546,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Return"):
         style "return_button"
-
-        action Return()
+        action [ Play("sound", "audio/sfx_hover.mp3"), Return() ]
 
     label title
 
@@ -813,11 +813,11 @@ screen preferences():
                 vbox:
                     style_prefix "radio"
                     label _("Size")
-                    textbutton _("Fullscreen") action Preference("display", "toggle")
-                    textbutton _("Tiny (540p)") action Preference("display", 0.5)
-                    textbutton _("Small (720p)") action Preference("display", 0.66666667)
-                    textbutton _("Medium (900p)") action Preference("display", 0.83333333)
-                    textbutton _("Large (1080p)") action Preference("display", 1)
+                    textbutton _("Fullscreen") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", "toggle") ]
+                    textbutton _("Tiny (540p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 0.5) ]
+                    textbutton _("Small (720p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 0.66666667) ]
+                    textbutton _("Medium (900p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 0.83333333) ]
+                    textbutton _("Large (1080p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 1) ]
 
                 ##vbox:
                     ##style_prefix "radio"
@@ -1249,8 +1249,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Yes") action [ Play("sound", "audio/sfx_hover.mp3"), yes_action ]
+                textbutton _("No") action [ Play("sound", "audio/sfx_hover.mp3"), no_action ]
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
