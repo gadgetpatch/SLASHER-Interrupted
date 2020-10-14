@@ -370,7 +370,7 @@ screen navigation():
 
             textbutton _("Settings") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("preferences") ]
 
-            textbutton _("Credits") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("about") ]
+            textbutton _("About") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("about") ]
 
             textbutton _("Help") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("help") ]
 
@@ -383,6 +383,8 @@ screen navigation():
             ## textbutton _("Load") action ShowMenu("load")
 
             textbutton _("Settings") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("preferences") ]
+
+            textbutton _("About") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("about") ]
 
             textbutton _("Help") action [ Play("sound", "audio/sfx_hover.mp3"), ShowMenu("help") ]
 
@@ -633,7 +635,19 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("A campfire horror story interrupted by your girlfriends.\n\nMade for the {a=https://store.steampowered.com/curator/38713864}10mg Collection{/a}. \n\nFreya would like to thank her patreon supporters:\n80percentrelatable, MKhan, Mathias, Abbi, and Rumpel.\n\nMade with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("A campfire horror story interrupted by your girlfriends.\n\nMade for the {a=https://store.steampowered.com/curator/38713864}10mg Collection{/a}, by SOFTERROR INTERACTIVE:")
+            text _("{a=https://communistsister.itch.io/}Freya Campbell{/a} (Writing & Music) \n{a=https://gadgetpatch.itch.io/}Dana Holdampf{/a} (Art & Scripting)"):
+                at transform:
+                    align (0.05, 0.5)
+            text _("\nFreya would like to thank her Patreon supporters:")
+            text _("80percentrelatable \nMKhan \nMathias \nAbbi \nRumpel"):
+                at transform:
+                    align (0.05, 0.5)
+            text _("\nDana would also like to thank her Patreon supporters:")
+            text _("Andrea Feather \nAsh Barker \nAyo \nBen Bruce \nCatherine Conspiracy \nGail Frisbee \nHorvath Peter \nManu \nMichael Klamerus \nOwen Crute \nRed \nRobust Laser"):
+                at transform:
+                    align (0.05, 0.5)
+            text _("\nMade with {a=https://www.renpy.org/}Ren`Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
@@ -645,7 +659,7 @@ style about_label_text is gui_label_text
 style about_text is gui_text
 
 style about_label_text:
-    size 56
+    size 52
 
 ## Load and Save screens #######################################################
 ##
