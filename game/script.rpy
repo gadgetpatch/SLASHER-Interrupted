@@ -1685,7 +1685,7 @@ show caz sinister onlayer screens at scoot_up
 
 C "Go for the eyes!"
 
-show caz sinister Os at scoot_mid
+show caz sinister onlayer screens at scoot_mid
 show ellie hiding onlayer screens at scoot_up
 
 E "Run away!"
@@ -2359,23 +2359,24 @@ if ellie_score == caz_score: ####################### equal results
 
     if death: ##### Caz middle
 
-        show caz smirking onlayer screens
+        show caz smirking onlayer screens at scoot_left
 
         C "An impressively compromised story."
 
-        show caz smirking onlayer screens at scoot_mid
-        show rosie skeptical onlayer screens at scoot_up
+        show caz smirking onlayer screens
+        show rosie skeptical flip onlayer screens at scoot_up
 
         R "Yeah, a cute scene, a funny scene, and a dual fuckin' murder."
 
-        show rosie skeptical onlayer screens at scoot_mid
-        show caz onlayer screens
-        show ellie onlayer screens at scoot_up
+        show rosie skeptical flip onlayer screens at scoot_mid
+        show caz onlayer screens at scoot_mid
+        show ellie flip onlayer screens at scoot_up
 
         E "The three elements..."
 
-        show ellie onlayer screens at scoot_mid
+        show ellie flip onlayer screens at scoot_mid
         show rosie laughing onlayer screens at scoot_up
+        show caz smirking onlayer screens
 
         R "Gasp! Jake and Amy were killed by a knife-bender!"
 
@@ -2388,7 +2389,7 @@ if ellie_score == caz_score: ####################### equal results
             R "And worse, a pizza was murdered, too..."
 
             show rosie stoned onlayer screens at scoot_mid
-            show ellie onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             E "So sad..."
 
@@ -2404,7 +2405,7 @@ if ellie_score == caz_score: ####################### equal results
             C "Sadder than your two friends getting stabbed?"
 
             show caz onlayer screens at scoot_mid
-            show rosie gremlin onlayer screens at scoot_up
+            show rosie gremlin flip onlayer screens at scoot_up
 
             R "They'd be sad about the pizza too!"
 
@@ -2421,11 +2422,11 @@ if ellie_score == caz_score: ####################### equal results
             C "That was totally a cop-out."
 
             show caz eyeroll onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "Noooo it was a surprise so I didn't find out about the party..."
 
-            show ellie pouting onlayer screens at scoot_mid
+            show ellie pouting flip onlayer screens at scoot_mid
             show caz onlayer screens
             show rosie skeptical onlayer screens
 
@@ -2447,11 +2448,11 @@ if ellie_score == caz_score: ####################### equal results
         R "Yeah, a cute scene, a funny scene, but then a creepy guy with a knife."
 
         show rosie skeptical onlayer screens at scoot_mid
-        show ellie scared onlayer screens at scoot_up
+        show ellie scared flip onlayer screens at scoot_up
 
         E "I mean... I've been afraid of killers when stoned..."
 
-        show ellie scared onlayer screens at scoot_mid
+        show ellie scared flip onlayer screens at scoot_mid
         show rosie stoned onlayer screens at scoot_up
 
         R "Yeah, guess it's accurate."
@@ -2475,16 +2476,17 @@ if ellie_score == caz_score: ####################### equal results
             C "Oh come on, the tone was setting it up."
 
             show caz onlayer screens at scoot_mid
-            show rosie skeptical onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_up
 
             R "See a kitty, see your stoned friends, {i}get killed by a knife guy??!{/i}"
 
-            show rosie skeptical onlayer screens at scoot_mid
+            show rosie skeptical flip onlayer screens at scoot_mid
             show emily sheepish onlayer screens 
 
             "You do have to admit, it kinda came out of nowhere."
 
             show emily sheepish onlayer screens 
+            show rosie skeptical onlayer screens at scoot_mid
 
             P "I was trying to get back on track..."
 
@@ -2510,11 +2512,12 @@ if ellie_score == caz_score: ####################### equal results
             C "This was simply the setup, of course."
 
             show caz sinister onlayer screens
+            show rosie skeptical flip onlayer screens at scoot_mid
 
             C "For a grisly birthday-party slasher murder..."
 
             show caz sinister onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "Noooooo they were just..."
 
@@ -2534,16 +2537,16 @@ if ellie_score == caz_score: ####################### equal results
 
     else: ###### Ellie middle
 
-        show rosie skeptical onlayer screens at scoot_up
+        show rosie skeptical flip onlayer screens at scoot_up
 
         R "Yeah, a cute couple oblivious to the horror around them..."
 
         show rosie skeptical onlayer screens at scoot_mid
-        show ellie onlayer screens at scoot_up
+        show ellie flip onlayer screens at scoot_up
 
         E "Well... I've been like that before..."
 
-        show ellie onlayer screens at scoot_mid
+        show ellie flip onlayer screens at scoot_mid
         show rosie laughing onlayer screens at scoot_up
 
         R "You've ignored a {i}creepy guy with a knife{/i} whilst cuddling?"
@@ -2567,11 +2570,11 @@ if ellie_score == caz_score: ####################### equal results
             C "You're talking about the pizza, aren't you."
 
             show caz onlayer screens at scoot_mid
-            show ellie onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             E "So sad..."
 
-            show ellie onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
             show rosie laughing onlayer screens at scoot_up
 
             R "So sad!"
@@ -2584,17 +2587,18 @@ if ellie_score == caz_score: ####################### equal results
             show caz onlayer screens at scoot_mid
             show rosie stoned onlayer screens
             show emily sheepish onlayer screens at scoot_right
+            show ellie onlayer screens at scoot_mid
 
             P "Uhhh..."
 
             show emily sheepish onlayer screens at scoot_mid_x
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "He murdered the pizza!"
 
             show emily satisfied onlayer screens
-            show rosie stoned onlayer screens at scoot_mid
-            show ellie hiding onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_mid
+            show ellie hiding flip onlayer screens at scoot_up
 
             E "Oh no!"
 
@@ -2603,7 +2607,7 @@ if ellie_score == caz_score: ####################### equal results
 
             R "Oh no!"
 
-            show rosie laughing Os at scoot_mid
+            show rosie laughing onlayer screens at scoot_mid
             show caz eyeroll onlayer screens
 
             "Caz looks unimpressed."
@@ -2611,16 +2615,16 @@ if ellie_score == caz_score: ####################### equal results
         else:
         ###### Rosie -> Ellie -> Caz
 
-            show rosie onlayer screens at scoot_up
+            show rosie flip onlayer screens at scoot_up
 
             R "Yeah, well, your ignorance led to my {i}death{/i}."
 
             show rosie onlayer screens at scoot_mid
-            show ellie scared onlayer screens at scoot_up
+            show ellie scared flip onlayer screens at scoot_up
 
             E "And ours!"
 
-            show ellie scared onlayer screens at scoot_mid
+            show ellie scared flip onlayer screens at scoot_mid
             show rosie skeptical onlayer screens at scoot_up
 
             R "Yeah! So much death outta nowhere! Talk about no foreshadowing!"
@@ -2631,11 +2635,11 @@ if ellie_score == caz_score: ####################### equal results
             C "Oh come on, the tone was setting it up."
 
             show caz onlayer screens at scoot_mid
-            show rosie laughing onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_up
 
             R "See a creepy skeleton, see your friends cuddling, {i}get killed by a knife guy??!{/i}"
 
-            show rosie laughing onlayer screens at scoot_mid
+            show rosie laughing flip onlayer screens at scoot_mid
 
             "You do have to admit, it kinda came out of nowhere."
 
@@ -2653,7 +2657,7 @@ if ellie_score == caz_score: ####################### equal results
 elif ellie_score == 2: ####################### ellie majority
 
     show emily onlayer screens at scoot_mid_x
-    show caz  onlayer screens at scoot_mid
+    show caz onlayer screens at scoot_mid
     show rosie onlayer screens at scoot_mid
     show ellie onlayer screens at scoot_up
 
@@ -2667,7 +2671,7 @@ elif ellie_score == 2: ####################### ellie majority
         R "Yeah, you got a cute cuddly couple and a birthday."
 
         show rosie stoned onlayer screens at scoot_mid
-        show ellie hiding onlayer screens at scoot_up
+        show ellie hiding flip onlayer screens at scoot_up
 
         E "It was nice! I didn't want to hear a scary story before we go to sleep, it's so... spooky out here."
 
@@ -2687,7 +2691,7 @@ elif ellie_score == 2: ####################### ellie majority
             C "Who puts them up for {i}birthdays{/i}?"
 
             show caz onlayer screens at scoot_mid
-            show rosie gremlin onlayer screens at scoot_up
+            show rosie gremlin flip onlayer screens at scoot_up
 
             R "Spooky people! Spooky birthdays!"
 
@@ -2697,7 +2701,7 @@ elif ellie_score == 2: ####################### ellie majority
             C "But it's August!"
 
             show caz onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "I'm not spooky, either..."
 
@@ -2713,17 +2717,18 @@ elif ellie_score == 2: ####################### ellie majority
             R "Just don't think about the creepy knife guy outside."
 
             show rosie stoned onlayer screens at scoot_mid
-            show ellie scared onlayer screens at scoot_up
+            show ellie scared flip onlayer screens at scoot_up
 
             E "...well NOW I'm thinking about them!"
 
-            show ellie scared onlayer screens at scoot_mid
+            show ellie scared flip onlayer screens at scoot_mid
             show emily sheepish onlayer screens at scoot_right
 
             P "I guess that was... uhhh..."
 
             show emily sheepish onlayer screens at scoot_mid_x
             show caz smirking onlayer screens at scoot_up
+            show ellie scared flip onlayer screens at scoot_mid
 
             C "It was simply the setup, of course."
 
@@ -2732,18 +2737,18 @@ elif ellie_score == 2: ####################### ellie majority
             C "For a grisly birthday-party slasher murder!"
 
             show caz sinister onlayer screens at scoot_mid
-            show ellie scared onlayer screens at scoot_up
+            show ellie scared flip onlayer screens at scoot_up
 
             E "Noooooo they were just... umm..."
 
-            show ellie scared onlayer screens at scoot_mid
+            show ellie scared flip onlayer screens at scoot_mid
             show rosie gremlin onlayer screens at scoot_up
 
             R "Bringing the knife to cut the cake?"
 
             show rosie onlayer screens at scoot_mid
             show caz eyeroll onlayer screens
-            show ellie pouting onlayer screens
+            show ellie pouting flip onlayer screens
 
             "Nobody looks convinced by that."
 
@@ -2761,7 +2766,7 @@ elif ellie_score == 2: ####################### ellie majority
         R "Yeah, you got a nice kitty and a party."
 
         show rosie stoned onlayer screens at scoot_mid
-        show ellie scared onlayer screens at scoot_up
+        show ellie scared flip onlayer screens at scoot_up
 
         E "It was nice! I didn't want to hear a scary story before we go to sleep, it's so... spooky out here."
 
@@ -2778,16 +2783,16 @@ elif ellie_score == 2: ####################### ellie majority
 
         "You wince at the reminder."
 
-        show ellie onlayer screens at scoot_up
+        show ellie flip onlayer screens at scoot_up
 
         E "Yeah... I guess that's kinda realistic..."
 
         show ellie onlayer screens at scoot_mid
-        show rosie gremlin onlayer screens at scoot_up
+        show rosie gremlin flip onlayer screens at scoot_up
 
         R "It's real life, innit."
 
-        show rosie gremlin onlayer screens at scoot_mid
+        show rosie gremlin flip onlayer screens at scoot_mid
         show caz smirking onlayer screens at scoot_up
 
         C "Depressingly so."
@@ -2812,16 +2817,17 @@ elif ellie_score == 2: ####################### ellie majority
         C "Then a burnt pizza and a room full of smoke."
 
         show caz eyeroll onlayer screens at scoot_mid
-        show rosie gremlin onlayer screens at scoot_up
+        show rosie gremlin flip onlayer screens at scoot_up
 
         R "So sad..."
 
-        show rosie gremlin onlayer screens at scoot_mid
-        show ellie onlayer screens at scoot_up
+        show rosie gremlin flip onlayer screens at scoot_mid
+        show ellie flip onlayer screens at scoot_up
 
         E "So sad..."
 
-        show ellie onlayer screens at scoot_mid
+        show ellie flip onlayer screens at scoot_mid
+        show rosie gremlin onlayer screens at scoot_mid
         show emily sheepish onlayer screens
 
         "You wince at the disappointing ending."
@@ -2841,7 +2847,7 @@ elif ellie_score == 2: ####################### ellie majority
         R "by the ghost of the pizza!"
 
         show rosie gremlin onlayer screens at scoot_mid
-        show ellie pouting onlayer screens at scoot_up
+        show ellie pouting flip onlayer screens at scoot_up
 
         E "..."
 
@@ -2875,17 +2881,17 @@ elif ellie_score == 2: ####################### ellie majority
         C "And a double-murder."
 
         show caz sinister onlayer screens at scoot_mid
-        show ellie pouting onlayer screens at scoot_up
+        show ellie pouting flip onlayer screens at scoot_up
 
         E "But it wasn't a murder! It was fake blood, right?"
 
         show caz eyeroll onlayer screens at scoot_up
-        show ellie scared onlayer screens at scoot_mid
+        show ellie scared flip onlayer screens at scoot_mid
 
         C "That was totally a cop-out."
 
         show caz eyeroll onlayer screens at scoot_mid
-        show ellie pouting onlayer screens at scoot_up
+        show ellie pouting flip onlayer screens at scoot_up
 
         E "Noooo it was a surprise so I didn't find out about the party..."
 
@@ -2895,6 +2901,7 @@ elif ellie_score == 2: ####################### ellie majority
         R "..."
 
         show rosie laughing onlayer screens
+        show ellie pouting flip onlayer screens at scoot_mid
 
         R "It was definitely a cop-out, lol."
 
@@ -2908,7 +2915,7 @@ elif ellie_score == 2: ####################### ellie majority
         C "Shame you couldn't commit to the party-slasher-horror setup."
 
         show caz onlayer screens at scoot_mid
-        show ellie hiding onlayer screens at scoot_up
+        show ellie hiding flip onlayer screens at scoot_up
 
         E "Noooo that's not what it was! Don't make me worry about a slasher."
 
@@ -2916,12 +2923,13 @@ elif ellie_score == 2: ####################### ellie majority
 
         E "That wasn't the story, right?"
 
-        show ellie scared onlayer screens at scoot_mid
+        show ellie scared flip onlayer screens at scoot_mid
         show emily sheepish onlayer screens at scoot_right
 
         P "..."
 
         show emily satisfied onlayer screens at scoot_right
+        show ellie scared onlayer screens at scoot_mid
 
         P "...no, the murders were, uh. Pretend."
 
@@ -2938,21 +2946,21 @@ elif ellie_score == 2: ####################### ellie majority
 
         R "Yeah, you got to see a cute kitty and a nice cuddle."
 
-        show rosie gremlin onlayer screens
+        show rosie gremlin flip onlayer screens
 
         R "Then I fucking DIED."
 
-        show rosie gremlin onlayer screens at scoot_mid
+        show rosie gremlin flip onlayer screens at scoot_mid
         show caz annoyed onlayer screens at scoot_up
 
         C "Oh come on, the tone was setting it up."
 
         show caz annoyed onlayer screens at scoot_mid
-        show rosie skeptical onlayer screens at scoot_up
+        show rosie skeptical flip onlayer screens at scoot_up
 
         R "What part of that was setting up to {i}get killed by a knife guy??!{/i}"
 
-        show rosie skeptical onlayer screens at scoot_mid
+        show rosie skeptical flip onlayer screens at scoot_mid
         show emily sheepish onlayer screens
 
         "You do have to admit, it kinda came out of nowhere."
@@ -2962,16 +2970,18 @@ elif ellie_score == 2: ####################### ellie majority
         P "I was trying to get back on track..."
 
         show emily sheepish onlayer screens at scoot_mid_x
+        show rosie skeptical onlayer screens at scoot_mid
         show ellie pouting onlayer screens at scoot_up
 
         E "I wish you hadn't..."
 
-        show ellie pouting onlayer screens at scoot_mid
+        show ellie pouting onlayer screns at scoot_mid
         show rosie laughing onlayer screens at scoot_up
 
         R "No cute story for baby Ellie. Just DEATH."
 
         show rosie laughing onlayer screens at scoot_mid
+        show ellie pouting flip onlayer screns at scoot_mid
         
         "Ellie pouts and you feel a little bad."
 
@@ -2994,17 +3004,18 @@ elif rosie_score == 2: ################ rosie majority
     C "A regular stoner comedy."
 
     show caz onlayer screens at scoot_mid
-    show rosie stoned onlayer screens at scoot_up
+    show rosie stoned flip onlayer screens at scoot_up
+    show ellie flip onlayer screens at scoot_mid
 
     R "Yeah! Right!"
 
-    show rosie skeptical onlayer screens at scoot_up
+    show rosie skeptical flip onlayer screens at scoot_up
 
     R "Just..."
 
     if not stoned:
 
-        show rosie skeptical onlayer screens at scoot_up
+        show rosie skeptical flip onlayer screens at scoot_up
 
         R "Without anyone actually getting stoned."
 
@@ -3019,17 +3030,17 @@ elif rosie_score == 2: ################ rosie majority
 
         if ellie_score == 1: ####### R E R
 
-            show ellie excited onlayer screens at scoot_up
+            show ellie excited flip onlayer screens at scoot_up
 
             E "I mean, there was a cute couple!"
 
-            show ellie excited onlayer screens at scoot_mid
+            show ellie excited flip onlayer screens at scoot_mid
             show caz eyeroll onlayer screens at scoot_up
 
             C "If it was Jake and Amy, they probably {i}were{/i} stoned. They usually are."
 
             show caz eyeroll onlayer screens at scoot_mid
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "Yeah! guess it was just, like... implied..."
 
@@ -3048,16 +3059,18 @@ elif rosie_score == 2: ################ rosie majority
             C "Actually, it's kind of depressing, isn't it?"
 
             show caz smirking onlayer screens
+            show rosie skeptical flip onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
 
             C "You run into some halloween decorations outside, in {i}August{/i}, then go in to find your friends made out too much and fell asleep and burned a pizza."
 
             show caz onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "..."
 
             show ellie pouting at scoot_mid
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "..."
 
@@ -3068,17 +3081,17 @@ elif rosie_score == 2: ################ rosie majority
 
         else: ###### R C R
 
-            show rosie skeptical onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_up
 
             R "Yeah, they just fucking... died..."
 
-            show rosie skeptical onlayer screens at scoot_mid
+            show rosie skeptical flip onlayer screens at scoot_mid
             show caz eyeroll onlayer screens at scoot_up
 
             C "If it was Jake and Amy, they probably {i}were{/i} stoned, beforehand. They usually are."
 
             show caz eyeroll onlayer screens at scoot_mid
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "Yeah! guess it was just, like... implied..."
 
@@ -3087,6 +3100,7 @@ elif rosie_score == 2: ################ rosie majority
             R "Impldied."
 
             show rosie gremlin onlayer screens at scoot_mid
+            show ellie excited flip onlayer screens
 
             "Ellie giggles at the mashed pronunciation."
 
@@ -3096,6 +3110,8 @@ elif rosie_score == 2: ################ rosie majority
 
             show caz smirking onlayer screens at scoot_mid
             show emily interrupted onlayer screens
+            show rosie gremlin flip onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
 
             "Woops..."
 
@@ -3104,16 +3120,16 @@ elif rosie_score == 2: ################ rosie majority
             C "Don't do drugs, kids! You'll get killed by a knife murderer!"
 
             show caz smirking onlayer screens at scoot_mid
-            show rosie laughing onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_up
 
             R "And burn your pizza!"
 
-            show rosie laughing onlayer screens at scoot_mid
-            show ellie hiding onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_mid
+            show ellie hiding flip onlayer screens at scoot_up
 
             E "So sad!"
 
-            show ellie onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
             show rosie laughing onlayer screens at scoot_up
 
             R "So sad!"
@@ -3125,7 +3141,7 @@ elif rosie_score == 2: ################ rosie majority
 
     elif not pizza:
 
-        show rosie skeptical onlayer screens at scoot_up
+        show rosie skeptical flip onlayer screens at scoot_up
 
         R "With a kinda leftfield ending..."
 
@@ -3134,13 +3150,13 @@ elif rosie_score == 2: ################ rosie majority
 
         "Woops..."
 
-        show ellie onlayer screens at scoot_up
+        show ellie flip onlayer screens at scoot_up
 
         E "Yeah..."
 
         if ellie_score == 1: ###### R R E
 
-            show ellie excited onlayer screens
+            show ellie excited flip onlayer screens
             show emily satisfied onlayer screens
 
             E "I mean... it was kinda cute to go from comedy to a fun party..."
@@ -3149,7 +3165,7 @@ elif rosie_score == 2: ################ rosie majority
 
             E "I didn't want to hear a scary story before we go to sleep, it's so... spooky out here."
 
-            show ellie scared onlayer screens at scoot_mid
+            show ellie scared flip onlayer screens at scoot_mid
             show emily onlayer screens
 
             "She gestures around to the mostly-empty campsite, the wind making only slightly less noise than in the story."
@@ -3159,16 +3175,16 @@ elif rosie_score == 2: ################ rosie majority
             C "So you get a birthday party, that's happening whilst two people are stoned on your sofa."
 
             show caz smirking onlayer screens at scoot_mid
-            show ellie pouting Os at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "Yeah... I guess that's kinda realistic..."
 
-            show ellie pouting onlayer screens at scoot_mid
-            show rosie stoned onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_mid
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "It's real life, innit."
 
-            show rosie stoned onlayer screens at scoot_mid
+            show rosie stoned flip onlayer screens at scoot_mid
             show caz eyeroll onlayer screens at scoot_up
 
             C "Depressingly so."
@@ -3180,12 +3196,12 @@ elif rosie_score == 2: ################ rosie majority
 
         else:  ######## R R C
 
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "Yeah, I just fucking... died..."
 
-            show rosie stoned onlayer screens at scoot_mid
-            show ellie hiding onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_mid
+            show ellie hiding flip onlayer screens at scoot_up
 
             E "So did we! Or... whoever's meant to be the character..."
 
@@ -3200,12 +3216,13 @@ elif rosie_score == 2: ################ rosie majority
 
             show caz sinister onlayer screens at scoot_mid
             show emily onlayer screens
-            show rosie laughing onlayer screens at scoot_up
+            show ellie hiding flip onlayer screens at scoot_mid
+            show rosie laughing flip onlayer screens at scoot_up
 
             R "It was so out of nowhere!"
 
-            show rosie laughing onlayer screens at scoot_mid
-            show ellie onlayer screens
+            show rosie laughing flip onlayer screens at scoot_mid
+            show ellie flip onlayer screens
             show caz reassuring onlayer screens at scoot_up
 
             C "It was a classic one-two-three misdirection."
@@ -3220,7 +3237,7 @@ elif rosie_score == 2: ################ rosie majority
             P "Uhhh yeah that's what - "
 
             show emily interrupted onlayer screens at scoot_mid_x
-            show rosie skeptical onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_up
 
             R "Oh come on, it felt like an anti-drugs advert."
 
@@ -3229,12 +3246,13 @@ elif rosie_score == 2: ################ rosie majority
             "Caz laughs suddenly, and pats her thigh in amusement."
 
             show caz smirking onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_mid
             show emily onlayer screens
 
             C "Don't do drugs, kids! You'll get killed by a knife murderer!"
 
             show caz smirking onlayer screens at scoot_mid
-            show ellie onlayer screens at scoot_up
+            show ellie onlayer flip screens at scoot_up
 
             E "But the protagonist didn't, did they? Whoever we were..."
 
@@ -3244,7 +3262,7 @@ elif rosie_score == 2: ################ rosie majority
             C "...I guess not."
 
             show caz onlayer screens at scoot_mid
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "Don't be in proximity to drugs?"
 
@@ -3272,20 +3290,21 @@ elif rosie_score == 2: ################ rosie majority
         if ellie_score == 1: ##### E R R
 
             show caz smirking onlayer screens at scoot_mid
-            show rosie laughing onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_up
 
             R "No, like, the cat..."
 
-            show rosie laughing onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_mid
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "The kitty was nice!"
 
             show ellie excited onlayer screens
+            show rosie laughing onlayer screens at scoot_mid
 
             E "Don't you like saying hi to a cat?"
 
-            show ellie excited onlayer screens at scoot_mid
+            show ellie excited flip onlayer screens at scoot_mid
             show rosie stoned onlayer screens at scoot_up
 
             R "I mean yeah totally. But it's a weird narrative, innit?"
@@ -3301,11 +3320,11 @@ elif rosie_score == 2: ################ rosie majority
             P "..."
 
             show emily sheepish onlayer screens at scoot_mid_x
-            show ellie onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             E "It just sounds like a generic day..."
 
-            show ellie onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
             show rosie stoned onlayer screens at scoot_up
 
             R "Yeah, dang."
@@ -3316,7 +3335,7 @@ elif rosie_score == 2: ################ rosie majority
 
         else: #C R R
 
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "No, like, the fucking... knife guy hanging around."
 
@@ -3325,7 +3344,7 @@ elif rosie_score == 2: ################ rosie majority
             R "What was with that??"
 
             show rosie skeptical onlayer screens at scoot_mid
-            show ellie scared onlayer screens at scoot_up
+            show ellie scared flip onlayer screens at scoot_up
 
             E "It was scary..."
 
@@ -3339,18 +3358,19 @@ elif rosie_score == 2: ################ rosie majority
             C "It's foreshadowing the death of the pizza."
 
             show caz sinister onlayer screens at scoot_mid
-            show rosie stoned onlayer screens at scoot_up
+            show ellie scared flip onlayer screens at scoot_mid
+            show rosie stoned flip onlayer screens at scoot_up
             show emily satisfied onlayer screens ### emily laughing ?
 
             R "That wasn't {i}stabbed{/i} though."
 
-            show rosie stoned onlayer screens at scoot_mid
+            show rosie stoned flip onlayer screens at scoot_mid
             show caz smirking onlayer screens at scoot_up
 
             C "Foreshadowing the abstract concept of death."
 
             show caz smirking onlayer screens at scoot_mid
-            show ellie onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             E "Pizza death..."
 
@@ -3359,11 +3379,11 @@ elif rosie_score == 2: ################ rosie majority
 
             P "..."
 
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "So sad..."
 
-            show ellie onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
             show rosie laughing onlayer screens at scoot_up
 
             R "So sad..."
@@ -3384,7 +3404,7 @@ elif caz_score == 2: ################# caz majority
     if ellie_score == 1:
 
         show caz onlayer screens at scoot_mid
-        show ellie hiding onlayer screens at scoot_up
+        show ellie hiding flip onlayer screens at scoot_up
 
         E "Yeah..."
 
@@ -3400,7 +3420,7 @@ elif caz_score == 2: ################# caz majority
             R "Oh, the cat?"
 
             show rosie stoned onlayer screens at scoot_mid
-            show ellie excited onlayer screens at scoot_up
+            show ellie excited flip onlayer screens at scoot_up
 
             E "Yeah!"
 
@@ -3427,22 +3447,23 @@ elif caz_score == 2: ################# caz majority
             C "They get so much shunning for having black fur..."
 
             show caz reassuring onlayer screens at scoot_mid
-            show rosie laughing onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_up
 
             R "Oh, Caz, I was {i}joking{/i}."
 
-            show rosie laughing onlayer screens at scoot_mid
-            show caz annoyed onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_mid
+            show caz annoyed flip onlayer screens at scoot_up
 
             C "Hmmph."
 
             show caz onlayer screens at scoot_mid
             show emily sheepish onlayer screens at scoot_right
+            show rosie laughing onlayer screens at scoot_mid
 
             P "..."
 
             show emily sheepish onlayer screens at scoot_mid_x
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "I hope the cat survived..."
 
@@ -3458,7 +3479,7 @@ elif caz_score == 2: ################# caz majority
             C "You mean Jake and Amy passed out on the sofa."
 
             show caz eyeroll onlayer screens at scoot_mid
-            show ellie excited onlayer screens at scoot_up
+            show ellie excited flip onlayer screens at scoot_up
 
             E "Yeah! Having a cuddle..."
 
@@ -3467,10 +3488,10 @@ elif caz_score == 2: ################# caz majority
             E "It sounds nice."
 
             show rosie gremlin onlayer screens at scoot_up
-            show ellie pouting onlayer screens at scoot_mid
-
+            
             R "And then a murderer breaks in!"
 
+            show ellie pouting flip onlayer screens at scoot_mid
             show rosie gremlin onlayer screens at scoot_mid
             show caz sinister onlayer screens at scoot_up
 
@@ -3478,6 +3499,7 @@ elif caz_score == 2: ################# caz majority
 
             show caz sinister onlayer screens at scoot_mid
             show ellie pouting onlayer screens
+            show rosie gremlin flip onlayer screens at scoot_mid
 
             "Ellie pouts and shakes her head at the two of them."
 
@@ -3485,13 +3507,13 @@ elif caz_score == 2: ################# caz majority
 
             E "It's so back and forth..."
 
-            show ellie pouting onlayer screens at scoot_mid
+            show ellie pouting flip onlayer screens at scoot_mid
             show caz smirking onlayer screens at scoot_up
 
             C "Everyone knows the couple who make out die in a horror film."
 
             show caz smirking onlayer screens at scoot_mid
-            show rosie skeptical onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_up
 
             R "Did they die, though? I thought we did? Or like... whoever the protagonist was."
 
@@ -3519,19 +3541,19 @@ elif caz_score == 2: ################# caz majority
 
             C "Who knows? Could be a slasher at our house right now."
 
-            show rosie laughing onlayer screens
+            show rosie laughing flip onlayer screens
             show caz sinister onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "Nooo..."
 
         else: ###### C C E
 
-            show ellie excited onlayer screens at scoot_up
+            show ellie excited flip onlayer screens at scoot_up
 
             E "I got a nice birthday party!"
 
-            show ellie excited onlayer screens at scoot_mid
+            show ellie excited flip onlayer screens at scoot_mid
             show rosie skeptical onlayer screens at scoot_up
 
             R "You mean the \"Happy birthday! My friends are dead and there's a knife guy outside laughing at us!\" bit?"
@@ -3550,11 +3572,11 @@ elif caz_score == 2: ################# caz majority
 
             "She glances over at you, unimpressed."
 
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "Noooo it was a surprise so I didn't find out about the party..."
 
-            show ellie pouting onlayer screens at scoot_mid
+            show ellie pouting flip onlayer screens at scoot_mid
             show rosie stoned onlayer screens at scoot_up
 
             R "..."
@@ -3568,6 +3590,7 @@ elif caz_score == 2: ################# caz majority
 
             C "Shame you couldn't commit to the party-slasher-horror setup."
 
+            show rosie laughing flip onlayer screens at scoot_mid
             show caz smirking onlayer screens at scoot_up
 
             C "Or maybe it's a double-bluff, and next the slasher comes in for real."
@@ -3577,7 +3600,7 @@ elif caz_score == 2: ################# caz majority
             C "That'd be fun."
 
             show caz sinister onlayer screens at scoot_mid
-            show ellie hiding onlayer screens at scoot_up
+            show ellie hiding flip onlayer screens at scoot_up
 
             E "Noooo that's not what it was going to be! Don't make me worry about a slasher."
 
@@ -3587,6 +3610,7 @@ elif caz_score == 2: ################# caz majority
             E "That wasn't the story, right?"
 
             show ellie scared onlayer screens at scoot_mid
+            show rosie laughing onlayer screens at scoot_mid
 
             P "..."
 
@@ -3605,17 +3629,17 @@ elif caz_score == 2: ################# caz majority
 
         if pizza:  ###### C C R
 
-            show rosie skeptical onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_up
 
             R "Yeah, just derailed by the pizza-murder ending."
 
             show rosie skeptical onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "The saddest part..."
 
             show rosie stoned onlayer screens at scoot_up
-            show ellie onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
 
             R "So sad..."
 
@@ -3625,11 +3649,11 @@ elif caz_score == 2: ################# caz majority
             C "Sadder than your two friends getting stabbed?"
 
             show caz onlayer screens at scoot_mid
-            show rosie laughing onlayer screens at scoot_up
+            show rosie laughing flip onlayer screens at scoot_up
 
             R "They'd be sad about the pizza too!"
 
-            show rosie laughing onlayer screens at scoot_mid
+            show rosie laughing flip onlayer screens at scoot_mid
             show caz onlayer screens at scoot_up
 
             C "Hmmm."
@@ -3648,18 +3672,21 @@ elif caz_score == 2: ################# caz majority
             C "A bit anticlimatic though."
 
             show caz reassuring onlayer screens at scoot_mid
+            show rosie onlayer screens at scoot_mid
+            show ellie onlayer screens at scoot_mid
             show emily sheepish onlayer screens at scoot_right
 
             P "Yeah, I guess."
 
         elif stoned: ##### C R C
 
-            show rosie skeptical onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_up
 
             R "How was it? You see a creepy guy, see your stoned friends, then I'm dead?"
 
-            show rosie skeptical onlayer screens at scoot_mid
+            show rosie skeptical flip onlayer screens at scoot_mid
             show caz sinister onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             C "Yeah. Setup, distraction, payoff."
 
@@ -3668,11 +3695,12 @@ elif caz_score == 2: ################# caz majority
             C "Shame we don't see what happens to Jake and Amy."
 
             show caz onlayer screens at scoot_mid
-            show ellie onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             E "Or... whoever's meant to be the character..."
 
             show ellie onlayer screens at scoot_mid
+            show rosie onlayer screens at scoot_mid
             show emily sheepish onlayer screens
 
             "It was kinda muddled as to who the protagonist was..."
@@ -3688,21 +3716,23 @@ elif caz_score == 2: ################# caz majority
 
             show emily onlayer screens at scoot_mid_x
             show caz smirking onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_mid
+            show rosie flip onlayer screens at scoot_mid            
 
             C "Don't do drugs, kids! You'll wake up to your recording engineer dead by knife!"
 
             show caz smirking onlayer screens at scoot_mid
-            show rosie stoned onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_up
 
             R "However will they record their EP without me..."
 
-            show rosie stoned at scoot_mid
+            show rosie stoned flip at scoot_mid
             show caz reassuring onlayer screens at scoot_up
 
             C "They'll be missing a certain spark, that's for sure."
 
             show caz reassuring onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "But it's not like {i}we{/i} took any - I mean, the protagonist... whoever they are."
 
@@ -3715,7 +3745,7 @@ elif caz_score == 2: ################# caz majority
 
             R "Heh. Impldied, you could say."
 
-            show ellie excited onlayer screens
+            show ellie excited flip onlayer screens
             show caz eyeroll onlayer screens
 
             "Ellie snorts at the bad pun."
@@ -3726,22 +3756,23 @@ elif caz_score == 2: ################# caz majority
             C "God, you probably got knife-murdered because of that level of pun."
 
             show caz smirking onlayer screens at scoot_mid
-            show rosie gremlin onlayer screens at scoot_up
+            show rosie gremlin flip onlayer screens at scoot_up
 
             R "Hey, you love my jokes!"
 
-            show rosie gremlin onlayer screens at scoot_mid
-            show caz eyeroll onlayer screens
+            show rosie gremlin flip onlayer screens at scoot_mid
+            show caz eyeroll flip onlayer screens
 
             "Caz looks unimpressed."
 
         else: ###### R C C
 
-            show rosie skeptical onlayer screens at scoot_up
+            show rosie skeptical flip onlayer screens at scoot_up
 
             R "What do you mean? It was rock solid, even if I {i}died{/i}."
 
-            show rosie skeptical onlayer screens at scoot_mid
+            show rosie skeptical flip onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
             show caz onlayer screens at scoot_up
 
             C "I mean, the sofa death comes out of nowhere."
@@ -3759,16 +3790,16 @@ elif caz_score == 2: ################# caz majority
 
             "You're glad that Rosie is covering for your storytelling..."
 
-            show rosie stoned onlayer screens
+            show rosie stoned flip onlayer screens
 
             R "Funny, too..."
 
-            show rosie stoned onlayer screens at scoot_mid
-            show ellie pouting onlayer screens at scoot_up
+            show rosie stoned flip onlayer screens at scoot_mid
+            show ellie pouting flip onlayer screens at scoot_up
 
             E "If you put up jumpscare skeletons this halloween, I'll scream..."
 
-            show ellie pouting onlayer screens at scoot_mid
+            show ellie pouting flip onlayer screens at scoot_mid
             show rosie gremlin onlayer screens at scoot_up
 
             R "Heh heh heh..."
@@ -3779,6 +3810,7 @@ elif caz_score == 2: ################# caz majority
             C "Really, though, if I was going for a misdirection, I'd have {i}two{/i} of them to really sell it."
 
             show caz sinister onlayer screens
+            show rosie gremlin flip onlayer screens at scoot_mid
 
             C "A skeleton jumpscare, then - I don't know, something else, {i}then{/i} knife murder."
 
@@ -3788,6 +3820,7 @@ elif caz_score == 2: ################# caz majority
             P "..."
 
             show emily sheepish onlayer screens
+            show ellie onlayer screens
 
             P "Guess I'll remember that for next time..."
 
@@ -3797,11 +3830,11 @@ elif caz_score == 2: ################# caz majority
             R "Hey, next storytime, maybe me and the band can {i}survive{/i}? Just a thought."
 
             show rosie stoned onlayer screens at scoot_mid
-            show ellie onlayer screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             E "Once upon a time, Rosie and the band didn't die. The end, happy ever after."
 
-            show ellie onlayer screens at scoot_mid
+            show ellie flip onlayer screens at scoot_mid
             show rosie laughing onlayer screens at scoot_up
 
             R "Thanks, El, that's perfect."
@@ -3838,17 +3871,17 @@ show rosie stoned onlayer screens at scoot_up
 
 R "Anyway, storytime over. Where's the snacks..."
 
-show rosie stoned onlayer screens at scoot_mid
+show rosie stoned flip onlayer screens at scoot_mid
 show caz reassuring onlayer screens at scoot_up
 
 C "They're in the tent."
 
 show caz reassuring onlayer screens at scoot_mid
-show ellie excited onlayer screens at scoot_up
+show ellie excited flip onlayer screens at scoot_up
 
 E "Ooh, get me some too!"
 
-show ellie excited onlayer screens at scoot_mid
+show ellie excited flip onlayer screens at scoot_mid
 show rosie stoned onlayer screens at scoot_away
 
 "Rosie crawls off to fetch them, leaving Ellie to curl up on the blanket."
