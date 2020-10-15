@@ -1,56 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/screens.rpy", line 616, in prepare_screen
-    screen about():
-  File "game/screens.rpy", line 616, in prepare
-    screen about():
-  File "game/screens.rpy", line 623, in prepare
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 623, in prepare
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 627, in prepare
-    vbox:
-  File "game/screens.rpy", line 627, in prepare
-    vbox:
-  File "game/screens.rpy", line 636, in prepare
-    text _("A campfire horror story interrupted by your girlfriends.\n\nMade for the {a="https://store.steampowered.com/curator/38713864"}10mg Collection{/a}. \n\nFreya would like to thank her patreon supporters:\n80percentrelatable, MKhan, Mathias, Abbi, and Rumpel.\n\nMade with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-SyntaxError: invalid syntax (game/screens.rpy, line 636)
+While running game code:
+  File "game/script.rpy", line 2431, in script
+    show caz reassuring onlayer screens at scoot_up
+  File "game/script.rpy", line 2431, in <module>
+    show caz reassuring onlayer screens at scoot_up
+NameError: name 'scoot_awayt' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
-    renpy.main.main()
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\main.py", line 578, in main
-    run(restart)
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\main.py", line 94, in run
-    renpy.display.screen.prepare_screens()
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\display\screen.py", line 931, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/screens.rpy", line 616, in prepare_screen
-    screen about():
-  File "game/screens.rpy", line 616, in prepare
-    screen about():
-  File "game/screens.rpy", line 623, in prepare
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 623, in prepare
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 627, in prepare
-    vbox:
-  File "game/screens.rpy", line 627, in prepare
-    vbox:
-  File "game/screens.rpy", line 636, in prepare
-    text _("A campfire horror story interrupted by your girlfriends.\n\nMade for the {a="https://store.steampowered.com/curator/38713864"}10mg Collection{/a}. \n\nFreya would like to thank her patreon supporters:\n80percentrelatable, MKhan, Mathias, Abbi, and Rumpel.\n\nMade with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\pyanalysis.py", line 703, in ast_eval
-    return self.ast_eval_literal(expr)[0]
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\pyanalysis.py", line 687, in ast_eval_literal
-    expr = py_compile(expr, 'eval', ast_node=True)
-  File "D:\GAMEDEV\renpy-7.3.5-sdk\renpy\python.py", line 692, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/screens.rpy, line 636)
+  File "game/script.rpy", line 2431, in script
+    show caz reassuring onlayer screens at scoot_up
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\ast.py", line 1183, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\ast.py", line 1142, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 2431, in <module>
+    show caz reassuring onlayer screens at scoot_up
+NameError: name 'scoot_awayt' is not defined
 
-Windows-8-6.2.9200
+Windows-7-6.1.7601-SP1
 Ren'Py 7.3.5.606
 SLASHER, Interrupted 1.0
-Wed Oct 14 14:42:52 2020
+Thu Oct 15 16:05:01 2020
