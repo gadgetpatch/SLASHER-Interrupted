@@ -3252,7 +3252,7 @@ elif rosie_score == 2: ################ rosie majority
             C "Don't do drugs, kids! You'll get killed by a knife murderer!"
 
             show caz smirking onlayer screens at scoot_mid
-            show ellie onlayer flip screens at scoot_up
+            show ellie flip onlayer screens at scoot_up
 
             E "But the protagonist didn't, did they? Whoever we were..."
 
