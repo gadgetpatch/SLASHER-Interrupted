@@ -107,11 +107,11 @@ image caz annoyed = "sprite/caz_annoyed.png"
 image caz sinister = "sprite/caz_sinister.png"
 image caz reassuring = "sprite/caz_reassure.png"
 image caz flip = im.Flip("sprite/caz.png", horizontal=True)
-image caz flip smirking = im.Flip("sprite/caz_smirking.png", horizontal=True)
-image caz flip eyeroll = im.Flip("sprite/caz_eyeroll.png", horizontal=True)
-image caz flip annoyed = im.Flip("sprite/caz_annoyed.png", horizontal=True)
-image caz flip sinister = im.Flip("sprite/caz_sinister.png", horizontal=True)
-image caz flip reassuring = im.Flip("sprite/caz_reassure.png", horizontal=True)
+image caz smirking flip = im.Flip("sprite/caz_smirking.png", horizontal=True)
+image caz eyeroll flip = im.Flip("sprite/caz_eyeroll.png", horizontal=True)
+image caz annoyed flip = im.Flip("sprite/caz_annoyed.png", horizontal=True)
+image caz sinister flip = im.Flip("sprite/caz_sinister.png", horizontal=True)
+image caz reassuring flip = im.Flip("sprite/caz_reassure.png", horizontal=True)
 
 
 ## Animations #################################################################
@@ -253,6 +253,7 @@ E "Eeek!"
 show bg campfire onlayer background with dissolve
 show rosie laughing onlayer screens at opaque, scoot_up
 show ellie scared onlayer screens
+
 $ renpy.music.set_volume(0.0, delay=1, channel='music')
 play musicb chewgum loop fadein 1.0
 
@@ -731,6 +732,8 @@ show caz onlayer screens at faded
 $ renpy.music.set_volume(0.0, delay=1, channel='musicb')
 $ renpy.music.set_volume(1.0, delay=2, channel='music')
 
+show bg sofa onlayer background with dissolve
+
 P "As you get closer to check the bodies, one of them gently snores."
 
 P "Moving around the side of the sofa, you realise it's Jake and Amy - "
@@ -772,8 +775,6 @@ show caz onlayer screens
 show emily gendo onlayer screens
 
 P "You keep quiet so as not to disturb them."
-
-show bg sofa onlayer background with dissolve
 
 show ellie onlayer screens at faded
 show rosie onlayer screens at faded
@@ -838,6 +839,8 @@ else:
 $ renpy.music.set_volume(0.0, delay=1, channel='music')
 $ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
+show bg sofa onlayer background with dissolve
+
 show emily gendo onlayer screens
 
 P "As you get closer to check the bodies, one of them groans."
@@ -882,12 +885,12 @@ show caz eyeroll onlayer screens
 
 C "They were passed out IN MY BED. NAKED. I don't care what it was from."
 
-show caz flip annoyed onlayer screens at scoot_mid_x
+show caz annoyed flip onlayer screens at scoot_mid_x
 
 P "..."
 
 show ellie pouting flip onlayer screens at scoot_right
-show caz flip eyeroll onlayer screens
+show caz eyeroll flip onlayer screens
 
 E "I've done that too..."
 
@@ -926,11 +929,10 @@ P "..."
 
 $ renpy.music.set_volume(0.0, delay=1, channel='musicb')
 $ renpy.music.set_volume(1.0, delay=2, channel='music')
+
 show emily gendo onlayer screens
 
 P "You keep quiet so as not to disturb them."
-
-show bg sofa onlayer background with dissolve
 
 show rosie onlayer screens at faded
 show ellie onlayer screens at faded
@@ -997,12 +999,13 @@ show ellie onlayer screens at faded
 show rosie onlayer screens at faded
 show caz onlayer screens at faded
 show emily gendo onlayer screens
+
 $ renpy.music.set_volume(0.0, delay=1, channel='musicb')
 $ renpy.music.set_volume(1.0, delay=2, channel='music')
 
-P "You step closer to the sofa, and every step causes a sick feeling in your stomach to rise."
+show bg sofa onlayer background with dissolve
 
-show emily gendo onlayer screens at faded
+P "You step closer to the sofa, and every step causes a sick feeling in your stomach to rise."
 
 P "When you can see the figures closer, you gasp and take a step back in shock."
 
@@ -1123,8 +1126,11 @@ show emily gendo onlayer screens
 show ellie scared onlayer screens at faded
 show rosie stoned onlayer screens at faded
 show caz sinister onlayer screens at faded
+
 $ renpy.music.set_volume(0.0, delay=1, channel='musicb')
 $ renpy.music.set_volume(1.0, delay=2, channel='music')
+
+show bg sofa onlayer background with dissolve
 
 P "You stare at the kitchen door, a grim sense of foreboding rooting you to the spot."
 
@@ -1171,9 +1177,10 @@ P "Whatever's in the kitchen, you're facing it on your own."
 
 P "With one quick movement, you snap the handle down and push the door open, to see - "
 
-show bg campfire onlayer background with dissolve
 $ renpy.music.set_volume(0.0, delay=1, channel='music')
 $ renpy.music.set_volume(1.0, delay=2, channel='musicb')
+
+show bg campfire onlayer background with dissolve
 
 show caz sinister onlayer screens at scoot_up
 
@@ -1247,8 +1254,11 @@ else:
         "This story is a lost cause by now."
 
 show emily gendo onlayer screens
+
 $ renpy.music.set_volume(0.0, delay=1, channel='musicb')
 $ renpy.music.set_volume(1.0, delay=2, channel='music')
+
+show bg kitchen onlayer background with dissolve
 
 P "As you open the door, there's a bang, and you close your eyes in shock."
 
@@ -1394,8 +1404,9 @@ label choice_C_Rosie:
 hide screen choice_C
 nvl clear
 
+show emily onlayer screens at scoot_up
 show ellie onlayer screens at scoot_mid
-show rosie onlayer screens at scoot_mid
+show rosie stoned onlayer screens at scoot_mid
 show caz onlayer screens at scoot_mid
 
 $ rosie_score += 1
@@ -1410,6 +1421,7 @@ elif rosie_score > 1:
     "You lean the story towards Rosie's stoner comedy tastes again."
 
     if death:
+        show emily sheepish onlayer screens
         "Guess it's kinda weird after literally killing two people, but whatever."
 
         "We're off the rails now."
@@ -1417,63 +1429,75 @@ else:
     "At the last minute, you chicken out from a different ending, and go with Rosie's idea."
 
     if death:
+        show emily sheepish onlayer screens
         "It feels kinda jarring, but whatever."
 
         "This story is a lost cause by now."
 
+show emily gendo onlayer screens
+
 $ renpy.music.set_volume(0.0, delay=1, channel='musicb')
 $ renpy.music.set_volume(1.0, delay=2, channel='music')
+
+show bg kitchen onlayer background with dissolve
+
+show ellie onlayer screens at faded
+show caz onlayer screens at faded
+show rosie stoned onlayer screens at faded
 
 P "As you open the door, a bad smell hits your nose and you reel backwards a step."
 
 P "The kitchen is filled with black smoke, spilling out in clouds from the edge of the oven door."
 
-show rosie skeptical onlayer screens at scoot_up
+show rosie stoned onlayer screens at shown
 
 R "Awh dang."
 
-show rosie skeptical onlayer screens at scoot_mid
+show rosie stoned onlayer screens at faded
 
 P "You cross the kitchen, wafting smoke away from your face, and pull open the oven door."
 
 P "Inside is a gory mess; the blackened remains of what was once a pizza, now charred to a crisp."
 
-show rosie stoned onlayer screens at scoot_up
+show rosie skeptical onlayer screens at shown
 
 R "Nooo..."
 
-show rosie stoned onlayer screens at scoot_mid
-show ellie pouting onlayer screens at scoot_up
+show ellie pouting flip onlayer screens at scoot_right
+show emily onlayer screens
+
 $ renpy.music.set_volume(0.0, delay=1, channel='music')
 $ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 E "F in the chat..."
 
-show ellie onlayer screens at scoot_mid
-show caz annoyed onlayer screens at scoot_up
-show emily interrupted onlayer screens
+show ellie flip onlayer screens
+show rosie stoned onlayer screens at scoot_left
+show caz eyeroll onlayer screens at opaque
 
 C "What does that even {i}mean{/i}?"
 
 if death:
 
+    show caz annoyed onlayer screens at scoot_left
+
     C "Aren't there two people DEAD?"
 
-    show caz annoyed onlayer screens at scoot_mid
     show rosie gremlin onlayer screens at scoot_up
 
     R "They - they - they died before they could eat their pizza!"
 
-    show rosie laughing onlayer screens at scoot_up
-
     R "This is so sad!"
 
-    show rosie laughing onlayer screens at scoot_mid
-    show ellie excited onlayer screens at scoot_up
+    show ellie flip onlayer screens at scoot_up
+    show rosie stoned onlayer screens
 
     E "It's so sad!"
 
-show ellie excited onlayer screens at scoot_mid
+show rosie laughing onlayer screens at scoot_mid_y
+show ellie flip excited onlayer screens at scoot_mid_y
+show emily satisfied onlayer screens
+show caz eyeroll onlayer screens
 
 "Rosie breaks down into laughter, passing the joint to Ellie to hold as she cackles."
 
@@ -1481,17 +1505,19 @@ show caz smirking onlayer screens
 
 "Caroline rolls her eyes, but you catch a glimpse of her smiling." 
 
-show emily sheepish onlayer screens
+show emily relieved onlayer screens
 $ renpy.music.set_volume(0.0, delay=1, channel='musicb')
 $ renpy.music.set_volume(1.0, delay=2, channel='music')
 
 P "..."
 
-show emily onlayer screens
+show emily gendo onlayer screens
+show rosie onlayer screens
+show ellie flip onlayer screens
 
 P "You cough at the pizza smoke, and hunt around for gloves to take it out."
 
-show emily gendo onlayer screens
+show caz onlayer screens at scoot_mid
 
 P "With the blackened disk now sat on the counter, the kitchen feels like a crime scene."
 
@@ -1500,68 +1526,69 @@ $ renpy.music.set_volume(1.0, delay=2, channel='musicb')
 
 if death: 
 
-    show caz smirking onlayer screens at scoot_up
+    show caz eyeroll onlayer screens
 
     C "The {i}kitchen{/i} feels like a crime scene?"
 
-    show caz smirking onlayer screens at scoot_mid
-    show rosie gremlin onlayer screens at scoot_up
+    show emily sheepish onlayer screens
+    show rosie flip gremlin onlayer screens at scoot_mid
 
     R "Hey, my dead friends are sad, but a pizza is TRAGIC."
 
-    show rosie gremlin onlayer screens at scoot_mid
-    show caz annoyed onlayer screens at scoot_up
+    show caz onlayer screens 
 
     C "You told me off for being sarcastic about them like, two minutes ago."
 
-    show caz annoyed onlayer screens at scoot_mid
-    show rosie stoned onlayer screens at scoot_up
+    show rosie stoned flip onlayer screens
 
     R "...yeah, well."
 
 elif stoned:
     
-    show caz eyeroll onlayer screens at scoot_up
+    show caz eyeroll onlayer screens
 
     C "This is why we don't let Jake and Amy come over unattended."
 
-    show caz eyeroll onlayer screens at scoot_mid
-    show rosie skeptical onlayer screens at scoot_up
+    show emily onlayer screens
+    show ellie pouting flip onlayer screens
+    show rosie skeptical flip onlayer screens at scoot_mid
 
     R "Oh like you've never burned food."
 
-    show rosie skeptical onlayer screens at scoot_mid
-    show caz annoyed onlayer screens at scoot_up
+    show caz onlayer screens at scoot_left
 
     C "Not after smoking too much and passing out at someone {i}else's{/i} house, no!"
 
+    show rosie stoned flip onlayer screens
     show caz onlayer screens at scoot_mid
-    show rosie stoned onlayer screens at scoot_up
 
     R "Well, y'know..."
 
 else:
 
-    show caz eyeroll onlayer screens at scoot_up
+    show caz eyeroll onlayer screens
 
     C "This is why we don't let Jake and Amy come over unattended."
 
-    show caz eyeroll onlayer screens at scoot_mid
-    show rosie skeptical onlayer screens at scoot_up
+    show emily onlayer screens
+    show ellie pouting flip onlayer screens
+    show rosie skeptical flip onlayer screens at scoot_mid
 
     R "Oh like you've never burned food."
 
-    show rosie skeptical onlayer screens at scoot_mid
-    show caz annoyed onlayer screens at scoot_up
+    show ellie flip onlayer screens
+    show caz smirking onlayer screens at scoot_left
  
     C "Not after getting distracted cuddling at someone {i}else's{/i} house, no!"
 
-    show caz onlayer screens at scoot_mid
-    show rosie stoned onlayer screens at scoot_up
+    show rosie stoned flip onlayer screens
+    show caz smirking onlayer screens at scoot_mid
 
     R "Well, y'know..."
 
+show ellie flip onlayer screens
 show rosie stoned onlayer screens at scoot_mid
+show caz smirking onlayer screens
 
 "Rosie shrugs, and Caroline rolls her eyes."
 
@@ -1685,7 +1712,7 @@ show caz sinister onlayer screens at scoot_up
 
 C "Go for the eyes!"
 
-show caz sinister onlayer screens at scoot_mid
+show caz sinister Os at scoot_mid
 show ellie hiding onlayer screens at scoot_up
 
 E "Run away!"
@@ -1766,18 +1793,19 @@ show ellie onlayer screens at scoot_mid
 show bg campfire onlayer background with dissolve
 
 show emily onlayer screens
+show ellie excited onlayer screens at scoot_up
+$ renpy.music.set_volume(0.0, delay=2, channel='musicb')
+play music guitar loop
+$ renpy.music.set_volume(1.0, delay=1, channel='music')
+
+
+show emily onlayer screens
 
 "In front of you, the campfire has dimmed a little whilst you narrated, and you nudge a log further in with your foot."
 
 show emily satisfied onlayer screens
 
 P "Well, that's it. The end."
-
-show emily onlayer screens
-show ellie excited onlayer screens at scoot_up
-$ renpy.music.set_volume(0.0, delay=3, channel='musicb')
-play music guitar loop fadein 0.5
-$ renpy.music.set_volume(1.0, delay=1, channel='music')
 
 "Ellie claps excitedly for a few seconds, beaming at you."
 
@@ -1990,176 +2018,197 @@ return
 
 label ending_Rosie:
 
-show ellie onlayer screens at scoot_up
+show ellie onlayer screens
+show caz onlayer screens
 
 E "That was... funny? It kinda felt just like... average real life..."
 
-show ellie onlayer screens at scoot_mid
-show caz smirking onlayer screens at scoot_up
+show ellie onlayer screens
+show caz smirking onlayer screens
 
 C "If you narrated real life like a horror story, maybe."
 
-show caz onlayer screens at scoot_mid
-show rosie laughing onlayer screens at scoot_up
+show rosie laughing onlayer screens
+show caz onlayer screens
 
 R "Hey, I thought it was fun! It was like, believeable, innit."
 
+show ellie flip onlayer screens at scoot_right
 show rosie stoned onlayer screens
 
 R "Relatable antics. Relatable cast - "
 
-show rosie stoned onlayer screens at scoot_mid
-show caz eyeroll onlayer screens at scoot_up
+show caz smirking onlayer screens at scoot_left
 
 C "Relatable for some of us, anyway."
 
-show caz eyeroll onlayer screens at scoot_mid
+show emily relieved onlayer screens
+show ellie excited flip onlayer screens
+show rosie gremlin flip onlayer screens at scoot_right
+show caz eyeroll onlayer screens at scoot_mid_x
 
 "Rosie sticks her tongue out at Caz, and looks around on the ground."
 
+show emily onlayer screens
+show ellie flip onlayer screens
+show rosie stoned onlayer screens
 show caz onlayer screens
-show rosie stoned onlayer screens at scoot_up
 
 R "Hey, who's got the snacks?"
 
-show rosie stoned onlayer screens at scoot_mid
-show ellie onlayer screens at scoot_up
-
 E "They're in the tent."
 
-show ellie onlayer screens at scoot_mid
-show rosie gremlin onlayer screens at scoot_down
+show rosie gremlin onlayer screens
 
 R "Oh, sick. Snack time."
 
 show rosie gremlin onlayer screens at scoot_away
+show caz smirking onlayer screens
 
 "Rosie starts to crawl over to the tent to fetch her biscuits."
 
 "Caz watches her go, then rubs her hands together to warm them up."
 
-show ellie pouting onlayer screens at scoot_up
+show ellie pouting flip onlayer screens at scoot_mid_y
+show caz onlayer screens
 
 E "I'm kinda sad about the pizza now."
 
-show ellie onlayer screens at scoot_mid
-show caz smirking onlayer screens at scoot_up
+show ellie pouting flip onlayer screens at scoot_right
+show caz smirking onlayer screens at scoot_left
 
 C "It's not that tragic. It's just a fictional pizza."
 
-show caz smirking onlayer screens at scoot_mid
-show ellie pouting onlayer screens at scoot_up
+show ellie flip onlayer screens
+show caz reassuring onlayer screens
 
 E "I know... I just like happy endings."
 
-show ellie pouting onlayer screens at scoot_mid
-show emily sheepish onlayer screens at scoot_right
+show emily relieved onlayer screens at scoot_right
+show caz onlayer screens
 
 P "I'll do a happier story next time for you."
 
-show emily sheepish onlayer screens at scoot_mid
+show emily onlayer screens
+show ellie onlayer screens at scoot_up
 
 "Ellie beams, then brings her knees up to her chest to hug."
 
-show ellie onlayer screens at scoot_up
+show emily satisfied onlayer screens
 
 E "At least it made me laugh."
 
-show ellie scared onlayer screens at scoot_up
+show emily onlayer screens
+show ellie pouting onlayer screens
+show caz reassuring onlayer screens
+show rosie gremlin onlayer screens at scoot_left
 
 E "I didn't really want to hear a scary story, it's so... spooky out here."
 
-show ellie scared onlayer screens at scoot_mid
+show ellie pouting onlayer screens at scoot_mid_y
 
 "She gestures around to the mostly-empty campsite, the wind making only slightly less noise than in the story."
 
-show emily satisfied onlayer screens at scoot_right
+show emily relieved onlayer screens
 
 P "It is a bit creepy, huh."
 
-show emily satisfied onlayer screens at scoot_mid
-show caz reassuring onlayer screens at scoot_up
+show emily onlayer screens
+show caz smirking onlayer screens
 
 C "It's only a campsite. We're basically the only ones here."
 
-show caz reassuring onlayer screens at scoot_mid
-show ellie hiding onlayer screens at scoot_up
-show emily onlayer screens
+show caz reassuring onlayer screens
+show ellie hiding onlayer screens
 
 E "That's why it's so creepy! We're all alone..."
 
-show rosie gremlin onlayer screens at scoot_down
+show rosie stoned onlayer screens at scoot_mid_y
 
 R "It'sh alright, Elsh. I'll protectch you from monshtersh."
 
-show ellie pouting onlayer screens at scoot_mid
-show rosie gremlin onlayer screens at scoot_mid
-show caz eyeroll onlayer screens at scoot_up
+show ellie flip onlayer screens
+show rosie gremlin onlayer screens
+show caz smirking onlayer screens
 
 C "Don't eat with your mouth full, dear."
 
-show caz eyeroll onlayer screens at scoot_mid
-show ellie onlayer screens
+show caz onlayer screens
 
 "Rosie rolls her eyes and lays back down on the blanket, patting Ellie on the back."
 
+show ellie onlayer screens at scoot_up
 show rosie stoned onlayer screens at scoot_up
 
 R "Hey, [Emily], I liked the jokes. S'good."
 
-show rosie stoned onlayer screens at scoot_mid
-show emily satisfied onlayer screens at scoot_right
+show rosie stoned onlayer screens
+show emily satisfied onlayer screens
 
 P "Thanks."
 
-show emily satisfied onlayer screens at scoot_mid
-show rosie gremlin onlayer screens at scoot_up
+show emily onlayer screens
+show ellie flip onlayer screens
+show rosie gremlin flip onlayer screens at scoot_mid_x
+show caz onlayer screens
 
 R "Shame it didn't rub off on Caz, huh."
 
-show rosie gremlin onlayer screens at scoot_mid
-show caz annoyed onlayer screens at scoot_up
+show emily sheepish onlayer screens
+show caz annoyed onlayer screens
 
 C "Oh! You - I'm not sharing the tent with you tonight."
 
-show caz annoyed onlayer screens at scoot_mid
-show rosie laughing onlayer screens at scoot_up
 show emily onlayer screens
+show ellie onlayer screens
+show rosie onlayer screens at scoot_left
+show caz eyeroll onlayer screens
 
-R "Whatever. You share with Ellie, I'll take the car with Em."
+R "Whatever. You share with Ellie, I'll take the car with [Emily]."
 
+show emily satisfied onlayer screens
 show rosie stoned onlayer screens
 
 R "She likes funny stuff, at least. The skeletons were fun."
 
+show emily onlayer screens
+
 R "Like..."
 
-show rosie gremlin onlayer screens
+show rosie skeptical onlayer screens at scoot_mid_x
+show ellie flip onlayer screens
+show caz onlayer screens
 
 "Her face contorts as she tries to suppress a laugh."
 
+show rosie gremlin onlayer screens
+
 R "Like... humerus..."
 
-show ellie excited onlayer screens
+show emily relieved onlayer screens
+show ellie excited flip onlayer screens
 show caz smirking onlayer screens
-show emily satisfied onlayer screens
 
 "Caz groans and Ellie giggles. You can't help but grin at the half-formed joke."
 
-show rosie gremlin onlayer screens at scoot_mid
 show emily onlayer screens
+show ellie flip onlayer screens
+show rosie stoned onlayer screens
 
 "However the story went down with the others, Rosie appreciated the stoner comedy, at least."
 
-show rosie onlayer screens at faded
-show caz onlayer screens at faded
-show ellie onlayer screens at faded
+show caz smirking flip onlayer screens at scoot_away
+show ellie flip onlayer screens at scoot_away_right
 
 "It's nice to see her laugh - not that that's difficult usually."
 
+show emily satisfied onlayer screens
+show rosie onlayer screens
+
 "Maybe you could've told the story differently, but it's nice seeing someone get what they wanted."
 
-show emily onlayer screens at faded
+show emily satisfied onlayer screens at scoot_away_right
+show rosie onlayer screens at scoot_away_left
 
 "..."
 
