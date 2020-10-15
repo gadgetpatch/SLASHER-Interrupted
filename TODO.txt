@@ -1,6 +1,4 @@
-button SFX
-
-install instructions
+Install instructions
 
 sprite animations pass 2
 
