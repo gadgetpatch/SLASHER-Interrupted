@@ -1,33 +1,33 @@
-Fri Oct 16 03:51:11 2020
+Fri Oct 23 04:27:40 2020
 Windows-7-6.1.7601-SP1
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.10s
+Bootstrap to the start of init.init took 0.11s
 Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.23s
-Loading script took 3.55s
-Loading save slot metadata. took 0.03s
+Loader init took 0.05s
+Loading error handling took 0.22s
+Loading script took 3.47s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.23s
+Running init code took 0.24s
 Loading analysis data took 0.00s
-Analyze and compile ATL took 0.01s
+Analyze and compile ATL took 0.05s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Difference Engine\\AppData\\Roaming/RenPy/backups\\SLASHER-Interrupted':
-Dump and make backups. took 0.12s
+Dump and make backups. took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.03s
 DPI scale factor: 1.000000
-Creating interface object took 0.09s
+Creating interface object took 0.10s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.04s
+Analyze screens took 0.05s
 Save screen analysis took 0.10s
-Prepare screens took 0.17s
+Prepare screens took 0.19s
 Save pyanalysis. took 0.11s
-Save bytecode. took 0.09s
+Save bytecode. took 0.10s

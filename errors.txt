@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3947: else clause expects a non-empty block.
-    else: 
-          ^
+File "game/script.rpy", line 3271: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    show ellie scared flip onlayer screens
+    ^
+
+File "game/script.rpy", line 3300: expected statement.
+    else:  
+        ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Oct 16 02:38:35 2020
+Wed Oct 21 01:57:56 2020

@@ -827,11 +827,12 @@ screen preferences():
                 vbox:
                     style_prefix "radio"
                     label _("Size")
-                    textbutton _("Fullscreen") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", "toggle") ]
+                    ##textbutton _("Fullscreen") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", "toggle") ]
                     textbutton _("Tiny (540p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 0.5) ]
                     textbutton _("Small (720p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 0.66666667) ]
                     textbutton _("Medium (900p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 0.83333333) ]
                     textbutton _("Large (1080p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 1) ]
+                    ##textbutton _("Huge (1440p)") action [ Play("sound", "audio/sfx_hover.mp3"), Preference("display", 1.125) ]
 
                 ##vbox:
                     ##style_prefix "radio"

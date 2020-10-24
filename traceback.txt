@@ -1,17 +1,17 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 2431, in script
-    show caz reassuring onlayer screens at scoot_up
-  File "game/script.rpy", line 2431, in <module>
-    show caz reassuring onlayer screens at scoot_up
-NameError: name 'scoot_awayt' is not defined
+  File "game/script.rpy", line 3529, in script
+    show rosie gremlin flip onlayer screens at scoot_mid_xd
+  File "game/script.rpy", line 3529, in <module>
+    show rosie gremlin flip onlayer screens at scoot_mid_xd
+NameError: name 'scoot_mid_xd' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 2431, in script
-    show caz reassuring onlayer screens at scoot_up
+  File "game/script.rpy", line 3529, in script
+    show rosie gremlin flip onlayer screens at scoot_mid_xd
   File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\ast.py", line 1183, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\ast.py", line 1142, in show_imspec
@@ -20,11 +20,11 @@ Full traceback:
     return py_eval_bytecode(code, globals, locals)
   File "C:\Users\Difference Engine\Utilities\RenPy 7.3.5\renpy\python.py", line 2052, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 2431, in <module>
-    show caz reassuring onlayer screens at scoot_up
-NameError: name 'scoot_awayt' is not defined
+  File "game/script.rpy", line 3529, in <module>
+    show rosie gremlin flip onlayer screens at scoot_mid_xd
+NameError: name 'scoot_mid_xd' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 7.3.5.606
 SLASHER, Interrupted 1.0
-Thu Oct 15 16:05:01 2020
+Wed Oct 21 17:57:33 2020
